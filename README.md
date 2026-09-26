@@ -19,9 +19,9 @@ UBot FAQ 검색에 쓸 Vector DB를 고르려고 pgvector·Qdrant·Weaviate·Mil
 
 Recall 약 0.99에서는 pgvector(ef_search=400)의 p95가 32.2ms로 Qdrant(4.2ms)보다 약 28ms 느렸습니다. Milvus·Weaviate를 포함한 비교는 [선정 결론](docs/07-results/decision.md), 124개 설정 전체는 [수치 부록](docs/07-results/assets/fairness-v2-20260912-1826/parameter-statistics.md)에 있습니다.
 
-![무필터 Recall과 p95 지연 산포도](docs/07-results/assets/fairness-v2-20260912-1826/scatter-recall-latency.png)
+![무필터 정확도–지연, 혼합 정확도–처리량 산포도](docs/07-results/assets/fairness-v2-20260912-1826/scatter-readme.png)
 
-색: 파랑 pgvector · 주황 Qdrant · 보라 OpenSearch · 분홍 Milvus · 초록 Weaviate. 오른쪽 아래일수록 Recall이 높고 빠릅니다. 범례와 처리량·메모리·필터 그림은 [6축 산포도](docs/07-results/assets/fairness-v2-20260912-1826/scatter-multi-axis.png)에 있습니다.
+파랑이 pgvector입니다. 왼쪽 그림은 오른쪽 아래, 오른쪽 그림은 오른쪽 위일수록 좋습니다. 지연–처리량·메모리·CPU·필터 그림까지 보려면 [6축 산포도](docs/07-results/assets/fairness-v2-20260912-1826/scatter-multi-axis.png)를, 구성 숨기기와 점별 반복값은 [상호작용 산포도](docs/07-results/assets/fairness-v2-20260912-1826/scatter-interactive.html)를 봅니다(브라우저에서 파일로 열기).
 
 > [!NOTE]
 > 벤치마크의 pgvector 조건(Top-10, `ef_construction=128`, 인덱스 사용 강제)은 UBot-BE 실제 설정(Top-3, pgvector 기본 파라미터)과 다릅니다. 항목별 차이는 [선정 결론](docs/07-results/decision.md#ubot-be-현재-설정과-벤치마크-조건의-차이)에 있습니다.

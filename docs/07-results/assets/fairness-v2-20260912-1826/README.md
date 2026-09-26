@@ -8,7 +8,8 @@
 |---|---|
 | [scatter-interactive.html](scatter-interactive.html) | 앞서 확인한 6개 상호작용 산포도 보존본. 데이터 포함, D3 등 표시 라이브러리는 CDN 연결 필요 |
 | [scatter-multi-axis.png](scatter-multi-axis.png) | 기본 상태의 6개 그림과 범례. 오프라인 문서용 |
-| scatter-*.png | 각 축 조합의 확대 이미지 6개. 색·기호 범례는 전체 그림 참고 |
+| scatter-recall-latency.png 등 6개 | 각 축 조합의 확대 이미지. 색·기호 범례는 전체 그림 참고 |
+| [scatter-readme.png](scatter-readme.png) | 저장소 README용. 상호작용 산포도의 제목·범례·①② 패널을 Edge headless(가로 1280px, 2배율)로 잘라 낸 이미지. 아래 스크립트가 다시 만들지 않으며 해시 목록 대상도 아님 |
 | [scatter-data.json](scatter-data.json) | 14개 구성·124개 설정·620회차, 9개 축 지표. 표시용 반올림 데이터 및 경고 |
 | [measurements.json](measurements.json) | 원시 JSON의 전체 정밀도 지표 620행. p50/p95/p99, 자원 평균/최대, 구축·적재·index size, 분할 지표, 생성/검색 파라미터 포함 |
 | [parameter-statistics.md](parameter-statistics.md) | 124개 고정 설정의 사람이 읽는 요약 표 |
