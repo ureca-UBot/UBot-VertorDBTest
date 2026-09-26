@@ -1,0 +1,235 @@
+name: vector-db-benchmark
+
+services:
+  postgres:
+    image: pgvector/pgvector:${PGVECTOR_IMAGE_TAG:-0.8.6-pg17-bookworm}
+    container_name: vector-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-vectorlab}
+      POSTGRES_USER: ${POSTGRES_USER:-vector}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-vector}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./docker/postgres/init:/docker-entrypoint-initdb.d:ro
+    shm_size: ${POSTGRES_SHM_SIZE:-1gb}
+    cpus: ${VECTOR_CPU_LIMIT:-4.0}
+    mem_limit: ${VECTOR_MEMORY_LIMIT:-8g}
+    memswap_limit: ${VECTOR_MEMORY_LIMIT:-8g}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-vector} -d ${POSTGRES_DB:-vectorlab}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    networks:
+      - vector-net
+
+  qdrant:
+    image: qdrant/qdrant:${QDRANT_VERSION:-v1.19.0}
+    container_name: vector-qdrant
+    profiles: ["qdrant"]
+    restart: unless-stopped
+    ports:
+      - "${QDRANT_HTTP_PORT:-6333}:6333"
+      - "${QDRANT_GRPC_PORT:-6334}:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    cpus: ${VECTOR_CPU_LIMIT:-4.0}
+    mem_limit: ${VECTOR_MEMORY_LIMIT:-8g}
+    memswap_limit: ${VECTOR_MEMORY_LIMIT:-8g}
+    networks:
+      - vector-net
+
+  weaviate:
+    image: cr.weaviate.io/semitechnologies/weaviate:${WEAVIATE_VERSION:-1.39.3}
+    container_name: vector-weaviate
+    profiles: ["weaviate"]
+    restart: on-failure:0
+    ports:
+      - "${WEAVIATE_HTTP_PORT:-18080}:8080"
+      - "${WEAVIATE_GRPC_PORT:-50051}:50051"
+    volumes:
+      - weaviate_data:/var/lib/weaviate
+    environment:
+      QUERY_DEFAULTS_LIMIT: "25"
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: "true"
+      PERSISTENCE_DATA_PATH: "/var/lib/weaviate"
+      CLUSTER_HOSTNAME: "node1"
+      ASYNC_INDEXING: "true"
+    cpus: ${VECTOR_CPU_LIMIT:-4.0}
+    mem_limit: ${VECTOR_MEMORY_LIMIT:-8g}
+    memswap_limit: ${VECTOR_MEMORY_LIMIT:-8g}
+    networks:
+      - vector-net
+
+  milvus-etcd:
+    image: quay.io/coreos/etcd:${MILVUS_ETCD_VERSION:-v3.5.25}
+    container_name: vector-milvus-etcd
+    profiles: ["milvus"]
+    restart: unless-stopped
+    environment:
+      ETCD_AUTO_COMPACTION_MODE: revision
+      ETCD_AUTO_COMPACTION_RETENTION: "1000"
+      ETCD_QUOTA_BACKEND_BYTES: "4294967296"
+      ETCD_SNAPSHOT_COUNT: "50000"
+    command:
+      - etcd
+      - -advertise-client-urls=http://milvus-etcd:2379
+      - -listen-client-urls
+      - http://0.0.0.0:2379
+      - --data-dir
+      - /etcd
+    volumes:
+      - milvus_etcd_data:/etcd
+    cpus: ${MILVUS_ETCD_CPU_LIMIT:-0.5}
+    mem_limit: ${MILVUS_ETCD_MEMORY_LIMIT:-512m}
+    memswap_limit: ${MILVUS_ETCD_MEMORY_LIMIT:-512m}
+    healthcheck:
+      test: ["CMD", "etcdctl", "endpoint", "health"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+    networks:
+      - vector-net
+
+  milvus-minio:
+    image: minio/minio:${MILVUS_MINIO_VERSION:-RELEASE.2024-05-28T17-19-04Z}
+    container_name: vector-milvus-minio
+    profiles: ["milvus"]
+    restart: unless-stopped
+    environment:
+      MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY:-minioadmin}
+      MINIO_SECRET_KEY: ${MINIO_SECRET_KEY:-minioadmin}
+    command: minio server /minio_data --console-address ":9001"
+    ports:
+      - "${MINIO_API_PORT:-9000}:9000"
+      - "${MINIO_CONSOLE_PORT:-9001}:9001"
+    volumes:
+      - milvus_minio_data:/minio_data
+    cpus: ${MILVUS_MINIO_CPU_LIMIT:-0.5}
+    mem_limit: ${MILVUS_MINIO_MEMORY_LIMIT:-1g}
+    memswap_limit: ${MILVUS_MINIO_MEMORY_LIMIT:-1g}
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+    networks:
+      - vector-net
+
+  milvus:
+    image: milvusdb/milvus:${MILVUS_VERSION:-v3.0.1}
+    container_name: vector-milvus
+    profiles: ["milvus"]
+    restart: unless-stopped
+    command: ["milvus", "run", "standalone"]
+    security_opt:
+      - seccomp:unconfined
+    environment:
+      ETCD_ENDPOINTS: milvus-etcd:2379
+      MINIO_ADDRESS: milvus-minio:9000
+      MINIO_REGION: us-east-1
+    ports:
+      - "${MILVUS_PORT:-19530}:19530"
+      - "${MILVUS_WEBUI_PORT:-9091}:9091"
+    volumes:
+      - milvus_data:/var/lib/milvus
+      - ./docker/milvus/user.yaml:/milvus/configs/user.yaml:ro
+    depends_on:
+      milvus-etcd:
+        condition: service_healthy
+      milvus-minio:
+        condition: service_healthy
+    # The Milvus deployment budget includes Milvus + etcd + MinIO. With the
+    # defaults below their aggregate is the same 4 vCPU / 8 GiB as every
+    # single-container database.
+    cpus: ${MILVUS_CPU_LIMIT:-3.0}
+    mem_limit: ${MILVUS_MEMORY_LIMIT:-6656m}
+    memswap_limit: ${MILVUS_MEMORY_LIMIT:-6656m}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9091/healthz"]
+      interval: 10s
+      start_period: 90s
+      timeout: 5s
+      retries: 20
+    networks:
+      - vector-net
+
+  opensearch:
+    image: opensearchproject/opensearch:${OPENSEARCH_VERSION:-3.8.0}
+    container_name: vector-opensearch
+    profiles: ["opensearch"]
+    restart: unless-stopped
+    environment:
+      discovery.type: single-node
+      bootstrap.memory_lock: "true"
+      DISABLE_INSTALL_DEMO_CONFIG: "true"
+      DISABLE_SECURITY_PLUGIN: "true"
+      OPENSEARCH_JAVA_OPTS: "${OPENSEARCH_JAVA_OPTS:--Xms4g -Xmx4g}"
+    ports:
+      - "${OPENSEARCH_HTTP_PORT:-9200}:9200"
+      - "${OPENSEARCH_PERF_PORT:-9600}:9600"
+    volumes:
+      - opensearch_data:/usr/share/opensearch/data
+    cpus: ${VECTOR_CPU_LIMIT:-4.0}
+    mem_limit: ${VECTOR_MEMORY_LIMIT:-8g}
+    memswap_limit: ${VECTOR_MEMORY_LIMIT:-8g}
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    networks:
+      - vector-net
+
+  opensearch-jvector:
+    build:
+      context: .
+      dockerfile: docker/opensearch-jvector/Dockerfile
+      args:
+        OPENSEARCH_VERSION: ${OPENSEARCH_VERSION:-3.8.0}
+    image: vector-opensearch-jvector:${OPENSEARCH_VERSION:-3.8.0}
+    container_name: vector-opensearch-jvector
+    profiles: ["opensearch-jvector"]
+    restart: unless-stopped
+    environment:
+      discovery.type: single-node
+      bootstrap.memory_lock: "true"
+      DISABLE_INSTALL_DEMO_CONFIG: "true"
+      DISABLE_SECURITY_PLUGIN: "true"
+      OPENSEARCH_JAVA_OPTS: "${OPENSEARCH_JAVA_OPTS:--Xms4g -Xmx4g}"
+    ports:
+      - "${OPENSEARCH_JVECTOR_HTTP_PORT:-19200}:9200"
+      - "${OPENSEARCH_JVECTOR_PERF_PORT:-19600}:9600"
+    volumes:
+      - opensearch_jvector_data:/usr/share/opensearch/data
+    cpus: ${VECTOR_CPU_LIMIT:-4.0}
+    mem_limit: ${VECTOR_MEMORY_LIMIT:-8g}
+    memswap_limit: ${VECTOR_MEMORY_LIMIT:-8g}
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    networks:
+      - vector-net
+
+networks:
+  vector-net:
+    name: vector-db-benchmark-net
+
+volumes:
+  postgres_data:
+  qdrant_data:
+  weaviate_data:
+  milvus_etcd_data:
+  milvus_minio_data:
+  milvus_data:
+  opensearch_data:
+  opensearch_jvector_data:

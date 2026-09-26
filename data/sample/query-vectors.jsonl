@@ -1,0 +1,5 @@
+{"queryId":"q-cat","embedding":[1.0,0.0,0.0,0.0]}
+{"queryId":"q-spring","embedding":[0.0,1.0,0.0,0.0]}
+{"queryId":"q-vector","embedding":[0.0,0.0,1.0,0.0]}
+{"queryId":"q-ops","embedding":[0.0,0.0,0.0,1.0]}
+{"queryId":"q-private","embedding":[0.0,0.0,0.4,0.6]}

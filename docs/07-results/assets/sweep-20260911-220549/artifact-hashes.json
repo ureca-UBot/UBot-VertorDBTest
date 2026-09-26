@@ -1,0 +1,62 @@
+[
+  {
+    "file": "scatter-recall-latency-all-372.svg",
+    "sha256": "07eb5102985ccd0f918f01266300d76ed7d9c4d67af44f74f7295e6fd0c63bc8"
+  },
+  {
+    "file": "vector-db-result.csv",
+    "sha256": "8d6534595ca6091a781fd1d6137bf59fbb52e3e5a00430b0ab3cff5e1d3aecf7"
+  },
+  {
+    "file": "vector-db-summary.json",
+    "sha256": "0a962237ab4bf6d003a026366deb62e8f024c17a2216c2861660aab2229522b6"
+  },
+  {
+    "file": "vector-db-summary.csv",
+    "sha256": "0d397ebacfe710c2046c74df7b71741e960eb7ccf6c530f1bd2e93f05b9b49e4"
+  },
+  {
+    "file": "run-manifest.json",
+    "sha256": "0710d5d15bf84ec7e34ac2ff03f4928f03a306fbe8e3715d2e1b868dbe9d346d"
+  },
+  {
+    "file": "benchmark-matrix.json",
+    "sha256": "3ea37b64926cad48f904dd237ce34459ab183863456fc5b3e57d3476fb14cf5b"
+  },
+  {
+    "file": "validation.json",
+    "sha256": "ab90c15a534b45879ccb9ff01c57b6ac107381ad11ffd7e74ff826aa852feda6"
+  },
+  {
+    "file": "verify-results.ps1",
+    "sha256": "25d71a819437424d6d4b12f8cd3aaa13f41bb60f600631fbc49d77c64ced1bd8"
+  },
+  {
+    "file": "execution-start.json",
+    "sha256": "a6a841b1b53f04f9c5c6514a4e9caf9cc1fba1e1f3c844760eb3490ca7e95cb5"
+  },
+  {
+    "file": "run-status.json",
+    "sha256": "cec1e6542be3c0b184eaae3d93f64bb15087679681b58b55f6a45763044ca9b8"
+  },
+  {
+    "file": "execution-order.json",
+    "sha256": "6edfbedf16976ae1943d7567173ba5c30484b167343a7564d655fb26b2a083ef"
+  },
+  {
+    "file": "all-measurements.json",
+    "sha256": "8580e0e4ff1a08674b6f80bd9f6e5a11586f74249b533b3c88faf0b82aed19f1"
+  },
+  {
+    "file": "scatter-recall-latency-all-372.png",
+    "sha256": "e22ef973ecd102eef06cd1cbd5af5c66bf95c732459bda1c8151a9f2f3bb3dfb"
+  },
+  {
+    "file": "source-snapshot.zip",
+    "sha256": "8615c8777b0078c45f05c48d13c1f28dbba81b628e1b568c5008cf374b28f9ff"
+  },
+  {
+    "file": "unit-test-results.json",
+    "sha256": "569ef75d3a59df9f49a643d66419a97779a89745c5e12caa8e04eb081593e8f9"
+  }
+]

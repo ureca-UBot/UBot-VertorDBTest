@@ -1,0 +1,34 @@
+spring:
+  config:
+    activate:
+      on-profile: weaviate
+  data.jdbc.repositories.enabled: true
+  flyway.enabled: true
+
+vector:
+  store.type: weaviate
+  weaviate:
+    base-url: ${WEAVIATE_URL:http://localhost:18080}
+    api-key: ${WEAVIATE_API_KEY:}
+    class-name: ${WEAVIATE_CLASS:BenchmarkChunk}
+    dimension: ${VECTOR_DIMENSION:1024}
+    metric: ${VECTOR_METRIC:COSINE}
+    index-type: ${WEAVIATE_INDEX_TYPE:hnsw}
+    hnsw-m: ${HNSW_M:16}
+    ef-construction: ${HNSW_EF_CONSTRUCTION:128}
+    ef: ${HNSW_EF_SEARCH:100}
+    hfresh-max-posting-size-kb: ${WEAVIATE_HFRESH_MAX_POSTING_SIZE_KB:48}
+    hfresh-replicas: ${WEAVIATE_HFRESH_REPLICAS:4}
+    hfresh-search-probe: ${WEAVIATE_HFRESH_SEARCH_PROBE:256}
+    filter-fields:
+      tenant: text
+      tenant_id: text
+      status: text
+      access_level: text
+      language: text
+      category: text
+      benchmark_selectivity_01: text
+      benchmark_selectivity_10: text
+      benchmark_selectivity_50: text
+
+benchmark.container-names: [vector-weaviate]

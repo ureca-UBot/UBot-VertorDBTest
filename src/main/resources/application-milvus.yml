@@ -1,0 +1,25 @@
+spring:
+  config:
+    activate:
+      on-profile: milvus
+  data.jdbc.repositories.enabled: true
+  flyway.enabled: true
+
+vector:
+  store.type: milvus
+  milvus:
+    base-url: ${MILVUS_URL:http://localhost:19530}
+    token: ${MILVUS_TOKEN:root:Milvus}
+    database: ${MILVUS_DATABASE:default}
+    collection: ${MILVUS_COLLECTION:benchmark_chunks}
+    dimension: ${VECTOR_DIMENSION:1024}
+    metric: ${VECTOR_METRIC:COSINE}
+    index-type: ${MILVUS_INDEX_TYPE:HNSW}
+    hnsw-m: ${HNSW_M:16}
+    ef-construction: ${HNSW_EF_CONSTRUCTION:128}
+    default-ef-search: ${HNSW_EF_SEARCH:100}
+    ivf-nlist: ${MILVUS_IVF_NLIST:128}
+    pq-m: ${MILVUS_PQ_M:64}
+    pq-nbits: ${MILVUS_PQ_NBITS:8}
+
+benchmark.container-names: [vector-milvus, vector-milvus-etcd, vector-milvus-minio]

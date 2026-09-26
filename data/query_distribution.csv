@@ -1,0 +1,8 @@
+query_type,count,ratio
+short_clear,60,0.2000
+long_natural,60,0.2000
+technical_term,45,0.1500
+semantic_paraphrase,45,0.1500
+exact_identifier,30,0.1000
+ambiguous,30,0.1000
+metadata_filter,30,0.1000

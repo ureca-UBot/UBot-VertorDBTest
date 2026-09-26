@@ -1,0 +1,352 @@
+[
+  {
+    "db": "milvus",
+    "engine": "Native",
+    "index": "DISKANN",
+    "settings": 9,
+    "rows": 45,
+    "recall": [
+      0.728535,
+      0.995361
+    ],
+    "p95": [
+      15.22,
+      98.858
+    ],
+    "qps": [
+      131.89,
+      1177.17
+    ],
+    "ram": [
+      0.6368,
+      1.2198
+    ],
+    "warmupWarnings": 6,
+    "recallVariationWarnings": 5
+  },
+  {
+    "db": "milvus",
+    "engine": "Native",
+    "index": "HNSW",
+    "settings": 9,
+    "rows": 45,
+    "recall": [
+      0.747423,
+      0.999485
+    ],
+    "p95": [
+      11.56,
+      45.096
+    ],
+    "qps": [
+      798.47,
+      1799.47
+    ],
+    "ram": [
+      0.6264,
+      1.0918
+    ],
+    "warmupWarnings": 28,
+    "recallVariationWarnings": 0
+  },
+  {
+    "db": "milvus",
+    "engine": "Native",
+    "index": "IVF_FLAT",
+    "settings": 9,
+    "rows": 45,
+    "recall": [
+      0.712371,
+      1
+    ],
+    "p95": [
+      11.267,
+      61.805
+    ],
+    "qps": [
+      393.48,
+      1816.41
+    ],
+    "ram": [
+      0.6192,
+      1.0287
+    ],
+    "warmupWarnings": 17,
+    "recallVariationWarnings": 0
+  },
+  {
+    "db": "milvus",
+    "engine": "Native",
+    "index": "IVF_PQ",
+    "settings": 9,
+    "rows": 45,
+    "recall": [
+      0.49433,
+      0.613918
+    ],
+    "p95": [
+      13.942,
+      33.622
+    ],
+    "qps": [
+      1236.92,
+      1709.73
+    ],
+    "ram": [
+      0.592,
+      1.1004
+    ],
+    "warmupWarnings": 34,
+    "recallVariationWarnings": 0
+  },
+  {
+    "db": "milvus",
+    "engine": "Native",
+    "index": "IVF_SQ8",
+    "settings": 9,
+    "rows": 45,
+    "recall": [
+      0.710825,
+      0.995876
+    ],
+    "p95": [
+      11.239,
+      44.804
+    ],
+    "qps": [
+      832.07,
+      1833.05
+    ],
+    "ram": [
+      0.5878,
+      1.4712
+    ],
+    "warmupWarnings": 29,
+    "recallVariationWarnings": 0
+  },
+  {
+    "db": "opensearch",
+    "engine": "Faiss",
+    "index": "HNSW",
+    "settings": 9,
+    "rows": 45,
+    "recall": [
+      0.745876,
+      1
+    ],
+    "p95": [
+      4.771,
+      19.37
+    ],
+    "qps": [
+      1551.52,
+      2991.38
+    ],
+    "ram": [
+      4.776,
+      5.07
+    ],
+    "warmupWarnings": 11,
+    "recallVariationWarnings": 0
+  },
+  {
+    "db": "opensearch",
+    "engine": "Faiss",
+    "index": "IVF",
+    "settings": 9,
+    "rows": 45,
+    "recall": [
+      0.712371,
+      1
+    ],
+    "p95": [
+      4.784,
+      40.791
+    ],
+    "qps": [
+      721.3,
+      2970.18
+    ],
+    "ram": [
+      4.817,
+      4.89
+    ],
+    "warmupWarnings": 6,
+    "recallVariationWarnings": 0
+  },
+  {
+    "db": "opensearch",
+    "engine": "JVector",
+    "index": "DiskANN",
+    "settings": 9,
+    "rows": 45,
+    "recall": [
+      0.352062,
+      0.996392
+    ],
+    "p95": [
+      4.693,
+      90.115
+    ],
+    "qps": [
+      185.16,
+      2822.66
+    ],
+    "ram": [
+      4.669,
+      4.734
+    ],
+    "warmupWarnings": 9,
+    "recallVariationWarnings": 0
+  },
+  {
+    "db": "opensearch",
+    "engine": "Lucene",
+    "index": "HNSW",
+    "settings": 9,
+    "rows": 45,
+    "recall": [
+      0.787629,
+      0.995361
+    ],
+    "p95": [
+      4.771,
+      17.264
+    ],
+    "qps": [
+      1838.02,
+      2938.27
+    ],
+    "ram": [
+      4.665,
+      4.766
+    ],
+    "warmupWarnings": 6,
+    "recallVariationWarnings": 0
+  },
+  {
+    "db": "pgvector",
+    "engine": "PostgreSQL",
+    "index": "hnsw",
+    "settings": 9,
+    "rows": 45,
+    "recall": [
+      0.668041,
+      1
+    ],
+    "p95": [
+      3.809,
+      57.979
+    ],
+    "qps": [
+      640.19,
+      3772.82
+    ],
+    "ram": [
+      0.19,
+      0.2336
+    ],
+    "warmupWarnings": 5,
+    "recallVariationWarnings": 0
+  },
+  {
+    "db": "pgvector",
+    "engine": "PostgreSQL",
+    "index": "ivfflat",
+    "settings": 8,
+    "rows": 40,
+    "recall": [
+      0.827835,
+      1
+    ],
+    "p95": [
+      9.422,
+      84.193
+    ],
+    "qps": [
+      204.96,
+      2173.65
+    ],
+    "ram": [
+      0.2342,
+      0.2568
+    ],
+    "warmupWarnings": 2,
+    "recallVariationWarnings": 0
+  },
+  {
+    "db": "qdrant",
+    "engine": "Native",
+    "index": "hnsw",
+    "settings": 9,
+    "rows": 45,
+    "recall": [
+      0.893814,
+      1
+    ],
+    "p95": [
+      3.424,
+      26.88
+    ],
+    "qps": [
+      700.2,
+      3975.46
+    ],
+    "ram": [
+      0.0912,
+      0.1599
+    ],
+    "warmupWarnings": 17,
+    "recallVariationWarnings": 0
+  },
+  {
+    "db": "weaviate",
+    "engine": "Native",
+    "index": "hfresh",
+    "settings": 8,
+    "rows": 40,
+    "recall": [
+      0.964948,
+      0.984021
+    ],
+    "p95": [
+      31.563,
+      80.142
+    ],
+    "qps": [
+      227.29,
+      572.02
+    ],
+    "ram": [
+      0.1001,
+      0.2369
+    ],
+    "warmupWarnings": 0,
+    "recallVariationWarnings": 0
+  },
+  {
+    "db": "weaviate",
+    "engine": "Native",
+    "index": "hnsw",
+    "settings": 9,
+    "rows": 45,
+    "recall": [
+      0.705155,
+      0.992784
+    ],
+    "p95": [
+      21.356,
+      32.531
+    ],
+    "qps": [
+      545.28,
+      828.67
+    ],
+    "ram": [
+      0.18,
+      0.1903
+    ],
+    "warmupWarnings": 0,
+    "recallVariationWarnings": 0
+  }
+]

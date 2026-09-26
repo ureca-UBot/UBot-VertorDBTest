@@ -1,0 +1,75 @@
+[
+  {
+    "tags": [
+      "pgvector/pgvector:0.8.6-pg17-bookworm",
+      "pgvector/pgvector:pg17"
+    ],
+    "id": "sha256:cf134a767f474095eeba57e0117be8e568e011a63f33fbf252f14c9b760f8e6f",
+    "digests": [
+      "pgvector/pgvector@sha256:cf134a767f474095eeba57e0117be8e568e011a63f33fbf252f14c9b760f8e6f"
+    ]
+  },
+  {
+    "tags": [
+      "qdrant/qdrant:v1.19.0"
+    ],
+    "id": "sha256:057ee3a8da769fe7310dd3537b4dc7583bf87a95ce8ac43c0af5a46bc580d1fc",
+    "digests": [
+      "qdrant/qdrant@sha256:057ee3a8da769fe7310dd3537b4dc7583bf87a95ce8ac43c0af5a46bc580d1fc"
+    ]
+  },
+  {
+    "tags": [
+      "cr.weaviate.io/semitechnologies/weaviate:1.39.3"
+    ],
+    "id": "sha256:204f3f77141669adb7dad38cb40a14b65189f664ff15b3c9385f35ea5f9d4d0f",
+    "digests": [
+      "cr.weaviate.io/semitechnologies/weaviate@sha256:204f3f77141669adb7dad38cb40a14b65189f664ff15b3c9385f35ea5f9d4d0f"
+    ]
+  },
+  {
+    "tags": [
+      "milvusdb/milvus:v3.0.1"
+    ],
+    "id": "sha256:7984f52e02fc14df553615acbf3ecf3cc131e7ce77c79e7ee23c63652919cae8",
+    "digests": [
+      "milvusdb/milvus@sha256:7984f52e02fc14df553615acbf3ecf3cc131e7ce77c79e7ee23c63652919cae8"
+    ]
+  },
+  {
+    "tags": [
+      "quay.io/coreos/etcd:v3.5.25"
+    ],
+    "id": "sha256:52f17f7e56e4f7239f0320dbfcbcc24721163d7d78ae710b466af3254ccf6366",
+    "digests": [
+      "quay.io/coreos/etcd@sha256:52f17f7e56e4f7239f0320dbfcbcc24721163d7d78ae710b466af3254ccf6366"
+    ]
+  },
+  {
+    "tags": [
+      "minio/minio:RELEASE.2024-05-28T17-19-04Z"
+    ],
+    "id": "sha256:391d1d45fdbe79944cb6de9337b073864bb9ee38c4c24280bfb39572e925af08",
+    "digests": [
+      "minio/minio@sha256:391d1d45fdbe79944cb6de9337b073864bb9ee38c4c24280bfb39572e925af08"
+    ]
+  },
+  {
+    "tags": [
+      "opensearchproject/opensearch:3.8.0"
+    ],
+    "id": "sha256:bcc1797519726ceb6d651d4a3e60b7c30da91793914a8dfe75fd441d4f641509",
+    "digests": [
+      "opensearchproject/opensearch@sha256:bcc1797519726ceb6d651d4a3e60b7c30da91793914a8dfe75fd441d4f641509"
+    ]
+  },
+  {
+    "tags": [
+      "vector-opensearch-jvector:3.8.0"
+    ],
+    "id": "sha256:5eca0a91050daa14abc63924a44f5bb35247e7583892caee880211b6c576a5de",
+    "digests": [
+      "vector-opensearch-jvector@sha256:5eca0a91050daa14abc63924a44f5bb35247e7583892caee880211b6c576a5de"
+    ]
+  }
+]

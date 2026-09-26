@@ -1,0 +1,21 @@
+{
+  "source": "D:\\finalproject\\UBot-VertorDBTest\\benchmark-result\\matrix-t01-t28-20260911-183751\\csv\\vector-db-result.csv",
+  "sourceSha256": "696a49bccdbc49a24e3dbdbf7e45424e459578b4375db54974391289f5b76669",
+  "observations": 84,
+  "uniqueLabels": 84,
+  "labelsOverlapping": 0,
+  "coordinatesJittered": false,
+  "aggregated": false,
+  "selectionFilterApplied": false,
+  "x": "comparison_recall",
+  "y": "unfiltered_p95_ms",
+  "xDomain": [
+    0.5802721049999999,
+    1.000838895
+  ],
+  "yDomain": [
+    0.2268699999999999,
+    62.72753
+  ],
+  "svg": "D:\\finalproject\\UBot-VertorDBTest\\benchmark-result\\matrix-t01-t28-20260911-183751\\charts\\scatter-all-84.svg"
+}

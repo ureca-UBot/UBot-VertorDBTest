@@ -1,0 +1,26 @@
+{
+  "rebuildAndLoad": true,
+  "scenarios": [
+    {
+      "database": "",
+      "indexType": "hnsw",
+      "topK": 3,
+      "concurrency": 2,
+      "warmupIterations": 1,
+      "measurementIterations": 3,
+      "searchParameters": {},
+      "repetitions": 3,
+      "searchParameterValues": [
+        10,
+        20,
+        40,
+        80,
+        120,
+        200,
+        400,
+        800,
+        1000
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "protocol": "search-parameter-sweep-v1",
+  "plannedMeasurements": 372,
+  "rebuildRepetitions": 3,
+  "minimumMeasurementTimeMs": 5000,
+  "resourceSampling": "capture-window-contained-in-search-window",
+  "referenceRecallLevels": [
+    0.9,
+    0.95
+  ],
+  "createdAt": "2026-09-11T22:05:50.1889504+09:00",
+  "inputs": [
+    {
+      "path": "data/benchmark-matrix.json",
+      "sha256": "3ea37b64926cad48f904dd237ce34459ab183863456fc5b3e57d3476fb14cf5b"
+    },
+    {
+      "path": "data/embeddings/document-vectors.jsonl",
+      "sha256": "cc23f095b88585453940e8fca998f8b16f9573361b0c83f021d7bb095ba9e4c6"
+    },
+    {
+      "path": "data/embeddings/query-vectors.jsonl",
+      "sha256": "d06cc81c1169e1a926fc69a835fabda560932d8834bd687893fe0da301c4cfa9"
+    },
+    {
+      "path": "data/queries/queries.jsonl",
+      "sha256": "e9e52e8cd2ce129bb91205fa1a08f2baf2d4ca8bd28fe9c42299eefdb99ada18"
+    },
+    {
+      "path": "build/libs/VectorDBTest-0.0.1-SNAPSHOT.jar",
+      "sha256": "c7072547043623f88f9f10d5b21d2f26d710612798f8905e70595a1e1658c8d9"
+    },
+    {
+      "path": "scripts/run-all-benchmarks.ps1",
+      "sha256": "c69203b504788d7baf8919f2f3f4a020c432324eb0e9a28d5c1699799603d751"
+    }
+  ],
+  "priorInterruptedAttempt": "sweep-20260911-215805"
+}

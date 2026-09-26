@@ -1,0 +1,32 @@
+[
+  {
+    "runNumber": 1,
+    "databaseOrder": [
+      "pgvector",
+      "qdrant",
+      "weaviate",
+      "milvus",
+      "opensearch"
+    ]
+  },
+  {
+    "runNumber": 2,
+    "databaseOrder": [
+      "weaviate",
+      "opensearch",
+      "pgvector",
+      "qdrant",
+      "milvus"
+    ]
+  },
+  {
+    "runNumber": 3,
+    "databaseOrder": [
+      "milvus",
+      "qdrant",
+      "opensearch",
+      "weaviate",
+      "pgvector"
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: VectorDBTest
+  datasource:
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/vectorlab}
+    username: ${POSTGRES_USER:vector}
+    password: ${POSTGRES_PASSWORD:vector}
+  data:
+    jdbc:
+      repositories:
+        enabled: false
+  flyway:
+    enabled: false
+    baseline-on-migrate: true
+    baseline-version: 0
+
+vector:
+  store:
+    type: none
+
+benchmark:
+  document-vectors: ${DOCUMENT_VECTORS:data/embeddings/document-vectors.jsonl}
+  query-definitions: ${QUERY_DEFINITIONS:data/queries/queries.jsonl}
+  query-vectors: ${QUERY_VECTORS:data/embeddings/query-vectors.jsonl}
+  result-directory: ${BENCHMARK_RESULT_DIR:benchmark-result/fairness-v2}
+  metric: ${VECTOR_METRIC:COSINE}
+  container-names: []
+  upsert-batch-size: ${UPSERT_BATCH_SIZE:256}
+  search-parameter-values: [10, 20, 40, 80, 120, 200, 400, 800, 1000]
+  calibration-query-count: ${CALIBRATION_QUERY_COUNT:100}
+  minimum-measurement-time-ms: ${MINIMUM_MEASUREMENT_TIME_MS:30000}
+  maximum-measurement-time-ms: ${MAXIMUM_MEASUREMENT_TIME_MS:180000}
+  minimum-resource-samples: ${MINIMUM_RESOURCE_SAMPLES:30}
+  drift-diagnostic-repetitions: ${DRIFT_DIAGNOSTIC_REPETITIONS:3}
+  drift-threshold: ${DRIFT_THRESHOLD:0.05}
+  resource-budget-cpu: ${BENCHMARK_RESOURCE_CPU_BUDGET:4.0}
+  resource-budget-memory-bytes: ${BENCHMARK_RESOURCE_MEMORY_BUDGET_BYTES:8589934592}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics

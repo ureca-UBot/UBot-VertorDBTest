@@ -1,0 +1,25 @@
+{
+  "protocol": "fairness-sweep-v2",
+  "mode": "exploratory",
+  "startedAt": "2026-09-12T18:26:00+09:00",
+  "expectedMeasurements": 620,
+  "configurations": 14,
+  "searchPointsPerRebuild": 124,
+  "rebuildRepetitions": 5,
+  "minimumMeasurementTimeMs": 30000,
+  "minimumResourceSamples": 30,
+  "maximumMeasurementTimeMs": 180000,
+  "dbCpuBudget": 4,
+  "dbMemoryBudgetBytes": 8589934592,
+  "swapEnabled": false,
+  "gitCommit": "cf74735878a09e8a4c5248e861410e0b897f7d3f",
+  "dirtyWorkingTree": true,
+  "inputsSha256": {
+    "build/libs/VectorDBTest-0.0.1-SNAPSHOT.jar": "0f18dc2e2e84cf6bdb9f6892ad082ac118039f7b7628c083bea12bbcf423c202",
+    "data/benchmark-matrix.json": "3ea37b64926cad48f904dd237ce34459ab183863456fc5b3e57d3476fb14cf5b",
+    "data/embeddings/document-vectors.jsonl": "cc23f095b88585453940e8fca998f8b16f9573361b0c83f021d7bb095ba9e4c6",
+    "data/embeddings/query-vectors.jsonl": "d06cc81c1169e1a926fc69a835fabda560932d8834bd687893fe0da301c4cfa9",
+    "data/queries/queries.jsonl": "e9e52e8cd2ce129bb91205fa1a08f2baf2d4ca8bd28fe9c42299eefdb99ada18"
+  },
+  "preflight": "74 unit tests passed; actual database execution launched"
+}

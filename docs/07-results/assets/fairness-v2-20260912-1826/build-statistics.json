@@ -1,0 +1,898 @@
+[
+  {
+    "db": "milvus",
+    "engine": "Native",
+    "index": "DISKANN",
+    "builds": [
+      {
+        "buildId": "21211ee0-54c5-4f46-8c4c-9ec9ebfc3011",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "DISKANN",
+        "run": 1,
+        "timeToReadyMs": 53575,
+        "upsertTimeMs": 4183
+      },
+      {
+        "buildId": "fa802198-26b5-45ce-a6ac-0ec383e4bece",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "DISKANN",
+        "run": 2,
+        "timeToReadyMs": 53969,
+        "upsertTimeMs": 4209
+      },
+      {
+        "buildId": "f9a81b9d-43a5-48a5-b597-e6789ecafb46",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "DISKANN",
+        "run": 3,
+        "timeToReadyMs": 52611,
+        "upsertTimeMs": 4163
+      },
+      {
+        "buildId": "d888e435-1ffb-41d8-b9a5-551c4de0594f",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "DISKANN",
+        "run": 4,
+        "timeToReadyMs": 53490,
+        "upsertTimeMs": 4088
+      },
+      {
+        "buildId": "29e59edc-5248-4132-b538-80aca8e4cf53",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "DISKANN",
+        "run": 5,
+        "timeToReadyMs": 53622,
+        "upsertTimeMs": 4080
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 53453.4,
+      "median": 53575,
+      "min": 52611,
+      "max": 53969
+    },
+    "upsertTimeMs": {
+      "mean": 4144.6,
+      "median": 4163,
+      "min": 4080,
+      "max": 4209
+    }
+  },
+  {
+    "db": "milvus",
+    "engine": "Native",
+    "index": "HNSW",
+    "builds": [
+      {
+        "buildId": "7bc4b19b-d5f7-4b5a-97ab-51e1e9709981",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "HNSW",
+        "run": 1,
+        "timeToReadyMs": 22021,
+        "upsertTimeMs": 4148
+      },
+      {
+        "buildId": "5bde1f9f-fd99-40ab-a156-bef212ea60f4",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "HNSW",
+        "run": 2,
+        "timeToReadyMs": 22560,
+        "upsertTimeMs": 3981
+      },
+      {
+        "buildId": "99855016-6c6b-40f0-a2b5-91c8a28b8279",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "HNSW",
+        "run": 3,
+        "timeToReadyMs": 23287,
+        "upsertTimeMs": 4027
+      },
+      {
+        "buildId": "bfa59956-e918-4bb6-8639-41b578703cbf",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "HNSW",
+        "run": 4,
+        "timeToReadyMs": 22404,
+        "upsertTimeMs": 3952
+      },
+      {
+        "buildId": "52183170-db8a-4727-b82b-66df0234468a",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "HNSW",
+        "run": 5,
+        "timeToReadyMs": 22249,
+        "upsertTimeMs": 4042
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 22504.2,
+      "median": 22404,
+      "min": 22021,
+      "max": 23287
+    },
+    "upsertTimeMs": {
+      "mean": 4030,
+      "median": 4027,
+      "min": 3952,
+      "max": 4148
+    }
+  },
+  {
+    "db": "milvus",
+    "engine": "Native",
+    "index": "IVF_FLAT",
+    "builds": [
+      {
+        "buildId": "961d2b30-67c3-4a0d-86b8-5d28f8007325",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_FLAT",
+        "run": 1,
+        "timeToReadyMs": 21642,
+        "upsertTimeMs": 4530
+      },
+      {
+        "buildId": "ff00a738-f1b5-440f-9f63-a6ad7ddc7254",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_FLAT",
+        "run": 2,
+        "timeToReadyMs": 23339,
+        "upsertTimeMs": 3878
+      },
+      {
+        "buildId": "bca1f48a-37ea-4e41-a4c1-ac6ddc873fc0",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_FLAT",
+        "run": 3,
+        "timeToReadyMs": 22896,
+        "upsertTimeMs": 3996
+      },
+      {
+        "buildId": "cd84acc3-f91f-4e3d-ad5d-62f2f0455c67",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_FLAT",
+        "run": 4,
+        "timeToReadyMs": 22033,
+        "upsertTimeMs": 3892
+      },
+      {
+        "buildId": "6a7de0d4-5667-4924-bd5f-46207d433be2",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_FLAT",
+        "run": 5,
+        "timeToReadyMs": 22500,
+        "upsertTimeMs": 3915
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 22482,
+      "median": 22500,
+      "min": 21642,
+      "max": 23339
+    },
+    "upsertTimeMs": {
+      "mean": 4042.2,
+      "median": 3915,
+      "min": 3878,
+      "max": 4530
+    }
+  },
+  {
+    "db": "milvus",
+    "engine": "Native",
+    "index": "IVF_PQ",
+    "builds": [
+      {
+        "buildId": "163e4eba-c107-4569-8d23-657b9115ca7a",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_PQ",
+        "run": 1,
+        "timeToReadyMs": 21902,
+        "upsertTimeMs": 4445
+      },
+      {
+        "buildId": "a3444b90-9391-483f-aaa2-639b1eeb172f",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_PQ",
+        "run": 2,
+        "timeToReadyMs": 23337,
+        "upsertTimeMs": 3820
+      },
+      {
+        "buildId": "5efdcb90-e5cc-44c9-a59a-d3789c3142ea",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_PQ",
+        "run": 3,
+        "timeToReadyMs": 22195,
+        "upsertTimeMs": 4006
+      },
+      {
+        "buildId": "bd18a8d4-8be2-40cd-bb99-e9330317605f",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_PQ",
+        "run": 4,
+        "timeToReadyMs": 22334,
+        "upsertTimeMs": 4081
+      },
+      {
+        "buildId": "22fb71fa-44dc-4152-89c6-899304c722d8",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_PQ",
+        "run": 5,
+        "timeToReadyMs": 22597,
+        "upsertTimeMs": 4194
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 22473,
+      "median": 22334,
+      "min": 21902,
+      "max": 23337
+    },
+    "upsertTimeMs": {
+      "mean": 4109.2,
+      "median": 4081,
+      "min": 3820,
+      "max": 4445
+    }
+  },
+  {
+    "db": "milvus",
+    "engine": "Native",
+    "index": "IVF_SQ8",
+    "builds": [
+      {
+        "buildId": "1235b99a-b514-4249-8e13-02a0d62a9955",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_SQ8",
+        "run": 1,
+        "timeToReadyMs": 22788,
+        "upsertTimeMs": 4009
+      },
+      {
+        "buildId": "1eb5978d-ae33-445d-be1a-91c7cc015e49",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_SQ8",
+        "run": 2,
+        "timeToReadyMs": 22214,
+        "upsertTimeMs": 4123
+      },
+      {
+        "buildId": "4ecabc95-41e7-40e4-ad19-ed810b29f6ce",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_SQ8",
+        "run": 3,
+        "timeToReadyMs": 21836,
+        "upsertTimeMs": 3998
+      },
+      {
+        "buildId": "e4587ef5-14f8-475a-9869-34a0b761badc",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_SQ8",
+        "run": 4,
+        "timeToReadyMs": 22463,
+        "upsertTimeMs": 3969
+      },
+      {
+        "buildId": "ccf68955-3bd0-45f7-a6dc-5cb593775db2",
+        "db": "milvus",
+        "engine": "Native",
+        "index": "IVF_SQ8",
+        "run": 5,
+        "timeToReadyMs": 23076,
+        "upsertTimeMs": 3979
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 22475.4,
+      "median": 22463,
+      "min": 21836,
+      "max": 23076
+    },
+    "upsertTimeMs": {
+      "mean": 4015.6,
+      "median": 3998,
+      "min": 3969,
+      "max": 4123
+    }
+  },
+  {
+    "db": "opensearch",
+    "engine": "Faiss",
+    "index": "HNSW",
+    "builds": [
+      {
+        "buildId": "e502716f-ec86-4bd1-828a-d868e7e26a53",
+        "db": "opensearch",
+        "engine": "Faiss",
+        "index": "HNSW",
+        "run": 1,
+        "timeToReadyMs": 10760,
+        "upsertTimeMs": 8420
+      },
+      {
+        "buildId": "b7383f65-566c-4f2b-81fd-41e65726dab0",
+        "db": "opensearch",
+        "engine": "Faiss",
+        "index": "HNSW",
+        "run": 2,
+        "timeToReadyMs": 11061,
+        "upsertTimeMs": 8592
+      },
+      {
+        "buildId": "20658b34-6987-4b86-938c-b910fd78bd1c",
+        "db": "opensearch",
+        "engine": "Faiss",
+        "index": "HNSW",
+        "run": 3,
+        "timeToReadyMs": 11231,
+        "upsertTimeMs": 8880
+      },
+      {
+        "buildId": "12794396-145f-44d2-bd6b-1e23b3b378f5",
+        "db": "opensearch",
+        "engine": "Faiss",
+        "index": "HNSW",
+        "run": 4,
+        "timeToReadyMs": 10976,
+        "upsertTimeMs": 8357
+      },
+      {
+        "buildId": "c25baed5-56df-4a9d-b2ca-4fbedcfe48f8",
+        "db": "opensearch",
+        "engine": "Faiss",
+        "index": "HNSW",
+        "run": 5,
+        "timeToReadyMs": 11088,
+        "upsertTimeMs": 8856
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 11023.2,
+      "median": 11061,
+      "min": 10760,
+      "max": 11231
+    },
+    "upsertTimeMs": {
+      "mean": 8621,
+      "median": 8592,
+      "min": 8357,
+      "max": 8880
+    }
+  },
+  {
+    "db": "opensearch",
+    "engine": "Faiss",
+    "index": "IVF",
+    "builds": [
+      {
+        "buildId": "352112e3-7328-4719-803c-f78f6507780b",
+        "db": "opensearch",
+        "engine": "Faiss",
+        "index": "IVF",
+        "run": 1,
+        "timeToReadyMs": 19084,
+        "upsertTimeMs": 7650
+      },
+      {
+        "buildId": "c78d172e-c930-455e-b0d1-1132dc854b3c",
+        "db": "opensearch",
+        "engine": "Faiss",
+        "index": "IVF",
+        "run": 2,
+        "timeToReadyMs": 20835,
+        "upsertTimeMs": 8766
+      },
+      {
+        "buildId": "38a664cf-6efd-4694-9a7e-b19c228217a1",
+        "db": "opensearch",
+        "engine": "Faiss",
+        "index": "IVF",
+        "run": 3,
+        "timeToReadyMs": 19482,
+        "upsertTimeMs": 7669
+      },
+      {
+        "buildId": "93e2cf1e-9242-4b72-8a30-7dc0e591ba4a",
+        "db": "opensearch",
+        "engine": "Faiss",
+        "index": "IVF",
+        "run": 4,
+        "timeToReadyMs": 18811,
+        "upsertTimeMs": 7442
+      },
+      {
+        "buildId": "8fd2f010-b707-4f48-805a-c41a5f56dbd7",
+        "db": "opensearch",
+        "engine": "Faiss",
+        "index": "IVF",
+        "run": 5,
+        "timeToReadyMs": 19128,
+        "upsertTimeMs": 7354
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 19468,
+      "median": 19128,
+      "min": 18811,
+      "max": 20835
+    },
+    "upsertTimeMs": {
+      "mean": 7776.2,
+      "median": 7650,
+      "min": 7354,
+      "max": 8766
+    }
+  },
+  {
+    "db": "opensearch",
+    "engine": "JVector",
+    "index": "DiskANN",
+    "builds": [
+      {
+        "buildId": "0d6de4d2-2cc8-42b0-abd8-ffbc7ab64043",
+        "db": "opensearch",
+        "engine": "JVector",
+        "index": "DiskANN",
+        "run": 1,
+        "timeToReadyMs": 26837,
+        "upsertTimeMs": 9097
+      },
+      {
+        "buildId": "5b607f31-926f-4943-836b-016dbf3c94db",
+        "db": "opensearch",
+        "engine": "JVector",
+        "index": "DiskANN",
+        "run": 2,
+        "timeToReadyMs": 24679,
+        "upsertTimeMs": 8511
+      },
+      {
+        "buildId": "632c6865-35ee-4a3a-9ec4-4947cbe06498",
+        "db": "opensearch",
+        "engine": "JVector",
+        "index": "DiskANN",
+        "run": 3,
+        "timeToReadyMs": 24034,
+        "upsertTimeMs": 8524
+      },
+      {
+        "buildId": "a3c15c09-5960-473b-8b23-5ce171e34f6f",
+        "db": "opensearch",
+        "engine": "JVector",
+        "index": "DiskANN",
+        "run": 4,
+        "timeToReadyMs": 24134,
+        "upsertTimeMs": 8292
+      },
+      {
+        "buildId": "63b38195-abea-40a9-a575-13010c4ea1f7",
+        "db": "opensearch",
+        "engine": "JVector",
+        "index": "DiskANN",
+        "run": 5,
+        "timeToReadyMs": 25112,
+        "upsertTimeMs": 8466
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 24959.2,
+      "median": 24679,
+      "min": 24034,
+      "max": 26837
+    },
+    "upsertTimeMs": {
+      "mean": 8578,
+      "median": 8511,
+      "min": 8292,
+      "max": 9097
+    }
+  },
+  {
+    "db": "opensearch",
+    "engine": "Lucene",
+    "index": "HNSW",
+    "builds": [
+      {
+        "buildId": "60bf9345-6b16-46c6-bead-f57a96b192e9",
+        "db": "opensearch",
+        "engine": "Lucene",
+        "index": "HNSW",
+        "run": 1,
+        "timeToReadyMs": 11696,
+        "upsertTimeMs": 9633
+      },
+      {
+        "buildId": "db7b28d1-ee60-4264-b4d1-852a6aa005b5",
+        "db": "opensearch",
+        "engine": "Lucene",
+        "index": "HNSW",
+        "run": 2,
+        "timeToReadyMs": 11211,
+        "upsertTimeMs": 9123
+      },
+      {
+        "buildId": "bce6ef60-e386-4fe9-b78e-c5b5ab7f32b3",
+        "db": "opensearch",
+        "engine": "Lucene",
+        "index": "HNSW",
+        "run": 3,
+        "timeToReadyMs": 11013,
+        "upsertTimeMs": 9094
+      },
+      {
+        "buildId": "01d738aa-ad55-46bb-b743-eb62fb9f4e27",
+        "db": "opensearch",
+        "engine": "Lucene",
+        "index": "HNSW",
+        "run": 4,
+        "timeToReadyMs": 11008,
+        "upsertTimeMs": 9140
+      },
+      {
+        "buildId": "9012a5ed-f9df-4d10-bb56-c2690196a735",
+        "db": "opensearch",
+        "engine": "Lucene",
+        "index": "HNSW",
+        "run": 5,
+        "timeToReadyMs": 10406,
+        "upsertTimeMs": 8544
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 11066.8,
+      "median": 11013,
+      "min": 10406,
+      "max": 11696
+    },
+    "upsertTimeMs": {
+      "mean": 9106.8,
+      "median": 9123,
+      "min": 8544,
+      "max": 9633
+    }
+  },
+  {
+    "db": "pgvector",
+    "engine": "PostgreSQL",
+    "index": "hnsw",
+    "builds": [
+      {
+        "buildId": "8e08aa02-655f-4a43-966d-f8cd19d44544",
+        "db": "pgvector",
+        "engine": "PostgreSQL",
+        "index": "hnsw",
+        "run": 1,
+        "timeToReadyMs": 11974,
+        "upsertTimeMs": 11934
+      },
+      {
+        "buildId": "7f0db478-9ee0-459d-9266-7f95596b3937",
+        "db": "pgvector",
+        "engine": "PostgreSQL",
+        "index": "hnsw",
+        "run": 2,
+        "timeToReadyMs": 12162,
+        "upsertTimeMs": 12038
+      },
+      {
+        "buildId": "ca65e90a-8a8e-47f9-a9f7-65840b632d5a",
+        "db": "pgvector",
+        "engine": "PostgreSQL",
+        "index": "hnsw",
+        "run": 3,
+        "timeToReadyMs": 12820,
+        "upsertTimeMs": 12696
+      },
+      {
+        "buildId": "05c181ed-9359-461c-b4ce-d7f03b055291",
+        "db": "pgvector",
+        "engine": "PostgreSQL",
+        "index": "hnsw",
+        "run": 4,
+        "timeToReadyMs": 11615,
+        "upsertTimeMs": 11553
+      },
+      {
+        "buildId": "b6acad8b-bf81-44eb-9853-3611d715c6b1",
+        "db": "pgvector",
+        "engine": "PostgreSQL",
+        "index": "hnsw",
+        "run": 5,
+        "timeToReadyMs": 10972,
+        "upsertTimeMs": 10924
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 11908.6,
+      "median": 11974,
+      "min": 10972,
+      "max": 12820
+    },
+    "upsertTimeMs": {
+      "mean": 11829,
+      "median": 11934,
+      "min": 10924,
+      "max": 12696
+    }
+  },
+  {
+    "db": "pgvector",
+    "engine": "PostgreSQL",
+    "index": "ivfflat",
+    "builds": [
+      {
+        "buildId": "bc66a696-df85-4907-9809-e267119f9813",
+        "db": "pgvector",
+        "engine": "PostgreSQL",
+        "index": "ivfflat",
+        "run": 1,
+        "timeToReadyMs": 3494,
+        "upsertTimeMs": 2984
+      },
+      {
+        "buildId": "701ea7bd-6ea8-4f5a-8cf1-5de140a4ebe0",
+        "db": "pgvector",
+        "engine": "PostgreSQL",
+        "index": "ivfflat",
+        "run": 2,
+        "timeToReadyMs": 3911,
+        "upsertTimeMs": 3094
+      },
+      {
+        "buildId": "9c1f93d2-fbae-4e78-9575-e1607f6d949d",
+        "db": "pgvector",
+        "engine": "PostgreSQL",
+        "index": "ivfflat",
+        "run": 3,
+        "timeToReadyMs": 3965,
+        "upsertTimeMs": 3198
+      },
+      {
+        "buildId": "f9607494-844c-4768-9e39-b915af7467b1",
+        "db": "pgvector",
+        "engine": "PostgreSQL",
+        "index": "ivfflat",
+        "run": 4,
+        "timeToReadyMs": 3668,
+        "upsertTimeMs": 3053
+      },
+      {
+        "buildId": "af0cee91-5cc6-4b28-a094-d2b8a76f930f",
+        "db": "pgvector",
+        "engine": "PostgreSQL",
+        "index": "ivfflat",
+        "run": 5,
+        "timeToReadyMs": 3285,
+        "upsertTimeMs": 2853
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 3664.6,
+      "median": 3668,
+      "min": 3285,
+      "max": 3965
+    },
+    "upsertTimeMs": {
+      "mean": 3036.4,
+      "median": 3053,
+      "min": 2853,
+      "max": 3198
+    }
+  },
+  {
+    "db": "qdrant",
+    "engine": "Native",
+    "index": "hnsw",
+    "builds": [
+      {
+        "buildId": "24e9cf5a-d652-4e36-9f35-32e91e6ef15c",
+        "db": "qdrant",
+        "engine": "Native",
+        "index": "hnsw",
+        "run": 1,
+        "timeToReadyMs": 9749,
+        "upsertTimeMs": 3631
+      },
+      {
+        "buildId": "87c585eb-e032-4937-b876-daa037281a22",
+        "db": "qdrant",
+        "engine": "Native",
+        "index": "hnsw",
+        "run": 2,
+        "timeToReadyMs": 10420,
+        "upsertTimeMs": 3879
+      },
+      {
+        "buildId": "24b23a3a-9de7-421d-9a45-9539ed7362de",
+        "db": "qdrant",
+        "engine": "Native",
+        "index": "hnsw",
+        "run": 3,
+        "timeToReadyMs": 10536,
+        "upsertTimeMs": 4064
+      },
+      {
+        "buildId": "94625721-c107-435a-aceb-4a0f594db419",
+        "db": "qdrant",
+        "engine": "Native",
+        "index": "hnsw",
+        "run": 4,
+        "timeToReadyMs": 9833,
+        "upsertTimeMs": 3638
+      },
+      {
+        "buildId": "2eaca548-9db7-451f-b21e-4723840682b6",
+        "db": "qdrant",
+        "engine": "Native",
+        "index": "hnsw",
+        "run": 5,
+        "timeToReadyMs": 9926,
+        "upsertTimeMs": 3508
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 10092.8,
+      "median": 9926,
+      "min": 9749,
+      "max": 10536
+    },
+    "upsertTimeMs": {
+      "mean": 3744,
+      "median": 3638,
+      "min": 3508,
+      "max": 4064
+    }
+  },
+  {
+    "db": "weaviate",
+    "engine": "Native",
+    "index": "hfresh",
+    "builds": [
+      {
+        "buildId": "f1316e58-3a85-4c81-b0ad-06e9262d8af1",
+        "db": "weaviate",
+        "engine": "Native",
+        "index": "hfresh",
+        "run": 1,
+        "timeToReadyMs": 69661,
+        "upsertTimeMs": 8851
+      },
+      {
+        "buildId": "29ab426d-6ace-402f-9cb5-ff55d202391d",
+        "db": "weaviate",
+        "engine": "Native",
+        "index": "hfresh",
+        "run": 2,
+        "timeToReadyMs": 69084,
+        "upsertTimeMs": 9831
+      },
+      {
+        "buildId": "1911aef3-e0d7-4bd7-82d2-fd472be4c5f5",
+        "db": "weaviate",
+        "engine": "Native",
+        "index": "hfresh",
+        "run": 3,
+        "timeToReadyMs": 68843,
+        "upsertTimeMs": 8295
+      },
+      {
+        "buildId": "a03a7760-7e62-4878-9161-40d0a2de2f75",
+        "db": "weaviate",
+        "engine": "Native",
+        "index": "hfresh",
+        "run": 4,
+        "timeToReadyMs": 67746,
+        "upsertTimeMs": 8200
+      },
+      {
+        "buildId": "3a691750-86c5-4f69-8ecf-ce92f4627d72",
+        "db": "weaviate",
+        "engine": "Native",
+        "index": "hfresh",
+        "run": 5,
+        "timeToReadyMs": 68285,
+        "upsertTimeMs": 8106
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 68723.8,
+      "median": 68843,
+      "min": 67746,
+      "max": 69661
+    },
+    "upsertTimeMs": {
+      "mean": 8656.6,
+      "median": 8295,
+      "min": 8106,
+      "max": 9831
+    }
+  },
+  {
+    "db": "weaviate",
+    "engine": "Native",
+    "index": "hnsw",
+    "builds": [
+      {
+        "buildId": "2cd5359d-7211-4d0a-a001-ea8c5220e5b5",
+        "db": "weaviate",
+        "engine": "Native",
+        "index": "hnsw",
+        "run": 1,
+        "timeToReadyMs": 72342,
+        "upsertTimeMs": 8603
+      },
+      {
+        "buildId": "11000bb3-9397-4532-b0f8-4cf8c042d796",
+        "db": "weaviate",
+        "engine": "Native",
+        "index": "hnsw",
+        "run": 2,
+        "timeToReadyMs": 72236,
+        "upsertTimeMs": 8351
+      },
+      {
+        "buildId": "fe619435-4385-4480-ade1-38457695c2ef",
+        "db": "weaviate",
+        "engine": "Native",
+        "index": "hnsw",
+        "run": 3,
+        "timeToReadyMs": 72097,
+        "upsertTimeMs": 8213
+      },
+      {
+        "buildId": "2ac67ca2-ef0f-45af-b27a-c46b4e2f7fdc",
+        "db": "weaviate",
+        "engine": "Native",
+        "index": "hnsw",
+        "run": 4,
+        "timeToReadyMs": 72204,
+        "upsertTimeMs": 7959
+      },
+      {
+        "buildId": "1f9739e3-6977-4308-9658-6e414bee2771",
+        "db": "weaviate",
+        "engine": "Native",
+        "index": "hnsw",
+        "run": 5,
+        "timeToReadyMs": 72231,
+        "upsertTimeMs": 7629
+      }
+    ],
+    "timeToReadyMs": {
+      "mean": 72222,
+      "median": 72231,
+      "min": 72097,
+      "max": 72342
+    },
+    "upsertTimeMs": {
+      "mean": 8151,
+      "median": 8213,
+      "min": 7629,
+      "max": 8603
+    }
+  }
+]

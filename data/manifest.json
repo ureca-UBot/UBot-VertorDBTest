@@ -1,0 +1,58 @@
+{
+  "dataset_name": "bge-m3-vector-db-benchmark-ko",
+  "version": "1.0",
+  "created_for": "Vector DB comparison benchmark",
+  "model": {
+    "name": "BAAI/bge-m3",
+    "dense_dimension": 1024,
+    "max_sequence_length": 8192,
+    "benchmark_mode": "dense_embedding_only",
+    "query_instruction": "none"
+  },
+  "corpus": {
+    "records": 10000,
+    "languages": {
+      "ko": 10000
+    },
+    "synthetic": true,
+    "topic_count": 200
+  },
+  "chunking": {
+    "input_unit": "pre_chunked_synthetic_records",
+    "algorithm": "not_applicable_dataset_is_pregenerated",
+    "chunk_size": null,
+    "chunk_overlap": null,
+    "final_chunk_count": 10000,
+    "profiles": [
+      "short",
+      "medium",
+      "long"
+    ]
+  },
+  "queries": {
+    "records": 300,
+    "distribution": {
+      "metadata_filter": 30,
+      "short_clear": 60,
+      "long_natural": 60,
+      "technical_term": 45,
+      "exact_identifier": 30,
+      "ambiguous": 30,
+      "semantic_paraphrase": 45
+    },
+    "english_or_mixed_queries": 21
+  },
+  "recommended_benchmark": {
+    "top_k": 10,
+    "distance_metric": "cosine",
+    "concurrency": 10,
+    "rebuild_repetitions": 5,
+    "query_split": {
+      "calibration": 100,
+      "evaluation": 200
+    },
+    "reference_recall_levels": [0.90, 0.95],
+    "measurement_protocol": "fairness-sweep-v2",
+    "note": "Generate document/query embeddings once and reuse the exact same float vectors in every Vector DB."
+  }
+}

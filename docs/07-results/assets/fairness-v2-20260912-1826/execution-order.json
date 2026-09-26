@@ -1,0 +1,52 @@
+[
+  {
+    "runNumber": 1,
+    "databaseOrder": [
+      "pgvector",
+      "qdrant",
+      "weaviate",
+      "milvus",
+      "opensearch"
+    ]
+  },
+  {
+    "runNumber": 2,
+    "databaseOrder": [
+      "weaviate",
+      "opensearch",
+      "pgvector",
+      "qdrant",
+      "milvus"
+    ]
+  },
+  {
+    "runNumber": 3,
+    "databaseOrder": [
+      "milvus",
+      "qdrant",
+      "opensearch",
+      "weaviate",
+      "pgvector"
+    ]
+  },
+  {
+    "runNumber": 4,
+    "databaseOrder": [
+      "opensearch",
+      "milvus",
+      "weaviate",
+      "pgvector",
+      "qdrant"
+    ]
+  },
+  {
+    "runNumber": 5,
+    "databaseOrder": [
+      "qdrant",
+      "pgvector",
+      "milvus",
+      "opensearch",
+      "weaviate"
+    ]
+  }
+]

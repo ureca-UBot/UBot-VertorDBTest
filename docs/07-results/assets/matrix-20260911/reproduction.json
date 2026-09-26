@@ -1,0 +1,80 @@
+{
+  "runDirectory": "D:\\finalproject\\UBot-VertorDBTest\\benchmark-result\\matrix-t01-t28-20260911-183751",
+  "startedAt": "2026-09-11T18:48:20.6720875+09:00",
+  "endedAt": "2026-09-11T19:39:20.2071821+09:00",
+  "executionSucceeded": true,
+  "jarUnchanged": true,
+  "gitCommit": "14521c95a59de9a90a59496f9c4dbcbb71381a7d",
+  "preRunCorrection": "pgvector IVFFlat index creation deferred until after vector load",
+  "jarSha256": "8840ef573c6c02823bc69dfdd21c7521242997bd1e4c82a19a439615ff7290b3",
+  "sourceCsvSha256": "696a49bccdbc49a24e3dbdbf7e45424e459578b4375db54974391289f5b76669",
+  "sourceCsvBytes": 230284,
+  "sourceCsvRows": 84,
+  "indexRebuilds": 42,
+  "cases": 28,
+  "runsPerCase": 3,
+  "recordedTimedSearches": 84000,
+  "queryPartition": {
+    "evaluationIdsSha256": "f856701d0c4b142b59ef1f22919e1e8f1c897145a9bdf88e6b18a59196a6ca25",
+    "calibrationIdsSha256": "8b3e0cf00bea0503372f6e0e968ec87a831d597ac5132d0e7ae30ade95164508",
+    "evaluationQueries": 200,
+    "method": "query-type-stratified-sha256",
+    "calibrationQueries": 100
+  },
+  "documentVectorsSha256": "cc23f095b88585453940e8fca998f8b16f9573361b0c83f021d7bb095ba9e4c6",
+  "queryVectorsSha256": "d06cc81c1169e1a926fc69a835fabda560932d8834bd687893fe0da301c4cfa9",
+  "queryDefinitionsSha256": "e9e52e8cd2ce129bb91205fa1a08f2baf2d4ca8bd28fe9c42299eefdb99ada18",
+  "groundTruthSha256": "9bc82ff6313789291a005592ba3f6eb5e5813949d29eb598a1e638b19d0f15cb",
+  "emptyExactQueriesByPartition": {
+    "calibration": 1,
+    "evaluation": 6
+  },
+  "splitMembershipRecomputedAndHashesMatched": true,
+  "sourceFilesRecorded": 98,
+  "tests": 30,
+  "testFailures": 0,
+  "testErrors": 0,
+  "targetRangeCounts": {
+    "0.90": {
+      "안": 3,
+      "아래": 18,
+      "위": 21
+    },
+    "0.95": {
+      "안": 23,
+      "아래": 11,
+      "위": 8
+    }
+  },
+  "allThreeRunsInTargetRange": [
+    "T02",
+    "T12",
+    "T14",
+    "T16",
+    "T26"
+  ],
+  "documentationSelectionFilterApplied": false,
+  "documentationPrecision": {
+    "recallDecimals": 4,
+    "p95MsDecimals": 3,
+    "qpsDecimals": 1,
+    "ramMiBDecimals": 1
+  },
+  "sourceFiles": {
+    "benchmark-matrix.json": "1c59280d686297acc574b83952b2601fefaf9f7550aabd6bd284c55ecc49665b",
+    "docker-images.json": "cf917e90a5af8c3ad429cfc32913d84c96fb0d397ad5e48777915fc0898375bb",
+    "embedding-manifest.json": "ba2b6ede82e6e0cb98c5316b1504bdc845dac9cde518ed54c74714aa8ba89c76",
+    "ground-truth-top10.jsonl": "9bc82ff6313789291a005592ba3f6eb5e5813949d29eb598a1e638b19d0f15cb",
+    "PgVectorIndexManagerTest.java": "95750f2fb1df0efc5af48200137bee11609ce0167c47690f3a52f9fd1a20ff74",
+    "query-membership.json": "a059ebe7f4f449466dee3d93892dc454b57ab94a907118e6681447dc4a339f09",
+    "run-protocol.json": "b13bffa13a936dcd5b9a5c693e7b7b5adda6a22e7bc3d1ebd7e681e6dd61a5f0",
+    "run-status.json": "9dbe2af5759222825f2b44302aad11e491cda870e314348ed5db09be7c9c7b4f",
+    "scatter-all-84-manifest.json": "d16ab0c1f24198acf01e28fccad3950a8f315b46ba243c828f7719f461a12728",
+    "scatter-all-84.png": "009695657227ba000e6c7a3cf40e20a88d540a665428edc53c3db2d568cb8260",
+    "scatter-all-84.svg": "58d270a245eb455484f8c98cf5f5a370cdb49fb3497d60e49342902f8b7cfc61",
+    "source-sha256.json": "3b2f2eb0cde18cc3a1f0a9813cc098fe1c4e59ce539778d4bbc9d921f012c934",
+    "test-results.json": "b264016d7570536e5a44bd53b12a848baea6f11db63ae997a669370eedb6a45e",
+    "vector-db-result.csv": "696a49bccdbc49a24e3dbdbf7e45424e459578b4375db54974391289f5b76669",
+    "working-tree.patch": "548b1355f6c730ac7cfef6e71c143457eb8566089a1a804f58f5b7f586aa39b6"
+  }
+}

@@ -1,0 +1,521 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2300" height="1500" viewBox="0 0 2300 1500">
+<title>T01–T28: 84회 전체 측정 산포도</title>
+<desc>가로축은 comparison Recall@10, 세로축은 무필터 p95 응답시간(ms). 케이스별 28색과 회차별 세 가지 기호. 모든 84개 실행을 집계나 선정 필터 없이 표시한다.</desc>
+<style>text{font-family:Malgun Gothic,Arial,sans-serif;fill:#182535} .tick{font-size:21px} .point-label{font-size:18px} .legend{font-size:19px}</style>
+<rect width="2300" height="1500" fill="#ffffff"/>
+<text x="130.00" y="65.00" font-size="38" text-anchor="start" font-weight="700">T01–T28 · 84회 전체 측정</text>
+<text x="130.00" y="110.00" font-size="22" text-anchor="start" >10,000 vectors · 1,024 dimensions · topK 10 · concurrency 10 · 28 cases × 3 runs</text>
+<text x="130.00" y="146.00" font-size="20" text-anchor="start" fill="#5a6a7a">각 점은 한 번의 실행 결과이며, 좌표는 기록된 실제 측정값입니다.</text>
+<rect x="130" y="180" width="1610" height="1135" fill="none" stroke="#abb6c1"/>
+<line x1="216.40" y1="180" x2="216.40" y2="1315" stroke="#e5e9ee"/>
+<text x="216.40" y="1353.00" font-size="22" text-anchor="middle" >0.60</text>
+<line x1="404.95" y1="180" x2="404.95" y2="1315" stroke="#e5e9ee"/>
+<text x="404.95" y="1353.00" font-size="22" text-anchor="middle" >0.65</text>
+<line x1="593.51" y1="180" x2="593.51" y2="1315" stroke="#e5e9ee"/>
+<text x="593.51" y="1353.00" font-size="22" text-anchor="middle" >0.70</text>
+<line x1="782.06" y1="180" x2="782.06" y2="1315" stroke="#e5e9ee"/>
+<text x="782.06" y="1353.00" font-size="22" text-anchor="middle" >0.75</text>
+<line x1="970.62" y1="180" x2="970.62" y2="1315" stroke="#e5e9ee"/>
+<text x="970.62" y="1353.00" font-size="22" text-anchor="middle" >0.80</text>
+<line x1="1159.17" y1="180" x2="1159.17" y2="1315" stroke="#e5e9ee"/>
+<text x="1159.17" y="1353.00" font-size="22" text-anchor="middle" >0.85</text>
+<line x1="1347.73" y1="180" x2="1347.73" y2="1315" stroke="#e5e9ee"/>
+<text x="1347.73" y="1353.00" font-size="22" text-anchor="middle" >0.90</text>
+<line x1="1536.28" y1="180" x2="1536.28" y2="1315" stroke="#e5e9ee"/>
+<text x="1536.28" y="1353.00" font-size="22" text-anchor="middle" >0.95</text>
+<line x1="1724.84" y1="180" x2="1724.84" y2="1315" stroke="#e5e9ee"/>
+<text x="1724.84" y="1353.00" font-size="22" text-anchor="middle" >1.00</text>
+<line x1="130" y1="1129.27" x2="1740" y2="1129.27" stroke="#e5e9ee"/>
+<text x="110.00" y="1136.27" font-size="22" text-anchor="end" >10</text>
+<line x1="130" y1="951.52" x2="1740" y2="951.52" stroke="#e5e9ee"/>
+<text x="110.00" y="958.52" font-size="22" text-anchor="end" >20</text>
+<line x1="130" y1="773.76" x2="1740" y2="773.76" stroke="#e5e9ee"/>
+<text x="110.00" y="780.76" font-size="22" text-anchor="end" >30</text>
+<line x1="130" y1="596.00" x2="1740" y2="596.00" stroke="#e5e9ee"/>
+<text x="110.00" y="603.00" font-size="22" text-anchor="end" >40</text>
+<line x1="130" y1="418.24" x2="1740" y2="418.24" stroke="#e5e9ee"/>
+<text x="110.00" y="425.24" font-size="22" text-anchor="end" >50</text>
+<line x1="130" y1="240.48" x2="1740" y2="240.48" stroke="#e5e9ee"/>
+<text x="110.00" y="247.48" font-size="22" text-anchor="end" >60</text>
+<text x="935.00" y="1403.00" font-size="26" text-anchor="middle" >무필터 Recall@10 (0–1)</text>
+<text transform="translate(42 747.5) rotate(-90)" font-size="26" text-anchor="middle">무필터 p95 응답시간 (ms)</text>
+<line x1="1519.523" y1="1135.130" x2="1519.523" y2="1125.417" stroke="#315c1b" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1559.327" y1="1150.597" x2="1559.327" y2="1160.310" stroke="#80337b" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1488.094" y1="1133.989" x2="1471.329" y2="1149.489" stroke="#14536f" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1483.905" y1="1147.436" x2="1467.235" y2="1182.605" stroke="#14536f" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1538.378" y1="1170.922" x2="1575.928" y2="1143.422" stroke="#14536f" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1314.205" y1="1166.835" x2="1314.205" y2="1157.122" stroke="#2864c5" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1492.284" y1="1181.918" x2="1492.284" y2="1217.183" stroke="#2864c5" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1320.491" y1="1221.190" x2="1320.491" y2="1211.477" stroke="#14917c" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1576.089" y1="659.967" x2="1576.089" y2="650.253" stroke="#663b94" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1450.383" y1="1139.800" x2="1450.383" y2="1097.300" stroke="#548d35" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1395.913" y1="1182.810" x2="1386.913" y2="1238.860" stroke="#b751b0" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1557.234" y1="1139.382" x2="1573.903" y2="1104.213" stroke="#80337b" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1261.828" y1="1194.322" x2="1261.828" y2="1204.035" stroke="#2864c5" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1324.681" y1="1228.245" x2="1318.308" y2="1237.745" stroke="#14917c" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1576.089" y1="726.574" x2="1565.520" y2="726.574" stroke="#9b6bc4" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1582.372" y1="738.930" x2="1582.372" y2="748.643" stroke="#9b6bc4" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1588.658" y1="659.248" x2="1588.658" y2="668.962" stroke="#9b6bc4" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1557.234" y1="737.407" x2="1557.234" y2="747.120" stroke="#12606d" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1280.684" y1="1173.951" x2="1268.684" y2="1173.951" stroke="#548d35" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1293.257" y1="1161.671" x2="1293.257" y2="1126.406" stroke="#315c1b" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1293.257" y1="1163.719" x2="1284.257" y2="1107.669" stroke="#287fa4" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1406.390" y1="1126.690" x2="1406.390" y2="1091.425" stroke="#d35b17" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1544.661" y1="1215.294" x2="1544.661" y2="1225.007" stroke="#006050" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1544.661" y1="1114.304" x2="1544.661" y2="1079.039" stroke="#695800" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1393.817" y1="896.625" x2="1393.817" y2="886.912" stroke="#2695a6" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1393.817" y1="916.461" x2="1405.817" y2="916.461" stroke="#2695a6" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1293.257" y1="1143.632" x2="1293.257" y2="1077.132" stroke="#548d35" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1559.327" y1="1090.383" x2="1559.327" y2="1072.184" stroke="#80337b" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1529.995" y1="616.538" x2="1529.995" y2="626.252" stroke="#d35b17" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1515.329" y1="1218.964" x2="1507.145" y2="1245.648" stroke="#006050" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1582.372" y1="715.269" x2="1606.372" y2="715.269" stroke="#663b94" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1592.848" y1="711.760" x2="1565.690" y2="690.260" stroke="#663b94" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1557.234" y1="866.582" x2="1557.234" y2="856.869" stroke="#12606d" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1553.040" y1="800.394" x2="1565.040" y2="800.394" stroke="#773915" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1247.162" y1="1126.527" x2="1235.162" y2="1126.527" stroke="#287fa4" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1529.995" y1="593.460" x2="1529.995" y2="583.747" stroke="#8c390c" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1534.185" y1="790.592" x2="1534.185" y2="800.305" stroke="#882c50" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1454.573" y1="862.376" x2="1454.573" y2="852.663" stroke="#882c50" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1393.817" y1="1127.556" x2="1393.817" y2="1061.056" stroke="#2695a6" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1557.234" y1="899.983" x2="1569.234" y2="899.983" stroke="#12606d" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1389.627" y1="961.899" x2="1389.627" y2="971.613" stroke="#b35d32" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1389.627" y1="855.872" x2="1379.058" y2="855.872" stroke="#b35d32" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1389.627" y1="959.654" x2="1379.058" y2="959.654" stroke="#b35d32" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1452.480" y1="868.246" x2="1463.049" y2="868.246" stroke="#992946" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1395.913" y1="1132.416" x2="1428.913" y2="1034.796" stroke="#287fa4" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1393.817" y1="1101.342" x2="1393.817" y2="1025.908" stroke="#b751b0" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1395.913" y1="945.755" x2="1407.913" y2="945.755" stroke="#b751b0" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1544.661" y1="464.212" x2="1544.661" y2="473.925" stroke="#17427e" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1550.947" y1="452.722" x2="1550.947" y2="443.009" stroke="#17427e" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1550.947" y1="465.446" x2="1526.947" y2="465.446" stroke="#17427e" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1544.661" y1="923.466" x2="1534.092" y2="923.466" stroke="#695800" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1544.661" y1="970.688" x2="1544.661" y2="980.401" stroke="#695800" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1553.040" y1="933.295" x2="1565.040" y2="933.295" stroke="#773915" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="220.586" y1="893.192" x2="232.586" y2="893.192" stroke="#46499e" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="220.586" y1="856.455" x2="232.586" y2="856.455" stroke="#46499e" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1542.568" y1="544.255" x2="1542.568" y2="534.542" stroke="#992946" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1479.715" y1="611.250" x2="1479.715" y2="601.537" stroke="#d35b17" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1393.817" y1="1230.543" x2="1393.817" y2="1271.203" stroke="#14917c" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1442.004" y1="817.819" x2="1442.004" y2="808.106" stroke="#c34975" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1486.001" y1="617.879" x2="1463.841" y2="620.355" stroke="#882c50" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1297.446" y1="1013.968" x2="1297.446" y2="1004.255" stroke="#9c8310" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1297.446" y1="969.090" x2="1297.446" y2="959.377" stroke="#9c8310" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1297.446" y1="967.888" x2="1297.446" y2="927.228" stroke="#9c8310" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="220.586" y1="907.541" x2="208.586" y2="907.541" stroke="#797bd7" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="220.586" y1="933.990" x2="220.586" y2="943.703" stroke="#46499e" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1414.769" y1="1018.108" x2="1452.319" y2="990.608" stroke="#dc4671" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1282.780" y1="1022.906" x2="1270.780" y2="1022.906" stroke="#dc4671" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1601.227" y1="858.906" x2="1601.227" y2="849.193" stroke="#992946" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1511.139" y1="407.424" x2="1511.139" y2="397.711" stroke="#445460" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1617.990" y1="589.635" x2="1617.990" y2="579.922" stroke="#8c390c" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1611.703" y1="1217.023" x2="1611.703" y2="1226.736" stroke="#006050" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1553.040" y1="1023.439" x2="1565.040" y2="1023.439" stroke="#773915" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="220.586" y1="822.148" x2="220.586" y2="812.435" stroke="#797bd7" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1186.406" y1="333.793" x2="1186.406" y2="324.080" stroke="#445460" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1624.272" y1="422.039" x2="1624.272" y2="412.326" stroke="#8c390c" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1205.262" y1="844.433" x2="1205.262" y2="834.720" stroke="#c34975" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1217.834" y1="876.563" x2="1217.834" y2="886.276" stroke="#c34975" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1196.882" y1="401.081" x2="1196.882" y2="391.368" stroke="#758594" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1186.406" y1="264.457" x2="1186.406" y2="254.743" stroke="#758594" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="220.586" y1="1059.985" x2="220.586" y2="1050.271" stroke="#797bd7" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1115.174" y1="944.966" x2="1115.174" y2="954.679" stroke="#dc4671" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1649.414" y1="1002.990" x2="1649.414" y2="993.277" stroke="#315c1b" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1255.546" y1="527.098" x2="1255.546" y2="517.385" stroke="#758594" stroke-opacity=".42" stroke-width="1.1"/>
+<line x1="1358.202" y1="426.270" x2="1358.202" y2="416.557" stroke="#445460" stroke-opacity=".42" stroke-width="1.1"/>
+<g data-sample-id="T01-R1" fill="#2864c5" stroke="#ffffff" stroke-width="1"><title>T01-R1 · pgvector/PostgreSQL/hnsw · target 0.90 · Recall 0.891111 · p95 7.887000 ms</title>
+<circle cx="1314.205" cy="1166.835" r="7.4"/>
+</g>
+<g data-sample-id="T01-R2" fill="#2864c5" stroke="#ffffff" stroke-width="1"><title>T01-R2 · pgvector/PostgreSQL/hnsw · target 0.90 · Recall 0.938333 · p95 7.038500 ms</title>
+<path d="M 1492.284 1172.918 L 1500.284 1187.918 L 1484.284 1187.918 Z"/>
+</g>
+<g data-sample-id="T01-R3" fill="#2864c5" stroke="#ffffff" stroke-width="1"><title>T01-R3 · pgvector/PostgreSQL/hnsw · target 0.90 · Recall 0.877222 · p95 6.340700 ms</title>
+<rect x="1255.128" y="1187.622" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T02-R1" fill="#17427e" stroke="#ffffff" stroke-width="1"><title>T02-R1 · pgvector/PostgreSQL/hnsw · target 0.95 · Recall 0.952222 · p95 47.413900 ms</title>
+<circle cx="1544.661" cy="464.212" r="7.4"/>
+</g>
+<g data-sample-id="T02-R2" fill="#17427e" stroke="#ffffff" stroke-width="1"><title>T02-R2 · pgvector/PostgreSQL/hnsw · target 0.95 · Recall 0.953889 · p95 48.060300 ms</title>
+<path d="M 1550.947 443.722 L 1558.947 458.722 L 1542.947 458.722 Z"/>
+</g>
+<g data-sample-id="T02-R3" fill="#17427e" stroke="#ffffff" stroke-width="1"><title>T02-R3 · pgvector/PostgreSQL/hnsw · target 0.95 · Recall 0.953889 · p95 47.344500 ms</title>
+<rect x="1544.247" y="458.746" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T03-R1" fill="#d35b17" stroke="#ffffff" stroke-width="1"><title>T03-R1 · pgvector/PostgreSQL/ivfflat · target 0.90 · Recall 0.935000 · p95 39.142100 ms</title>
+<circle cx="1479.715" cy="611.250" r="7.4"/>
+</g>
+<g data-sample-id="T03-R2" fill="#d35b17" stroke="#ffffff" stroke-width="1"><title>T03-R2 · pgvector/PostgreSQL/ivfflat · target 0.90 · Recall 0.915556 · p95 10.145400 ms</title>
+<path d="M 1406.390 1117.690 L 1414.390 1132.690 L 1398.390 1132.690 Z"/>
+</g>
+<g data-sample-id="T03-R3" fill="#d35b17" stroke="#ffffff" stroke-width="1"><title>T03-R3 · pgvector/PostgreSQL/ivfflat · target 0.90 · Recall 0.948333 · p95 38.844600 ms</title>
+<rect x="1523.295" y="609.838" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T04-R1" fill="#8c390c" stroke="#ffffff" stroke-width="1"><title>T04-R1 · pgvector/PostgreSQL/ivfflat · target 0.95 · Recall 0.973333 · p95 49.786400 ms</title>
+<circle cx="1624.272" cy="422.039" r="7.4"/>
+</g>
+<g data-sample-id="T04-R2" fill="#8c390c" stroke="#ffffff" stroke-width="1"><title>T04-R2 · pgvector/PostgreSQL/ivfflat · target 0.95 · Recall 0.971667 · p95 40.358100 ms</title>
+<path d="M 1617.990 580.635 L 1625.990 595.635 L 1609.990 595.635 Z"/>
+</g>
+<g data-sample-id="T04-R3" fill="#8c390c" stroke="#ffffff" stroke-width="1"><title>T04-R3 · pgvector/PostgreSQL/ivfflat · target 0.95 · Recall 0.948333 · p95 40.142900 ms</title>
+<rect x="1523.295" y="586.760" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T05-R1" fill="#14917c" stroke="#ffffff" stroke-width="1"><title>T05-R1 · qdrant/Native/hnsw · target 0.90 · Recall 0.893889 · p95 4.432300 ms</title>
+<circle cx="1324.681" cy="1228.245" r="7.4"/>
+</g>
+<g data-sample-id="T05-R2" fill="#14917c" stroke="#ffffff" stroke-width="1"><title>T05-R2 · qdrant/Native/hnsw · target 0.90 · Recall 0.892778 · p95 4.829200 ms</title>
+<path d="M 1320.491 1212.190 L 1328.491 1227.190 L 1312.491 1227.190 Z"/>
+</g>
+<g data-sample-id="T05-R3" fill="#14917c" stroke="#ffffff" stroke-width="1"><title>T05-R3 · qdrant/Native/hnsw · target 0.90 · Recall 0.912222 · p95 4.303000 ms</title>
+<rect x="1387.117" y="1223.843" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T06-R1" fill="#006050" stroke="#ffffff" stroke-width="1"><title>T06-R1 · qdrant/Native/hnsw · target 0.95 · Recall 0.970000 · p95 5.063600 ms</title>
+<circle cx="1611.703" cy="1217.023" r="7.4"/>
+</g>
+<g data-sample-id="T06-R2" fill="#006050" stroke="#ffffff" stroke-width="1"><title>T06-R2 · qdrant/Native/hnsw · target 0.95 · Recall 0.952222 · p95 5.160900 ms</title>
+<path d="M 1544.661 1206.294 L 1552.661 1221.294 L 1536.661 1221.294 Z"/>
+</g>
+<g data-sample-id="T06-R3" fill="#006050" stroke="#ffffff" stroke-width="1"><title>T06-R3 · qdrant/Native/hnsw · target 0.95 · Recall 0.944444 · p95 4.954400 ms</title>
+<rect x="1508.629" y="1212.264" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T07-R1" fill="#c34975" stroke="#ffffff" stroke-width="1"><title>T07-R1 · weaviate/Native/hnsw · target 0.90 · Recall 0.862222 · p95 26.024100 ms</title>
+<circle cx="1205.262" cy="844.433" r="7.4"/>
+</g>
+<g data-sample-id="T07-R2" fill="#c34975" stroke="#ffffff" stroke-width="1"><title>T07-R2 · weaviate/Native/hnsw · target 0.90 · Recall 0.925000 · p95 27.521300 ms</title>
+<path d="M 1442.004 808.819 L 1450.004 823.819 L 1434.004 823.819 Z"/>
+</g>
+<g data-sample-id="T07-R3" fill="#c34975" stroke="#ffffff" stroke-width="1"><title>T07-R3 · weaviate/Native/hnsw · target 0.90 · Recall 0.865556 · p95 24.216600 ms</title>
+<rect x="1211.134" y="869.863" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T08-R1" fill="#882c50" stroke="#ffffff" stroke-width="1"><title>T08-R1 · weaviate/Native/hnsw · target 0.95 · Recall 0.936667 · p95 38.769200 ms</title>
+<circle cx="1486.001" cy="617.879" r="7.4"/>
+</g>
+<g data-sample-id="T08-R2" fill="#882c50" stroke="#ffffff" stroke-width="1"><title>T08-R2 · weaviate/Native/hnsw · target 0.95 · Recall 0.949444 · p95 29.053000 ms</title>
+<path d="M 1534.185 781.592 L 1542.185 796.592 L 1526.185 796.592 Z"/>
+</g>
+<g data-sample-id="T08-R3" fill="#882c50" stroke="#ffffff" stroke-width="1"><title>T08-R3 · weaviate/Native/hnsw · target 0.95 · Recall 0.928333 · p95 25.014700 ms</title>
+<rect x="1447.873" y="855.676" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T09-R1" fill="#9b6bc4" stroke="#ffffff" stroke-width="1"><title>T09-R1 · weaviate/Native/hfresh · target 0.90 · Recall 0.960556 · p95 32.654400 ms</title>
+<circle cx="1576.089" cy="726.574" r="7.4"/>
+</g>
+<g data-sample-id="T09-R2" fill="#9b6bc4" stroke="#ffffff" stroke-width="1"><title>T09-R2 · weaviate/Native/hfresh · target 0.90 · Recall 0.962222 · p95 31.959300 ms</title>
+<path d="M 1582.372 729.930 L 1590.372 744.930 L 1574.372 744.930 Z"/>
+</g>
+<g data-sample-id="T09-R3" fill="#9b6bc4" stroke="#ffffff" stroke-width="1"><title>T09-R3 · weaviate/Native/hfresh · target 0.90 · Recall 0.963889 · p95 36.441900 ms</title>
+<rect x="1581.958" y="652.548" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T10-R1" fill="#663b94" stroke="#ffffff" stroke-width="1"><title>T10-R1 · weaviate/Native/hfresh · target 0.95 · Recall 0.960556 · p95 36.401500 ms</title>
+<circle cx="1576.089" cy="659.967" r="7.4"/>
+</g>
+<g data-sample-id="T10-R2" fill="#663b94" stroke="#ffffff" stroke-width="1"><title>T10-R2 · weaviate/Native/hfresh · target 0.95 · Recall 0.962222 · p95 33.290400 ms</title>
+<path d="M 1582.372 706.269 L 1590.372 721.269 L 1574.372 721.269 Z"/>
+</g>
+<g data-sample-id="T10-R3" fill="#663b94" stroke="#ffffff" stroke-width="1"><title>T10-R3 · weaviate/Native/hfresh · target 0.95 · Recall 0.965000 · p95 33.487800 ms</title>
+<rect x="1586.148" y="705.060" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T11-R1" fill="#9c8310" stroke="#ffffff" stroke-width="1"><title>T11-R1 · milvus/Native/HNSW · target 0.90 · Recall 0.886667 · p95 16.486700 ms</title>
+<circle cx="1297.446" cy="1013.968" r="7.4"/>
+</g>
+<g data-sample-id="T11-R2" fill="#9c8310" stroke="#ffffff" stroke-width="1"><title>T11-R2 · milvus/Native/HNSW · target 0.90 · Recall 0.886667 · p95 19.011400 ms</title>
+<path d="M 1297.446 960.090 L 1305.446 975.090 L 1289.446 975.090 Z"/>
+</g>
+<g data-sample-id="T11-R3" fill="#9c8310" stroke="#ffffff" stroke-width="1"><title>T11-R3 · milvus/Native/HNSW · target 0.90 · Recall 0.886667 · p95 19.079000 ms</title>
+<rect x="1290.746" y="961.188" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T12-R1" fill="#695800" stroke="#ffffff" stroke-width="1"><title>T12-R1 · milvus/Native/HNSW · target 0.95 · Recall 0.952222 · p95 21.578000 ms</title>
+<circle cx="1544.661" cy="923.466" r="7.4"/>
+</g>
+<g data-sample-id="T12-R2" fill="#695800" stroke="#ffffff" stroke-width="1"><title>T12-R2 · milvus/Native/HNSW · target 0.95 · Recall 0.952222 · p95 18.921500 ms</title>
+<path d="M 1544.661 961.688 L 1552.661 976.688 L 1536.661 976.688 Z"/>
+</g>
+<g data-sample-id="T12-R3" fill="#695800" stroke="#ffffff" stroke-width="1"><title>T12-R3 · milvus/Native/HNSW · target 0.95 · Recall 0.952222 · p95 10.842200 ms</title>
+<rect x="1537.961" y="1107.604" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T13-R1" fill="#2695a6" stroke="#ffffff" stroke-width="1"><title>T13-R1 · milvus/Native/IVF_FLAT · target 0.90 · Recall 0.912222 · p95 10.096700 ms</title>
+<circle cx="1393.817" cy="1127.556" r="7.4"/>
+</g>
+<g data-sample-id="T13-R2" fill="#2695a6" stroke="#ffffff" stroke-width="1"><title>T13-R2 · milvus/Native/IVF_FLAT · target 0.90 · Recall 0.912222 · p95 23.088000 ms</title>
+<path d="M 1393.817 887.625 L 1401.817 902.625 L 1385.817 902.625 Z"/>
+</g>
+<g data-sample-id="T13-R3" fill="#2695a6" stroke="#ffffff" stroke-width="1"><title>T13-R3 · milvus/Native/IVF_FLAT · target 0.90 · Recall 0.912222 · p95 21.972100 ms</title>
+<rect x="1387.117" y="909.761" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T14-R1" fill="#12606d" stroke="#ffffff" stroke-width="1"><title>T14-R1 · milvus/Native/IVF_FLAT · target 0.95 · Recall 0.955556 · p95 22.899100 ms</title>
+<circle cx="1557.234" cy="899.983" r="7.4"/>
+</g>
+<g data-sample-id="T14-R2" fill="#12606d" stroke="#ffffff" stroke-width="1"><title>T14-R2 · milvus/Native/IVF_FLAT · target 0.95 · Recall 0.955556 · p95 32.045000 ms</title>
+<path d="M 1557.234 728.407 L 1565.234 743.407 L 1549.234 743.407 Z"/>
+</g>
+<g data-sample-id="T14-R3" fill="#12606d" stroke="#ffffff" stroke-width="1"><title>T14-R3 · milvus/Native/IVF_FLAT · target 0.95 · Recall 0.955556 · p95 24.778100 ms</title>
+<rect x="1550.534" y="859.882" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T15-R1" fill="#b35d32" stroke="#ffffff" stroke-width="1"><title>T15-R1 · milvus/Native/IVF_SQ8 · target 0.90 · Recall 0.911111 · p95 19.415900 ms</title>
+<circle cx="1389.627" cy="961.899" r="7.4"/>
+</g>
+<g data-sample-id="T15-R2" fill="#b35d32" stroke="#ffffff" stroke-width="1"><title>T15-R2 · milvus/Native/IVF_SQ8 · target 0.90 · Recall 0.911111 · p95 25.380600 ms</title>
+<path d="M 1389.627 846.872 L 1397.627 861.872 L 1381.627 861.872 Z"/>
+</g>
+<g data-sample-id="T15-R3" fill="#b35d32" stroke="#ffffff" stroke-width="1"><title>T15-R3 · milvus/Native/IVF_SQ8 · target 0.90 · Recall 0.911111 · p95 19.542200 ms</title>
+<rect x="1382.927" y="952.954" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T16-R1" fill="#773915" stroke="#ffffff" stroke-width="1"><title>T16-R1 · milvus/Native/IVF_SQ8 · target 0.95 · Recall 0.954444 · p95 28.501600 ms</title>
+<circle cx="1553.040" cy="800.394" r="7.4"/>
+</g>
+<g data-sample-id="T16-R2" fill="#773915" stroke="#ffffff" stroke-width="1"><title>T16-R2 · milvus/Native/IVF_SQ8 · target 0.95 · Recall 0.954444 · p95 21.025100 ms</title>
+<path d="M 1553.040 924.295 L 1561.040 939.295 L 1545.040 939.295 Z"/>
+</g>
+<g data-sample-id="T16-R3" fill="#773915" stroke="#ffffff" stroke-width="1"><title>T16-R3 · milvus/Native/IVF_SQ8 · target 0.95 · Recall 0.954444 · p95 15.953900 ms</title>
+<rect x="1546.340" y="1016.739" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T17-R1" fill="#797bd7" stroke="#ffffff" stroke-width="1"><title>T17-R1 · milvus/Native/IVF_PQ · target 0.90 · Recall 0.601111 · p95 22.473900 ms</title>
+<circle cx="220.586" cy="907.541" r="7.4"/>
+</g>
+<g data-sample-id="T17-R2" fill="#797bd7" stroke="#ffffff" stroke-width="1"><title>T17-R2 · milvus/Native/IVF_PQ · target 0.90 · Recall 0.601111 · p95 13.898000 ms</title>
+<path d="M 220.586 1050.985 L 228.586 1065.985 L 212.586 1065.985 Z"/>
+</g>
+<g data-sample-id="T17-R3" fill="#797bd7" stroke="#ffffff" stroke-width="1"><title>T17-R3 · milvus/Native/IVF_PQ · target 0.90 · Recall 0.601111 · p95 27.277800 ms</title>
+<rect x="213.886" y="815.448" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T18-R1" fill="#46499e" stroke="#ffffff" stroke-width="1"><title>T18-R1 · milvus/Native/IVF_PQ · target 0.95 · Recall 0.601111 · p95 20.986000 ms</title>
+<circle cx="220.586" cy="933.990" r="7.4"/>
+</g>
+<g data-sample-id="T18-R2" fill="#46499e" stroke="#ffffff" stroke-width="1"><title>T18-R2 · milvus/Native/IVF_PQ · target 0.95 · Recall 0.601111 · p95 23.281100 ms</title>
+<path d="M 220.586 884.192 L 228.586 899.192 L 212.586 899.192 Z"/>
+</g>
+<g data-sample-id="T18-R3" fill="#46499e" stroke="#ffffff" stroke-width="1"><title>T18-R3 · milvus/Native/IVF_PQ · target 0.95 · Recall 0.601111 · p95 25.347800 ms</title>
+<rect x="213.886" y="849.755" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T19-R1" fill="#dc4671" stroke="#ffffff" stroke-width="1"><title>T19-R1 · milvus/Native/DISKANN · target 0.90 · Recall 0.838333 · p95 20.368500 ms</title>
+<circle cx="1115.174" cy="944.966" r="7.4"/>
+</g>
+<g data-sample-id="T19-R2" fill="#dc4671" stroke="#ffffff" stroke-width="1"><title>T19-R2 · milvus/Native/DISKANN · target 0.90 · Recall 0.917778 · p95 16.253800 ms</title>
+<path d="M 1414.769 1009.108 L 1422.769 1024.108 L 1406.769 1024.108 Z"/>
+</g>
+<g data-sample-id="T19-R3" fill="#dc4671" stroke="#ffffff" stroke-width="1"><title>T19-R3 · milvus/Native/DISKANN · target 0.90 · Recall 0.882778 · p95 15.983900 ms</title>
+<rect x="1276.080" y="1016.206" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T20-R1" fill="#992946" stroke="#ffffff" stroke-width="1"><title>T20-R1 · milvus/Native/DISKANN · target 0.95 · Recall 0.927778 · p95 24.684500 ms</title>
+<circle cx="1452.480" cy="868.246" r="7.4"/>
+</g>
+<g data-sample-id="T20-R2" fill="#992946" stroke="#ffffff" stroke-width="1"><title>T20-R2 · milvus/Native/DISKANN · target 0.95 · Recall 0.967222 · p95 25.209900 ms</title>
+<path d="M 1601.227 849.906 L 1609.227 864.906 L 1593.227 864.906 Z"/>
+</g>
+<g data-sample-id="T20-R3" fill="#992946" stroke="#ffffff" stroke-width="1"><title>T20-R3 · milvus/Native/DISKANN · target 0.95 · Recall 0.951667 · p95 42.911000 ms</title>
+<rect x="1535.868" y="537.555" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T21-R1" fill="#548d35" stroke="#ffffff" stroke-width="1"><title>T21-R1 · opensearch/Lucene/HNSW · target 0.90 · Recall 0.885556 · p95 9.192300 ms</title>
+<circle cx="1293.257" cy="1143.632" r="7.4"/>
+</g>
+<g data-sample-id="T21-R2" fill="#548d35" stroke="#ffffff" stroke-width="1"><title>T21-R2 · opensearch/Lucene/HNSW · target 0.90 · Recall 0.927222 · p95 9.407900 ms</title>
+<path d="M 1450.383 1130.800 L 1458.383 1145.800 L 1442.383 1145.800 Z"/>
+</g>
+<g data-sample-id="T21-R3" fill="#548d35" stroke="#ffffff" stroke-width="1"><title>T21-R3 · opensearch/Lucene/HNSW · target 0.90 · Recall 0.882222 · p95 7.486700 ms</title>
+<rect x="1273.984" y="1167.251" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T22-R1" fill="#315c1b" stroke="#ffffff" stroke-width="1"><title>T22-R1 · opensearch/Lucene/HNSW · target 0.95 · Recall 0.885556 · p95 8.177500 ms</title>
+<circle cx="1293.257" cy="1161.671" r="7.4"/>
+</g>
+<g data-sample-id="T22-R2" fill="#315c1b" stroke="#ffffff" stroke-width="1"><title>T22-R2 · opensearch/Lucene/HNSW · target 0.95 · Recall 0.980000 · p95 17.104300 ms</title>
+<path d="M 1649.414 993.990 L 1657.414 1008.990 L 1641.414 1008.990 Z"/>
+</g>
+<g data-sample-id="T22-R3" fill="#315c1b" stroke="#ffffff" stroke-width="1"><title>T22-R3 · opensearch/Lucene/HNSW · target 0.95 · Recall 0.945556 · p95 9.670600 ms</title>
+<rect x="1512.823" y="1128.430" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T23-R1" fill="#287fa4" stroke="#ffffff" stroke-width="1"><title>T23-R1 · opensearch/Faiss/HNSW · target 0.90 · Recall 0.885556 · p95 8.062300 ms</title>
+<circle cx="1293.257" cy="1163.719" r="7.4"/>
+</g>
+<g data-sample-id="T23-R2" fill="#287fa4" stroke="#ffffff" stroke-width="1"><title>T23-R2 · opensearch/Faiss/HNSW · target 0.90 · Recall 0.873333 · p95 10.154600 ms</title>
+<path d="M 1247.162 1117.527 L 1255.162 1132.527 L 1239.162 1132.527 Z"/>
+</g>
+<g data-sample-id="T23-R3" fill="#287fa4" stroke="#ffffff" stroke-width="1"><title>T23-R3 · opensearch/Faiss/HNSW · target 0.90 · Recall 0.912778 · p95 9.823300 ms</title>
+<rect x="1389.213" y="1125.716" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T24-R1" fill="#14536f" stroke="#ffffff" stroke-width="1"><title>T24-R1 · opensearch/Faiss/HNSW · target 0.95 · Recall 0.937222 · p95 9.734800 ms</title>
+<circle cx="1488.094" cy="1133.989" r="7.4"/>
+</g>
+<g data-sample-id="T24-R2" fill="#14536f" stroke="#ffffff" stroke-width="1"><title>T24-R2 · opensearch/Faiss/HNSW · target 0.95 · Recall 0.936111 · p95 8.978300 ms</title>
+<path d="M 1483.905 1138.436 L 1491.905 1153.436 L 1475.905 1153.436 Z"/>
+</g>
+<g data-sample-id="T24-R3" fill="#14536f" stroke="#ffffff" stroke-width="1"><title>T24-R3 · opensearch/Faiss/HNSW · target 0.95 · Recall 0.950556 · p95 7.657100 ms</title>
+<rect x="1531.678" y="1164.222" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T25-R1" fill="#b751b0" stroke="#ffffff" stroke-width="1"><title>T25-R1 · opensearch/Faiss/IVF · target 0.90 · Recall 0.912222 · p95 11.571400 ms</title>
+<circle cx="1393.817" cy="1101.342" r="7.4"/>
+</g>
+<g data-sample-id="T25-R2" fill="#b751b0" stroke="#ffffff" stroke-width="1"><title>T25-R2 · opensearch/Faiss/IVF · target 0.90 · Recall 0.912778 · p95 20.324100 ms</title>
+<path d="M 1395.913 936.755 L 1403.913 951.755 L 1387.913 951.755 Z"/>
+</g>
+<g data-sample-id="T25-R3" fill="#b751b0" stroke="#ffffff" stroke-width="1"><title>T25-R3 · opensearch/Faiss/IVF · target 0.90 · Recall 0.912778 · p95 6.988300 ms</title>
+<rect x="1389.213" y="1176.110" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T26-R1" fill="#80337b" stroke="#ffffff" stroke-width="1"><title>T26-R1 · opensearch/Faiss/IVF · target 0.95 · Recall 0.955556 · p95 9.431400 ms</title>
+<circle cx="1557.234" cy="1139.382" r="7.4"/>
+</g>
+<g data-sample-id="T26-R2" fill="#80337b" stroke="#ffffff" stroke-width="1"><title>T26-R2 · opensearch/Faiss/IVF · target 0.95 · Recall 0.956111 · p95 12.187900 ms</title>
+<path d="M 1559.327 1081.383 L 1567.327 1096.383 L 1551.327 1096.383 Z"/>
+</g>
+<g data-sample-id="T26-R3" fill="#80337b" stroke="#ffffff" stroke-width="1"><title>T26-R3 · opensearch/Faiss/IVF · target 0.95 · Recall 0.956111 · p95 8.800500 ms</title>
+<rect x="1552.627" y="1143.897" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T27-R1" fill="#758594" stroke="#ffffff" stroke-width="1"><title>T27-R1 · opensearch/JVector/DiskANN · target 0.90 · Recall 0.875556 · p95 43.876200 ms</title>
+<circle cx="1255.546" cy="527.098" r="7.4"/>
+</g>
+<g data-sample-id="T27-R2" fill="#758594" stroke="#ffffff" stroke-width="1"><title>T27-R2 · opensearch/JVector/DiskANN · target 0.90 · Recall 0.860000 · p95 50.965400 ms</title>
+<path d="M 1196.882 392.081 L 1204.882 407.081 L 1188.882 407.081 Z"/>
+</g>
+<g data-sample-id="T27-R3" fill="#758594" stroke="#ffffff" stroke-width="1"><title>T27-R3 · opensearch/JVector/DiskANN · target 0.90 · Recall 0.857222 · p95 58.651400 ms</title>
+<rect x="1179.706" y="257.757" width="13.4" height="13.4"/>
+</g>
+<g data-sample-id="T28-R1" fill="#445460" stroke="#ffffff" stroke-width="1"><title>T28-R1 · opensearch/JVector/DiskANN · target 0.95 · Recall 0.943333 · p95 50.608600 ms</title>
+<circle cx="1511.139" cy="407.424" r="7.4"/>
+</g>
+<g data-sample-id="T28-R2" fill="#445460" stroke="#ffffff" stroke-width="1"><title>T28-R2 · opensearch/JVector/DiskANN · target 0.95 · Recall 0.902778 · p95 49.548400 ms</title>
+<path d="M 1358.202 417.270 L 1366.202 432.270 L 1350.202 432.270 Z"/>
+</g>
+<g data-sample-id="T28-R3" fill="#445460" stroke="#ffffff" stroke-width="1"><title>T28-R3 · opensearch/JVector/DiskANN · target 0.95 · Recall 0.857222 · p95 54.750800 ms</title>
+<rect x="1179.706" y="327.093" width="13.4" height="13.4"/>
+</g>
+<text x="1468.31" y="1120.42" font-size="18" text-anchor="start" class="point-label">T22-R3</text>
+<text x="1550.54" y="1178.31" font-size="18" text-anchor="start" class="point-label">T26-R3</text>
+<text x="1411.33" y="1167.49" font-size="18" text-anchor="start" class="point-label">T24-R1</text>
+<text x="1407.24" y="1200.61" font-size="18" text-anchor="start" class="point-label">T24-R2</text>
+<text x="1575.93" y="1138.42" font-size="18" text-anchor="start" class="point-label">T24-R3</text>
+<text x="1305.42" y="1152.12" font-size="18" text-anchor="start" class="point-label">T01-R1</text>
+<text x="1435.28" y="1235.18" font-size="18" text-anchor="start" class="point-label">T01-R2</text>
+<text x="1311.70" y="1206.48" font-size="18" text-anchor="start" class="point-label">T05-R2</text>
+<text x="1567.30" y="645.25" font-size="18" text-anchor="start" class="point-label">T10-R1</text>
+<text x="1420.38" y="1092.30" font-size="18" text-anchor="start" class="point-label">T21-R2</text>
+<text x="1326.91" y="1256.86" font-size="18" text-anchor="start" class="point-label">T25-R3</text>
+<text x="1573.90" y="1099.21" font-size="18" text-anchor="start" class="point-label">T26-R1</text>
+<text x="1210.61" y="1222.03" font-size="18" text-anchor="start" class="point-label">T01-R3</text>
+<text x="1258.31" y="1255.75" font-size="18" text-anchor="start" class="point-label">T05-R1</text>
+<text x="1505.52" y="722.20" font-size="18" text-anchor="start" class="point-label">T09-R1</text>
+<text x="1573.58" y="766.64" font-size="18" text-anchor="start" class="point-label">T09-R2</text>
+<text x="1579.87" y="686.96" font-size="18" text-anchor="start" class="point-label">T09-R3</text>
+<text x="1506.02" y="765.12" font-size="18" text-anchor="start" class="point-label">T14-R2</text>
+<text x="1208.68" y="1180.45" font-size="18" text-anchor="start" class="point-label">T21-R3</text>
+<text x="1290.26" y="1121.41" font-size="18" text-anchor="start" class="point-label">T22-R1</text>
+<text x="1224.26" y="1102.67" font-size="18" text-anchor="start" class="point-label">T23-R1</text>
+<text x="1349.39" y="1086.42" font-size="18" text-anchor="start" class="point-label">T03-R2</text>
+<text x="1535.87" y="1243.01" font-size="18" text-anchor="start" class="point-label">T06-R2</text>
+<text x="1487.66" y="1074.04" font-size="18" text-anchor="start" class="point-label">T12-R3</text>
+<text x="1342.60" y="881.91" font-size="18" text-anchor="start" class="point-label">T13-R2</text>
+<text x="1405.82" y="922.96" font-size="18" text-anchor="start" class="point-label">T13-R3</text>
+<text x="1263.26" y="1072.13" font-size="18" text-anchor="start" class="point-label">T21-R1</text>
+<text x="1559.03" y="1067.18" font-size="18" text-anchor="start" class="point-label">T26-R2</text>
+<text x="1478.78" y="644.25" font-size="18" text-anchor="start" class="point-label">T03-R3</text>
+<text x="1447.15" y="1263.65" font-size="18" text-anchor="start" class="point-label">T06-R3</text>
+<text x="1606.37" y="721.77" font-size="18" text-anchor="start" class="point-label">T10-R2</text>
+<text x="1505.69" y="685.26" font-size="18" text-anchor="start" class="point-label">T10-R3</text>
+<text x="1506.02" y="851.87" font-size="18" text-anchor="start" class="point-label">T14-R3</text>
+<text x="1565.04" y="806.89" font-size="18" text-anchor="start" class="point-label">T16-R1</text>
+<text x="1175.16" y="1133.03" font-size="18" text-anchor="start" class="point-label">T23-R2</text>
+<text x="1521.21" y="578.75" font-size="18" text-anchor="start" class="point-label">T04-R3</text>
+<text x="1482.97" y="818.31" font-size="18" text-anchor="start" class="point-label">T08-R2</text>
+<text x="1403.36" y="847.66" font-size="18" text-anchor="start" class="point-label">T08-R3</text>
+<text x="1363.82" y="1056.06" font-size="18" text-anchor="start" class="point-label">T13-R1</text>
+<text x="1569.23" y="906.48" font-size="18" text-anchor="start" class="point-label">T14-R1</text>
+<text x="1380.84" y="989.61" font-size="18" text-anchor="start" class="point-label">T15-R1</text>
+<text x="1319.06" y="851.50" font-size="18" text-anchor="start" class="point-label">T15-R2</text>
+<text x="1319.06" y="955.28" font-size="18" text-anchor="start" class="point-label">T15-R3</text>
+<text x="1463.05" y="885.62" font-size="18" text-anchor="start" class="point-label">T20-R1</text>
+<text x="1428.91" y="1029.80" font-size="18" text-anchor="start" class="point-label">T23-R3</text>
+<text x="1340.52" y="1020.91" font-size="18" text-anchor="start" class="point-label">T25-R1</text>
+<text x="1407.91" y="952.26" font-size="18" text-anchor="start" class="point-label">T25-R2</text>
+<text x="1535.87" y="491.93" font-size="18" text-anchor="start" class="point-label">T02-R1</text>
+<text x="1542.16" y="438.01" font-size="18" text-anchor="start" class="point-label">T02-R2</text>
+<text x="1466.95" y="471.95" font-size="18" text-anchor="start" class="point-label">T02-R3</text>
+<text x="1474.09" y="919.10" font-size="18" text-anchor="start" class="point-label">T12-R1</text>
+<text x="1535.87" y="998.40" font-size="18" text-anchor="start" class="point-label">T12-R2</text>
+<text x="1565.04" y="939.79" font-size="18" text-anchor="start" class="point-label">T16-R2</text>
+<text x="232.59" y="899.69" font-size="18" text-anchor="start" class="point-label">T18-R2</text>
+<text x="232.59" y="862.96" font-size="18" text-anchor="start" class="point-label">T18-R3</text>
+<text x="1533.78" y="529.54" font-size="18" text-anchor="start" class="point-label">T20-R3</text>
+<text x="1428.50" y="596.54" font-size="18" text-anchor="start" class="point-label">T03-R1</text>
+<text x="1377.79" y="1289.20" font-size="18" text-anchor="start" class="point-label">T05-R3</text>
+<text x="1390.79" y="803.11" font-size="18" text-anchor="start" class="point-label">T07-R2</text>
+<text x="1403.84" y="638.36" font-size="18" text-anchor="start" class="point-label">T08-R1</text>
+<text x="1246.23" y="999.26" font-size="18" text-anchor="start" class="point-label">T11-R1</text>
+<text x="1246.23" y="954.38" font-size="18" text-anchor="start" class="point-label">T11-R2</text>
+<text x="1253.47" y="922.23" font-size="18" text-anchor="start" class="point-label">T11-R3</text>
+<text x="148.59" y="914.04" font-size="18" text-anchor="start" class="point-label">T17-R1</text>
+<text x="211.80" y="961.70" font-size="18" text-anchor="start" class="point-label">T18-R1</text>
+<text x="1452.32" y="985.61" font-size="18" text-anchor="start" class="point-label">T19-R2</text>
+<text x="1210.78" y="1029.41" font-size="18" text-anchor="start" class="point-label">T19-R3</text>
+<text x="1592.44" y="844.19" font-size="18" text-anchor="start" class="point-label">T20-R2</text>
+<text x="1502.35" y="392.71" font-size="18" text-anchor="start" class="point-label">T28-R1</text>
+<text x="1609.20" y="574.92" font-size="18" text-anchor="start" class="point-label">T04-R2</text>
+<text x="1602.92" y="1244.74" font-size="18" text-anchor="start" class="point-label">T06-R1</text>
+<text x="1565.04" y="1029.94" font-size="18" text-anchor="start" class="point-label">T16-R3</text>
+<text x="211.80" y="807.43" font-size="18" text-anchor="start" class="point-label">T17-R3</text>
+<text x="1177.62" y="319.08" font-size="18" text-anchor="start" class="point-label">T28-R3</text>
+<text x="1615.49" y="407.33" font-size="18" text-anchor="start" class="point-label">T04-R1</text>
+<text x="1196.47" y="829.72" font-size="18" text-anchor="start" class="point-label">T07-R1</text>
+<text x="1166.62" y="904.28" font-size="18" text-anchor="start" class="point-label">T07-R3</text>
+<text x="1188.10" y="386.37" font-size="18" text-anchor="start" class="point-label">T27-R2</text>
+<text x="1177.62" y="249.74" font-size="18" text-anchor="start" class="point-label">T27-R3</text>
+<text x="211.80" y="1045.27" font-size="18" text-anchor="start" class="point-label">T17-R2</text>
+<text x="1106.39" y="972.68" font-size="18" text-anchor="start" class="point-label">T19-R1</text>
+<text x="1640.63" y="988.28" font-size="18" text-anchor="start" class="point-label">T22-R2</text>
+<text x="1246.76" y="512.38" font-size="18" text-anchor="start" class="point-label">T27-R1</text>
+<text x="1349.42" y="411.56" font-size="18" text-anchor="start" class="point-label">T28-R2</text>
+<text x="1800.00" y="190.00" font-size="22" text-anchor="start" font-weight="700">케이스 / 구성 / 목표 Recall</text>
+<circle cx="1807" cy="226.0" r="7" fill="#2864c5"/>
+<text x="1827.00" y="232.00" font-size="19" text-anchor="start" class="legend">T01 pgvector hnsw · 0.90</text>
+<circle cx="1807" cy="262.5" r="7" fill="#17427e"/>
+<text x="1827.00" y="268.50" font-size="19" text-anchor="start" class="legend">T02 pgvector hnsw · 0.95</text>
+<circle cx="1807" cy="299.0" r="7" fill="#d35b17"/>
+<text x="1827.00" y="305.00" font-size="19" text-anchor="start" class="legend">T03 pgvector ivfflat · 0.90</text>
+<circle cx="1807" cy="335.5" r="7" fill="#8c390c"/>
+<text x="1827.00" y="341.50" font-size="19" text-anchor="start" class="legend">T04 pgvector ivfflat · 0.95</text>
+<circle cx="1807" cy="372.0" r="7" fill="#14917c"/>
+<text x="1827.00" y="378.00" font-size="19" text-anchor="start" class="legend">T05 qdrant hnsw · 0.90</text>
+<circle cx="1807" cy="408.5" r="7" fill="#006050"/>
+<text x="1827.00" y="414.50" font-size="19" text-anchor="start" class="legend">T06 qdrant hnsw · 0.95</text>
+<circle cx="1807" cy="445.0" r="7" fill="#c34975"/>
+<text x="1827.00" y="451.00" font-size="19" text-anchor="start" class="legend">T07 weaviate hnsw · 0.90</text>
+<circle cx="1807" cy="481.5" r="7" fill="#882c50"/>
+<text x="1827.00" y="487.50" font-size="19" text-anchor="start" class="legend">T08 weaviate hnsw · 0.95</text>
+<circle cx="1807" cy="518.0" r="7" fill="#9b6bc4"/>
+<text x="1827.00" y="524.00" font-size="19" text-anchor="start" class="legend">T09 weaviate hfresh · 0.90</text>
+<circle cx="1807" cy="554.5" r="7" fill="#663b94"/>
+<text x="1827.00" y="560.50" font-size="19" text-anchor="start" class="legend">T10 weaviate hfresh · 0.95</text>
+<circle cx="1807" cy="591.0" r="7" fill="#9c8310"/>
+<text x="1827.00" y="597.00" font-size="19" text-anchor="start" class="legend">T11 milvus HNSW · 0.90</text>
+<circle cx="1807" cy="627.5" r="7" fill="#695800"/>
+<text x="1827.00" y="633.50" font-size="19" text-anchor="start" class="legend">T12 milvus HNSW · 0.95</text>
+<circle cx="1807" cy="664.0" r="7" fill="#2695a6"/>
+<text x="1827.00" y="670.00" font-size="19" text-anchor="start" class="legend">T13 milvus IVF_FLAT · 0.90</text>
+<circle cx="1807" cy="700.5" r="7" fill="#12606d"/>
+<text x="1827.00" y="706.50" font-size="19" text-anchor="start" class="legend">T14 milvus IVF_FLAT · 0.95</text>
+<circle cx="1807" cy="737.0" r="7" fill="#b35d32"/>
+<text x="1827.00" y="743.00" font-size="19" text-anchor="start" class="legend">T15 milvus IVF_SQ8 · 0.90</text>
+<circle cx="1807" cy="773.5" r="7" fill="#773915"/>
+<text x="1827.00" y="779.50" font-size="19" text-anchor="start" class="legend">T16 milvus IVF_SQ8 · 0.95</text>
+<circle cx="1807" cy="810.0" r="7" fill="#797bd7"/>
+<text x="1827.00" y="816.00" font-size="19" text-anchor="start" class="legend">T17 milvus IVF_PQ · 0.90</text>
+<circle cx="1807" cy="846.5" r="7" fill="#46499e"/>
+<text x="1827.00" y="852.50" font-size="19" text-anchor="start" class="legend">T18 milvus IVF_PQ · 0.95</text>
+<circle cx="1807" cy="883.0" r="7" fill="#dc4671"/>
+<text x="1827.00" y="889.00" font-size="19" text-anchor="start" class="legend">T19 milvus DISKANN · 0.90</text>
+<circle cx="1807" cy="919.5" r="7" fill="#992946"/>
+<text x="1827.00" y="925.50" font-size="19" text-anchor="start" class="legend">T20 milvus DISKANN · 0.95</text>
+<circle cx="1807" cy="956.0" r="7" fill="#548d35"/>
+<text x="1827.00" y="962.00" font-size="19" text-anchor="start" class="legend">T21 OS/Lucene HNSW · 0.90</text>
+<circle cx="1807" cy="992.5" r="7" fill="#315c1b"/>
+<text x="1827.00" y="998.50" font-size="19" text-anchor="start" class="legend">T22 OS/Lucene HNSW · 0.95</text>
+<circle cx="1807" cy="1029.0" r="7" fill="#287fa4"/>
+<text x="1827.00" y="1035.00" font-size="19" text-anchor="start" class="legend">T23 OS/Faiss HNSW · 0.90</text>
+<circle cx="1807" cy="1065.5" r="7" fill="#14536f"/>
+<text x="1827.00" y="1071.50" font-size="19" text-anchor="start" class="legend">T24 OS/Faiss HNSW · 0.95</text>
+<circle cx="1807" cy="1102.0" r="7" fill="#b751b0"/>
+<text x="1827.00" y="1108.00" font-size="19" text-anchor="start" class="legend">T25 OS/Faiss IVF · 0.90</text>
+<circle cx="1807" cy="1138.5" r="7" fill="#80337b"/>
+<text x="1827.00" y="1144.50" font-size="19" text-anchor="start" class="legend">T26 OS/Faiss IVF · 0.95</text>
+<circle cx="1807" cy="1175.0" r="7" fill="#758594"/>
+<text x="1827.00" y="1181.00" font-size="19" text-anchor="start" class="legend">T27 OS/JVector DiskANN · 0.90</text>
+<circle cx="1807" cy="1211.5" r="7" fill="#445460"/>
+<text x="1827.00" y="1217.50" font-size="19" text-anchor="start" class="legend">T28 OS/JVector DiskANN · 0.95</text>
+<text x="1800.00" y="1295.00" font-size="18" text-anchor="start" >OS = OpenSearch</text>
+<text x="130.00" y="1440.00" font-size="22" text-anchor="start" >● R1 = 1회차    ▲ R2 = 2회차    ■ R3 = 3회차    |    라벨: T번호-R회차    |    색상: 케이스</text>
+</svg>

@@ -1,0 +1,32 @@
+{
+  "panels": 6,
+  "rawMarksPerPanel": 620,
+  "summaryMarksPerPanel": 124,
+  "legendToggle": true,
+  "detailRows": 5,
+  "detailColumns": 11,
+  "escapeClears": true,
+  "wide": {
+    "overflow": false,
+    "labelOverlaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "mobile": {
+    "overflow": false,
+    "labelOverlaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "errors": []
+}

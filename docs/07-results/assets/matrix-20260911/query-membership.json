@@ -1,0 +1,2102 @@
+[
+  {
+    "queryId": "q-001",
+    "partition": "calibration",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-002",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-003",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-004",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-005",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-006",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-007",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-008",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 0
+  },
+  {
+    "queryId": "q-009",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-010",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-011",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-012",
+    "partition": "calibration",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-013",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-014",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-015",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-016",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-017",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-018",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-019",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-020",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-021",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-022",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-023",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-024",
+    "partition": "calibration",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-025",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-026",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-027",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-028",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-029",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-030",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-031",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-032",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-033",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-034",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-035",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-036",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-037",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-038",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-039",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-040",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-041",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-042",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-043",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-044",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-045",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-046",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-047",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-048",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-049",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-050",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-051",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-052",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-053",
+    "partition": "calibration",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-054",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-055",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-056",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-057",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-058",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-059",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-060",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-061",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-062",
+    "partition": "calibration",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-063",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-064",
+    "partition": "calibration",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 0
+  },
+  {
+    "queryId": "q-065",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-066",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-067",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-068",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-069",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-070",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-071",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-072",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-073",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-074",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-075",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-076",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-077",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-078",
+    "partition": "calibration",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-079",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-080",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-081",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-082",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-083",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-084",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-085",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-086",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-087",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-088",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-089",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-090",
+    "partition": "calibration",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-091",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-092",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-093",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-094",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-095",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-096",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-097",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-098",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-099",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-100",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-101",
+    "partition": "calibration",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-102",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-103",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-104",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-105",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-106",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-107",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-108",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-109",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-110",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-111",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-112",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-113",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-114",
+    "partition": "calibration",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-115",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-116",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-117",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-118",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-119",
+    "partition": "calibration",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-120",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-121",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-122",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-123",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-124",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-125",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-126",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-127",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-128",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 0
+  },
+  {
+    "queryId": "q-129",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-130",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-131",
+    "partition": "calibration",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-132",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-133",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-134",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-135",
+    "partition": "calibration",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-136",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-137",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-138",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-139",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-140",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-141",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-142",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-143",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-144",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-145",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-146",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-147",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-148",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 0
+  },
+  {
+    "queryId": "q-149",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-150",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-151",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-152",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-153",
+    "partition": "calibration",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-154",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-155",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-156",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-157",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-158",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-159",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-160",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-161",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-162",
+    "partition": "calibration",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-163",
+    "partition": "calibration",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-164",
+    "partition": "calibration",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-165",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-166",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-167",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-168",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-169",
+    "partition": "calibration",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-170",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-171",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-172",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-173",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-174",
+    "partition": "calibration",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-175",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-176",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-177",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-178",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-179",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-180",
+    "partition": "calibration",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-181",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-182",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-183",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-184",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-185",
+    "partition": "calibration",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-186",
+    "partition": "calibration",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-187",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-188",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-189",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-190",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-191",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-192",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 0
+  },
+  {
+    "queryId": "q-193",
+    "partition": "calibration",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-194",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-195",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-196",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-197",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-198",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-199",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-200",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-201",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-202",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-203",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-204",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-205",
+    "partition": "calibration",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-206",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-207",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-208",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-209",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-210",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-211",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-212",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-213",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-214",
+    "partition": "calibration",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-215",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-216",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 0
+  },
+  {
+    "queryId": "q-217",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-218",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-219",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-220",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-221",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-222",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-223",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-224",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-225",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-226",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-227",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-228",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-229",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-230",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-231",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-232",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-233",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-234",
+    "partition": "calibration",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-235",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-236",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-237",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-238",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-239",
+    "partition": "calibration",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-240",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 0
+  },
+  {
+    "queryId": "q-241",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-242",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-243",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-244",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-245",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-246",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-247",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-248",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-249",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-250",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-251",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-252",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-253",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-254",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-255",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-256",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-257",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-258",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-259",
+    "partition": "calibration",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-260",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-261",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-262",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-263",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-264",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-265",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-266",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-267",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-268",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-269",
+    "partition": "evaluation",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-270",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-271",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-272",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-273",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-274",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-275",
+    "partition": "calibration",
+    "queryType": "exact_identifier",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-276",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-277",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-278",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-279",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-280",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-281",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-282",
+    "partition": "evaluation",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-283",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-284",
+    "partition": "calibration",
+    "queryType": "ambiguous",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-285",
+    "partition": "evaluation",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-286",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-287",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-288",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-289",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-290",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-291",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-292",
+    "partition": "calibration",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-293",
+    "partition": "evaluation",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-294",
+    "partition": "evaluation",
+    "queryType": "metadata_filter",
+    "hasFilter": true,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-295",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-296",
+    "partition": "calibration",
+    "queryType": "semantic_paraphrase",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-297",
+    "partition": "evaluation",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-298",
+    "partition": "evaluation",
+    "queryType": "short_clear",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-299",
+    "partition": "calibration",
+    "queryType": "technical_term",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  },
+  {
+    "queryId": "q-300",
+    "partition": "calibration",
+    "queryType": "long_natural",
+    "hasFilter": false,
+    "exactTopKCount": 10
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "generatedAt" : "2026-09-11T00:58:44.652018900Z",
+  "provider" : "ollama",
+  "endpoint" : "http://localhost:11434",
+  "model" : "bge-m3:latest",
+  "modelDigest" : "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
+  "dimension" : 1024,
+  "batchSize" : 128,
+  "queryInstruction" : "none",
+  "documentInput" : {
+    "path" : "data\\documents_10000.jsonl",
+    "records" : 10000,
+    "sha256" : "d0910d3c5ae159478a4f1d85bc4a073ce2e608cd4eb0cd31aa32d7ed192814f3"
+  },
+  "queryInput" : {
+    "path" : "data\\queries_300.jsonl",
+    "records" : 300,
+    "sha256" : "e9e52e8cd2ce129bb91205fa1a08f2baf2d4ca8bd28fe9c42299eefdb99ada18"
+  },
+  "documentOutput" : {
+    "minL2Norm" : 0.9999989010731741,
+    "sha256" : "cc23f095b88585453940e8fca998f8b16f9573361b0c83f021d7bb095ba9e4c6",
+    "path" : "data\\embeddings\\document-vectors.jsonl",
+    "records" : 10000,
+    "maxL2Norm" : 1.0000009606140923
+  },
+  "queryOutput" : {
+    "minL2Norm" : 0.9999992928424298,
+    "sha256" : "d06cc81c1169e1a926fc69a835fabda560932d8834bd687893fe0da301c4cfa9",
+    "path" : "data\\embeddings\\query-vectors.jsonl",
+    "records" : 300,
+    "maxL2Norm" : 1.000000707529544
+  }
+}

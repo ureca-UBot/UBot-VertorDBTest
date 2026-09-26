@@ -1,0 +1,24 @@
+{
+  "verifiedAt": "2026-09-11T23:47:31.8588584+09:00",
+  "configurations": 14,
+  "measurements": 372,
+  "rawMeasurements": 372,
+  "parameterGroups": 124,
+  "repetitionsPerParameter": 3,
+  "plottedPoints": 372,
+  "referenceRecallLevels": [
+    0.9,
+    0.95
+  ],
+  "coordinatesMatchMeasurements": true,
+  "inputHashesAndWorkloadMatchProtocol": true,
+  "executionFailures": 0,
+  "unavailableCpuMeasurements": 0,
+  "unavailableRamMeasurements": 0,
+  "emptyGroundTruthViolations": 0.0,
+  "minimumMeasurementTimeMs": 5001.0,
+  "minimumResourceSamples": 2.0,
+  "totalQueryExecutions": 2948000.0,
+  "minimumRecall": 0.340206,
+  "maximumRecall": 0.999485
+}

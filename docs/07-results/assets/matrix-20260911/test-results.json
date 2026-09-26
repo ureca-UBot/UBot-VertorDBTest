@@ -1,0 +1,86 @@
+[
+  {
+    "suite": "com.myapp.benchmark.ExactSearchEngineTest",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.myapp.benchmark.LatencyCollectorTest",
+    "tests": 3,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.myapp.benchmark.QueryPartitionerTest",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.myapp.benchmark.QuerySegmentTest",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.myapp.benchmark.RecallCalculatorTest",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.myapp.benchmark.RecallTargetSelectorTest",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.myapp.benchmark.ResourceCollectorTest",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.myapp.benchmark.ResultWriterTest",
+    "tests": 3,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.myapp.dataset.QuerySetLoaderTest",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.myapp.dataset.VectorDatasetLoaderTest",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.myapp.infrastructure.vector.pgvector.PgVectorIndexManagerTest",
+    "tests": 4,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.myapp.infrastructure.vector.qdrant.QdrantIndexManagerTest",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.myapp.infrastructure.vector.VectorIndexContractTest",
+    "tests": 3,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.myapp.VectorDbTestApplicationTests",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0
+  }
+]

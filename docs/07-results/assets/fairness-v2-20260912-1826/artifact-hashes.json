@@ -1,0 +1,70 @@
+[
+  {
+    "file": "build-statistics.json",
+    "sha256": "7f3fbd59b1a9e53ba0c70ec7c44072293e3b0cfcbb8801772d7b4d486948fc07"
+  },
+  {
+    "file": "execution-order.json",
+    "sha256": "1fb02d673688ee217bf804ab13a7f458549c9906774dd949b60269282ced7f9e"
+  },
+  {
+    "file": "execution-start.json",
+    "sha256": "3f7931a11fb37b9d93e45c10ef09aff4c227555216cb82f27875fe887273c920"
+  },
+  {
+    "file": "measurements.json",
+    "sha256": "d6ac15ba7c2f5043587134c8908a88611fc5b3f4d83ea0b752908770abac7bd6"
+  },
+  {
+    "file": "method-ranges.json",
+    "sha256": "10884bddb94f22be19662a93096a431f6a9696d0ff8e2b75190b1e1b216319ce"
+  },
+  {
+    "file": "parameter-statistics.json",
+    "sha256": "16fef2b3cb508e4810db99e2a82580eba72ae06fc802ea9569bb203e456587d7"
+  },
+  {
+    "file": "render-validation.json",
+    "sha256": "e7820592df356119904ac5ab099746fc354b04757910da5572f21f698d2652e4"
+  },
+  {
+    "file": "scatter-cpu-throughput.png",
+    "sha256": "434b04486af482ba9409eb8f4e5a2c43368d01cd505d8a4e9f428467bb5a50f7"
+  },
+  {
+    "file": "scatter-data.json",
+    "sha256": "0d05ba9989540dc2ec0316b093825f0eba59d46740d01a297ffffb3e72512a74"
+  },
+  {
+    "file": "scatter-filter-recall-latency.png",
+    "sha256": "d7bb8227b8130a44e59817621dd0ec624451ed38263b0bc4c758dfebac72aa5b"
+  },
+  {
+    "file": "scatter-interactive.html",
+    "sha256": "5e765d99222f4d0e5151dfb917916fa341c3be8c1c3fb1d9e766d21fa2797548"
+  },
+  {
+    "file": "scatter-latency-throughput.png",
+    "sha256": "658fe90cc13ebbf1424eafd71a201a907484ddcdcb7a8470ce23ed8e58a56cb3"
+  },
+  {
+    "file": "scatter-memory-throughput.png",
+    "sha256": "f080eb0533b6690b2f40afd4e41c68d86e2cc7852c0e3fae262704996a2b571d"
+  },
+  {
+    "file": "scatter-multi-axis.png",
+    "sha256": "56691410a8acda0e0f922c4b5c68668332dc625fe5a9c1422ccfa5db62b11de2"
+  },
+  {
+    "file": "scatter-recall-latency.png",
+    "sha256": "fc05ae47a9c83c6a58268aa30752e8234a5438da6d27a1d7cbb2091e6af5ce26"
+  },
+  {
+    "file": "scatter-recall-throughput.png",
+    "sha256": "48bf1a51ffa3551d1ee30a5c9f5c6766a338d93c1cad8c4d1a3e9010f4fa3375"
+  },
+  {
+    "file": "validation.json",
+    "sha256": "dbdc2e82b5d2582c0eda3e3c27aadefa7004eccc2fc36f2e96f70d7c30a1950d"
+  }
+]

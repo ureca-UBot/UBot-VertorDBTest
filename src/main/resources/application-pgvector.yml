@@ -1,0 +1,21 @@
+spring:
+  config:
+    activate:
+      on-profile: pgvector
+  data.jdbc.repositories.enabled: true
+  flyway.enabled: true
+
+vector:
+  store.type: pgvector
+  pgvector:
+    table: ${PGVECTOR_TABLE:vector_documents}
+    dimension: ${VECTOR_DIMENSION:1024}
+    metric: ${VECTOR_METRIC:COSINE}
+    index-type: ${PGVECTOR_INDEX_TYPE:hnsw}
+    hnsw-m: ${HNSW_M:16}
+    ef-construction: ${HNSW_EF_CONSTRUCTION:128}
+    ivf-lists: ${PGVECTOR_IVF_LISTS:10}
+    default-ef-search: ${HNSW_EF_SEARCH:100}
+    force-index-scan: ${PGVECTOR_FORCE_INDEX_SCAN:true}
+
+benchmark.container-names: [vector-postgres]

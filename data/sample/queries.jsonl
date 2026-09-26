@@ -1,0 +1,5 @@
+{"queryId":"q-cat","query":"고양이의 특징은 무엇인가?"}
+{"queryId":"q-spring","query":"Spring Boot 자동 설정 설명"}
+{"queryId":"q-vector","query":"벡터 검색과 HNSW는 어떻게 동작하는가?","filter":{"tenant":"public"}}
+{"queryId":"q-ops","query":"시스템 운영과 모니터링","filter":{"tenant":"public"}}
+{"queryId":"q-private","query":"비공개 운영 문서","filter":{"tenant":"private"}}

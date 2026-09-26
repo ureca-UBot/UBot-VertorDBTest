@@ -1,0 +1,394 @@
+[
+  {
+    "path": "src\\main\\java\\com\\myapp\\VectorDbTestApplication.java",
+    "sha256": "5cb3cdbde1369e748d2e3a886780eba480ebe334e055d06e01f8afc4b213163c"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\api\\ApiExceptionHandler.java",
+    "sha256": "41599621fd7bea2591fd37524c424a74f04169964f7339a8c778d63ddbce0dc7"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\api\\BenchmarkController.java",
+    "sha256": "a69304a5969b5614da883dab9fc99a628e8e710831aadbfa1b4c9376fd528c58"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\api\\SearchController.java",
+    "sha256": "e5d927cc003f86c5d10bb7fd48c3e277c6dc504e91011b565bac03ce9169f845"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\application\\document\\ChunkingService.java",
+    "sha256": "aac7172095d66455ecdf5347221d076df7b0733c5e94cadb943fea55dba0bda9"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\application\\document\\DocumentService.java",
+    "sha256": "fec9ee8f2bada9ea8ce62730138f385c6687e8985be9d1f44dc9d1175e518a37"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\application\\embedding\\EmbeddingService.java",
+    "sha256": "35a7b4ab81cf2ce89087fc6d2eb9ecdc1652e287e2b773c9b6ffcb485e8d3c49"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\application\\search\\VectorSearchService.java",
+    "sha256": "4d155f801c4d44a4597fa8a6739be709f29127494062361671bee979ba013fee"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\BenchmarkEnvironmentCollector.java",
+    "sha256": "b3b563b574d187644359323973958cf0156dee371a70dbd588dac98a334c5966"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\BenchmarkProperties.java",
+    "sha256": "893bf2130630f482b5c738cce14a363f28052c42ce373e93bfc1640fa61ad5a4"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\BenchmarkResult.java",
+    "sha256": "2cfa06e87d86dfbe7c589375da25089d97d20206e8e93af9c245056ffddd6ea4"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\BenchmarkRunner.java",
+    "sha256": "8d176fdb51e0681b1d1e24a3c5b1b670a19756491455426d21f934615733018a"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\BenchmarkScenario.java",
+    "sha256": "d672359fc7bdc263f9c43731018969925e063f7272c27d6546f49e1ec93d101e"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\ExactSearchEngine.java",
+    "sha256": "63f2249db75746e11726f97c475fa12baf8085cc780f2b675f9e9201eb3d29e7"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\LatencyCollector.java",
+    "sha256": "1cc566efd2e50eb69de4575fa869f8f674b2cb08f8ba209be2b6095d8aa5298a"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\QueryPartitioner.java",
+    "sha256": "548b58dd54e83e8265129cf770013833ae2562aeee2935673e549a1a631a1a04"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\QuerySegment.java",
+    "sha256": "610b082bd3553e1b73d54f4e428b4211badeb79c83e12a8aed579ac9a00486f4"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\RecallCalculator.java",
+    "sha256": "f0d1311d0ff05596d75328a4a7783bbf09779f00e62e4c658fab9e0ba9dec45a"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\RecallTargetSelector.java",
+    "sha256": "b20113b66afeae1fa91a88444af61ae3ef325a34091eee51fdf9241c763a0956"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\ResourceCollector.java",
+    "sha256": "b12c011ac9e754d1cd33d554c2cc063b6cfc4973ef75eaba4a48ee8e80d9582f"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\ResultWriter.java",
+    "sha256": "d31b407e38b1ac1aa695bc3021fbacf026c1490d593e3aaf6d0411294c3b38e7"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\benchmark\\StabilityDiagnostics.java",
+    "sha256": "7a1552f2d02ace3cd62e37b69ae6e6561040c6822b794807bc77213bfdf6318c"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\dataset\\DatasetLoader.java",
+    "sha256": "27201ab7da4f2218c1964f078fe58dbf970691c6e04290df83f2009b23b409b4"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\dataset\\JsonlSupport.java",
+    "sha256": "7d7f2eca7e0a26e08cd684add7d79d5dae1120cb9234a7707da70422ba2518ed"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\dataset\\QuerySetLoader.java",
+    "sha256": "f29a9d18c28b3e997d51b54740727ce154edc97686a0cf0b84903c39e906a5a3"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\dataset\\VectorDatasetLoader.java",
+    "sha256": "5365de994c11c35efd0e6d5d7e4029d5c652a69abdcaeb5e2d71ff9dc21b400e"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\domain\\document\\Document.java",
+    "sha256": "d13e06fd6e56ae4103ac25dc0f98e7e3bb917ca24cd591128a49bed9dfeb47a7"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\domain\\document\\DocumentChunk.java",
+    "sha256": "79027d19d8d1f8c90430880fac125c2c927990c9913d047b252396c360f94a5a"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\domain\\vector\\BenchmarkQuery.java",
+    "sha256": "d60874a3f13cbaef5d2552cc83d6c91da4e6f05c2544a16b84cbaac76c3dcff9"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\domain\\vector\\DistanceMetric.java",
+    "sha256": "6354fa96fc9b2597ad61fc3fa97fb4fa37890175cf046b3f5065b83af4cab506"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\domain\\vector\\VectorDocument.java",
+    "sha256": "76e10246cf4baf6b2bdc5ec597b1f427282d191a49f6a4dbfa6ba0c596c9e144"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\domain\\vector\\VectorFilter.java",
+    "sha256": "ce7664a83c8582c9c7d5f07b69c726ca333f4d336940762986233db313608b99"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\domain\\vector\\VectorSearchRequest.java",
+    "sha256": "640636487b89ed572215821f6d0ad1a2b302064bbd5240ce27dd8f9331a596ac"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\domain\\vector\\VectorSearchResult.java",
+    "sha256": "114a63372e053cbf25c229423ce27ef40671e644a2dad88fb45bcc4cc21041aa"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\embedding\\FixedEmbeddingProvider.java",
+    "sha256": "18892dd914c0e1537de1ff1f2f5767474369acd93904712b80ed6522a54ee8f4"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\embedding\\OllamaEmbeddingClient.java",
+    "sha256": "0e4dba229d6673924a90461179f9125ff0f7f9a8ecb60edd29cece79353b0412"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\rdb\\postgres\\BenchmarkSourceOfTruthSynchronizer.java",
+    "sha256": "535c2756599f64d112f1e5352b3ffb8a5e50ac31be0628706f056466044dc755"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\rdb\\postgres\\config\\PostgresConfig.java",
+    "sha256": "9fc1570f5139176a02d6b64f5f547f552ef9b3a12752c8d990a1161a517be130"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\rdb\\postgres\\entity\\DocumentChunkEntity.java",
+    "sha256": "73dfd77fd145fc947443a668cc3b32520537b0a170d46998cfe56f48bb49eb02"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\rdb\\postgres\\entity\\DocumentEntity.java",
+    "sha256": "0481a8c7864b5ac71e7e0abb8ec1eb979f3eec09797dcab22c1c2193d8803a86"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\rdb\\postgres\\repository\\DocumentChunkRepository.java",
+    "sha256": "87791d1411495b5eff5ef73891d9e5769f27dadb6bcaf0d4c8b0ff33cb920615"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\rdb\\postgres\\repository\\DocumentRepository.java",
+    "sha256": "e8348883a9053c926d9c3e96ddd695707acfe19ccc672f87ef20a0dcde49bc56"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\http\\JsonHttpClient.java",
+    "sha256": "0ad29fcfdb7a96f2e261c21d2c233f02cb1ccb664a1491e092a5fdcc5f689843"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\http\\VectorHttpSupport.java",
+    "sha256": "8c27071f3c1e5e7042bc2c9af1c53c61d9740e9b209919cc15cac90d14e668e7"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\http\\VectorStoreHttpException.java",
+    "sha256": "588c9b6dc423efc5199815cfc3596d0724c7c293c306c0b14e8ad6caff59cb4f"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\milvus\\MilvusConfig.java",
+    "sha256": "90dd49e29cf1beec106d47793d97ca83831a69a9f1ce72b5abeed8d5ff9714a5"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\milvus\\MilvusIndexManager.java",
+    "sha256": "72b5b38df244dedd2b2ea09177cc47baae09f44ad85058b8d86705dcc0e5618b"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\milvus\\MilvusProperties.java",
+    "sha256": "e56b88055e66e341c8b81bc5aa339f215b6335b189bc6bcd9a2ed29edf748e0f"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\milvus\\MilvusVectorStore.java",
+    "sha256": "2f693475fbd6a1b8e5a88092c988cf8058fcd20c4441df4dd24d9e6f78e52556"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\opensearch\\OpenSearchConfig.java",
+    "sha256": "a88ad992b24b22504c68e4945c407618295b4045cd50e2488d8626f797a33eb2"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\opensearch\\OpenSearchIndexManager.java",
+    "sha256": "030230b0838aafd5fcca6cef2eeeed568f94ddb0107d2d197513a810e86bc4f3"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\opensearch\\OpenSearchProperties.java",
+    "sha256": "99b59a53b868c547d659cca3b76d6d746ff23583cdc317ed6a3627609bca2a4d"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\opensearch\\OpenSearchVectorStore.java",
+    "sha256": "ea075785db8dd069b6c09300f996bcc21ba522961063902d38a50d081687139a"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\pgvector\\PgVectorConfig.java",
+    "sha256": "bedca4aa64d5fdbc44a6c1d8978551397b7b23abf289dfc0e794311b1bc02137"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\pgvector\\PgVectorIndexManager.java",
+    "sha256": "b05e8afd76a99c65e5d481436d2716ce6c63732a0b0d6edff38c4010a0725da0"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\pgvector\\PgVectorProperties.java",
+    "sha256": "4ef5c6f75e9c03821beb849f609f04cdbeb8edc4a6a7283a8b01d1ec2e04d9d1"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\pgvector\\PgVectorStore.java",
+    "sha256": "8e2dc76e717a26b8d4c5f348934e0839eb866b75e52aadf9eab9d70b0cb6a33b"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\qdrant\\QdrantConfig.java",
+    "sha256": "2c0a96c149b7897dafe216123908bddb86b4b64979c3f2fd4c88f9bda1d6fcbf"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\qdrant\\QdrantIndexManager.java",
+    "sha256": "6a4919bacbf9176d675cc704c47fddf670ce5d8884e50bfb033f84f7620e900a"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\qdrant\\QdrantProperties.java",
+    "sha256": "16924b8a090df3abcc77d32605a53311262c014c2aa4acb7e256257a5ae0ce19"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\qdrant\\QdrantVectorStore.java",
+    "sha256": "69e74df5d0a41495de92f261dc1d9073d77f09e33b31e1774f2278d3892761ff"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\weaviate\\WeaviateConfig.java",
+    "sha256": "cd25900aa97e6ab660f8cd9ebf3df4420f537ffd25a4d1401e42b03fdeed0b43"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\weaviate\\WeaviateIndexManager.java",
+    "sha256": "9aec2063b55ca48fb6a78187fc5078b81fc47a6e771147638558009408b27bd4"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\weaviate\\WeaviateProperties.java",
+    "sha256": "f3a1752908543cee1cfd007b41a0eb489536b85f2efa561e3074926fd455a899"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\infrastructure\\vector\\weaviate\\WeaviateVectorStore.java",
+    "sha256": "ff83c032fc0fc8018687562a1289bb7b063e10676f8471a83f167d04eb6b196c"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\port\\EmbeddingProvider.java",
+    "sha256": "dbb442a77e256a6eb38cff53ea651b8be45723ccfb93c5b3692d52aac0edbbc8"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\port\\VectorIndexManager.java",
+    "sha256": "05af17107fc07fc68a53fb753a588b56a126027ea310c296e2802aacb02d6f00"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\port\\VectorStore.java",
+    "sha256": "cbdc6ef7b2f051b0ec1b7d9f1dc289ce244b8012f4aea65f94d92697733410c7"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\tools\\EmbeddingDatasetGenerator.java",
+    "sha256": "1031a21b47c0cdce21056612cdad7d31486b5e858e1571cdf615e3a30e8874d8"
+  },
+  {
+    "path": "src\\main\\java\\com\\myapp\\tools\\FilterSelectivityWorkloadGenerator.java",
+    "sha256": "434728712f8bca1bd8ce56e8343a65981328cc991efda4dd7af3d38d5b945382"
+  },
+  {
+    "path": "src\\main\\resources\\application-milvus.yml",
+    "sha256": "bb9c0d6358d37e21f0a1b6342347f9dd8d536b0dcfd1c0ca3900b8e8f9c51c67"
+  },
+  {
+    "path": "src\\main\\resources\\application-opensearch.yml",
+    "sha256": "9e60f50475bfadea8ebe00bf93bb215439d2ac0dfa3fbd8dbcdea3f46259566f"
+  },
+  {
+    "path": "src\\main\\resources\\application-pgvector.yml",
+    "sha256": "15ad126313c535c1dfafb9b69bd49aa3bc3ae65601a7a6a22ff182c8584d06ff"
+  },
+  {
+    "path": "src\\main\\resources\\application-qdrant.yml",
+    "sha256": "e187ea2cd9b429b3dab08795ec8356842940fc8aa601bc516dd93c8bd6a3ac54"
+  },
+  {
+    "path": "src\\main\\resources\\application-weaviate.yml",
+    "sha256": "bd3f9ed7b29b1ec435bcbe1bedfa1aa42297a3712c7202099d2f8f51042a8879"
+  },
+  {
+    "path": "src\\main\\resources\\application.yml",
+    "sha256": "fd55d0e80e6d347ab4c31432e77b4c34d1597c95956a9ef282bfb198264964a2"
+  },
+  {
+    "path": "src\\main\\resources\\db\\migration\\V1__source_of_truth.sql",
+    "sha256": "7b5dab6649e85ce6a28c4128410e3a7e3f215259d57369924e476b1ccecec641"
+  },
+  {
+    "path": "src\\main\\resources\\db\\migration\\V2__benchmark_dataset_state.sql",
+    "sha256": "7daafbbfe9ffd56907cd186fddc1e30b5fd1ad93a789a02bb4956907c4a88b0b"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\VectorDbTestApplicationTests.java",
+    "sha256": "2e91344cfd7d2b6a2bc3c6dbeb8c179054cae621b864f7b049ce55e8ab675f35"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\benchmark\\ExactSearchEngineTest.java",
+    "sha256": "3f9d52851561baa1df412c53fdd641286f43ebea81e62999507cb9b034654a84"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\benchmark\\LatencyCollectorTest.java",
+    "sha256": "9e56e2263a3baef24a22a7992621834c6441320588b50f355ef389d4db1ffbce"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\benchmark\\QueryPartitionerTest.java",
+    "sha256": "ec9992cc3cf0b400e3eed415e69d6f3cccf9bc8e35eeb0803a14cd9c33d60579"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\benchmark\\QuerySegmentTest.java",
+    "sha256": "e51fad45fd16bb96fcab781dcbf6295ea6633383b7e2e492611d26704b3c73ae"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\benchmark\\RecallCalculatorTest.java",
+    "sha256": "1637e7e40b173654c48da73d11dba6133792c33dfd4fb5d6dbeb0876b309263a"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\benchmark\\RecallTargetSelectorTest.java",
+    "sha256": "c2ea0e9d4775dc49edc2e9551d0ec44b34b45bd14938c78b18cdd477bca8c0cc"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\benchmark\\ResourceCollectorTest.java",
+    "sha256": "78060fe5dd26ec65d27c28ec8e86206e2b4de034e386c1e2360022956357e7f1"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\benchmark\\ResultWriterTest.java",
+    "sha256": "cfb0073b2440a041ff910f64cfb8476007337cf5403646eb60cc7d36d91c08a1"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\dataset\\QuerySetLoaderTest.java",
+    "sha256": "e414f50e7edf04e9349d9b57ae64869c6d476bec900a0d51fec65f19c601a938"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\dataset\\VectorDatasetLoaderTest.java",
+    "sha256": "3bcb22dffc5c7fba93440aa8d20c6cfe6d8357430de2e0a922a093d99e457d43"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\infrastructure\\vector\\VectorIndexContractTest.java",
+    "sha256": "0cb10720e56a0aaacd78b14040d4445137f2c1054870ab5a1e7badef745bb4c2"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\infrastructure\\vector\\pgvector\\PgVectorIndexManagerTest.java",
+    "sha256": "95750f2fb1df0efc5af48200137bee11609ce0167c47690f3a52f9fd1a20ff74"
+  },
+  {
+    "path": "src\\test\\java\\com\\myapp\\infrastructure\\vector\\qdrant\\QdrantIndexManagerTest.java",
+    "sha256": "13c629226b093c1bf9e55a67efe2d006858e32789059c48b29477f2a6339f548"
+  },
+  {
+    "path": "build.gradle",
+    "sha256": "6679c117ee0acafa4443b900ef2da52e722087c01b6944617ac8734a4bb79b7a"
+  },
+  {
+    "path": "settings.gradle",
+    "sha256": "46df818b4e82b3757e0fbc7deb0fbdb6036734012c6f1e697771d380af945734"
+  },
+  {
+    "path": "scripts\\run-all-benchmarks.ps1",
+    "sha256": "ad54266e71ea4ee90a4558efd5536ab5ec7e892e208be7596106baeabcb1e61b"
+  },
+  {
+    "path": "docker-compose.yml",
+    "sha256": "f567debd9c0354ee245c891075d3f26a6f0aecfe04ff62da78f6a891c2f9fd26"
+  },
+  {
+    "path": "docker\\milvus\\user.yaml",
+    "sha256": "5f34c84c753d7c4621760cbf9fe4a7325c66a099cd72a9658d3d25cc7b89467f"
+  },
+  {
+    "path": "docker\\opensearch-jvector\\Dockerfile",
+    "sha256": "e7e22e2198a205c153531ab2232dee41535ad5c8eabf4b4ad76817fadd7f6b62"
+  }
+]

@@ -1,0 +1,94 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '4.1.1'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.myapp'
+version = '0.0.1-SNAPSHOT'
+description = 'VectorDBTest'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation 'org.springframework.boot:spring-boot-starter-actuator-test'
+	testImplementation 'org.springframework.boot:spring-boot-starter-data-jdbc-test'
+	testImplementation 'org.springframework.boot:spring-boot-starter-validation-test'
+	testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// PostgreSQL
+    runtimeOnly 'org.postgresql:postgresql'
+
+    // DB migration
+    implementation 'org.springframework.boot:spring-boot-starter-flyway'
+    runtimeOnly 'org.flywaydb:flyway-database-postgresql'
+
+    // pgvector JDBC type support
+    implementation 'com.pgvector:pgvector:0.1.6'
+
+    // External vector DB adapters intentionally share Java's HTTP client so that
+    // client-library overhead is controlled. pgvector uses JDBC by necessity.
+    // Milvus SDK is used only outside the timed search path to capture query-segment
+    // state for the mandatory drift diagnostic.
+    implementation 'io.milvus:milvus-sdk-java:3.0.1'
+
+    // Test
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+tasks.register('renderBenchmarkChart', JavaExec) {
+	group = 'benchmark'
+	description = 'Plot every saved measurement with p95 on X and Recall on Y; preserve historical inputs.'
+	classpath = sourceSets.main.runtimeClasspath
+	mainClass = 'com.myapp.tools.BenchmarkChartGenerator'
+	doFirst {
+		args providers.gradleProperty('chartInput').get(), providers.gradleProperty('chartOutput').get()
+	}
+}
+
+tasks.register('generateEmbeddings', JavaExec) {
+	group = 'benchmark'
+	description = 'Generate resumable BGE-M3 document and query embeddings through local Ollama.'
+	classpath = sourceSets.main.runtimeClasspath
+	mainClass = 'com.myapp.tools.EmbeddingDatasetGenerator'
+	args "--ollama-url=${providers.gradleProperty('ollamaUrl').getOrElse('http://localhost:11434')}",
+			"--model=${providers.gradleProperty('embeddingModel').getOrElse('bge-m3:latest')}",
+			"--dimension=${providers.gradleProperty('embeddingDimension').getOrElse('1024')}",
+			"--batch-size=${providers.gradleProperty('embeddingBatchSize').getOrElse('128')}",
+			"--documents=${providers.gradleProperty('embeddingDocuments').getOrElse('data/documents_10000.jsonl')}",
+			"--queries=${providers.gradleProperty('embeddingQueries').getOrElse('data/queries_300.jsonl')}",
+			"--document-output=${providers.gradleProperty('documentEmbeddingOutput').getOrElse('data/embeddings/document-vectors.jsonl')}",
+			"--query-output=${providers.gradleProperty('queryEmbeddingOutput').getOrElse('data/embeddings/query-vectors.jsonl')}",
+			"--query-definitions-output=${providers.gradleProperty('queryDefinitionsOutput').getOrElse('data/queries/queries.jsonl')}",
+			"--manifest-output=${providers.gradleProperty('embeddingManifestOutput').getOrElse('data/embeddings/embedding-manifest.json')}",
+			"--overwrite=${providers.gradleProperty('overwriteEmbeddings').getOrElse('false')}"
+}
+
+tasks.register('generateFilterSelectivityWorkloads', JavaExec) {
+	group = 'benchmark'
+	description = 'Create deterministic 1%, 10%, and 50% metadata-filter workloads without changing embeddings.'
+	classpath = sourceSets.main.runtimeClasspath
+	mainClass = 'com.myapp.tools.FilterSelectivityWorkloadGenerator'
+	args "--document-input=${providers.gradleProperty('selectivityDocumentInput').getOrElse('data/embeddings/document-vectors.jsonl')}",
+			"--query-input=${providers.gradleProperty('selectivityQueryInput').getOrElse('data/queries/queries.jsonl')}",
+			"--query-vector-input=${providers.gradleProperty('selectivityQueryVectors').getOrElse('data/embeddings/query-vectors.jsonl')}",
+			"--output-directory=${providers.gradleProperty('selectivityOutputDirectory').getOrElse('data/workloads/filter-selectivity')}",
+			"--overwrite=${providers.gradleProperty('overwriteSelectivityWorkloads').getOrElse('false')}"
+}

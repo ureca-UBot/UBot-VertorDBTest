@@ -1,0 +1,16 @@
+[
+  {"testId":"T01","database":"pgvector","engine":"PostgreSQL","indexType":"HNSW","searchParameterValues":[10,20,40,80,120,200,400,800,1000]},
+  {"testId":"T03","database":"pgvector","engine":"PostgreSQL","indexType":"IVFFlat","searchParameterValues":[1,2,3,4,5,6,8,10]},
+  {"testId":"T05","database":"qdrant","engine":"Native","indexType":"HNSW","searchParameterValues":[10,20,40,80,120,200,400,800,1000]},
+  {"testId":"T07","database":"weaviate","engine":"Native","indexType":"HNSW","searchParameterValues":[10,20,40,80,120,200,400,800,1000]},
+  {"testId":"T09","database":"weaviate","engine":"Native","indexType":"HFresh","searchParameterValues":[8,16,32,64,128,256,512,1024]},
+  {"testId":"T11","database":"milvus","engine":"Native","indexType":"HNSW","searchParameterValues":[10,20,40,80,120,200,400,800,1000]},
+  {"testId":"T13","database":"milvus","engine":"Native","indexType":"IVF_FLAT","searchParameterValues":[1,2,4,8,16,32,64,96,128]},
+  {"testId":"T15","database":"milvus","engine":"Native","indexType":"IVF_SQ8","searchParameterValues":[1,2,4,8,16,32,64,96,128]},
+  {"testId":"T17","database":"milvus","engine":"Native","indexType":"IVF_PQ","searchParameterValues":[1,2,4,8,16,32,64,96,128]},
+  {"testId":"T19","database":"milvus","engine":"Native","indexType":"DISKANN","searchParameterValues":[10,20,40,80,120,200,400,800,1000]},
+  {"testId":"T21","database":"opensearch","engine":"Lucene","indexType":"HNSW","searchParameterValues":[10,20,40,80,120,200,400,800,1000]},
+  {"testId":"T23","database":"opensearch","engine":"Faiss","indexType":"HNSW","searchParameterValues":[10,20,40,80,120,200,400,800,1000]},
+  {"testId":"T25","database":"opensearch","engine":"Faiss","indexType":"IVF","searchParameterValues":[1,2,4,8,16,32,64,96,128]},
+  {"testId":"T27","database":"opensearch","engine":"JVector","indexType":"DiskANN","searchParameterValues":[10,20,40,80,120,200,400,800,1000]}
+]

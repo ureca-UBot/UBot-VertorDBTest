@@ -1,0 +1,114 @@
+[
+  {
+    "suite": "com.myapp.benchmark.BenchmarkRunnerTest",
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8821360+09:00"
+  },
+  {
+    "suite": "com.myapp.benchmark.BenchmarkScenarioTest",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8821360+09:00"
+  },
+  {
+    "suite": "com.myapp.benchmark.BenchmarkSummaryTest",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8821360+09:00"
+  },
+  {
+    "suite": "com.myapp.benchmark.ExactSearchEngineTest",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8831323+09:00"
+  },
+  {
+    "suite": "com.myapp.benchmark.LatencyCollectorTest",
+    "tests": 3,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8831323+09:00"
+  },
+  {
+    "suite": "com.myapp.benchmark.QueryPartitionerTest",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8831323+09:00"
+  },
+  {
+    "suite": "com.myapp.benchmark.QuerySegmentTest",
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8831323+09:00"
+  },
+  {
+    "suite": "com.myapp.benchmark.RecallCalculatorTest",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8831323+09:00"
+  },
+  {
+    "suite": "com.myapp.benchmark.ResourceCollectorTest",
+    "tests": 3,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8831323+09:00"
+  },
+  {
+    "suite": "com.myapp.benchmark.ResultWriterTest",
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8831323+09:00"
+  },
+  {
+    "suite": "com.myapp.dataset.QuerySetLoaderTest",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8831323+09:00"
+  },
+  {
+    "suite": "com.myapp.dataset.VectorDatasetLoaderTest",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8831323+09:00"
+  },
+  {
+    "suite": "com.myapp.infrastructure.vector.pgvector.PgVectorIndexManagerTest",
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8831323+09:00"
+  },
+  {
+    "suite": "com.myapp.infrastructure.vector.qdrant.QdrantIndexManagerTest",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8831323+09:00"
+  },
+  {
+    "suite": "com.myapp.infrastructure.vector.VectorIndexContractTest",
+    "tests": 3,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8831323+09:00"
+  },
+  {
+    "suite": "com.myapp.VectorDbTestApplicationTests",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "lastWrittenAt": "2026-09-11T22:05:14.8831323+09:00"
+  }
+]

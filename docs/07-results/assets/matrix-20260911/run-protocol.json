@@ -1,0 +1,51 @@
+{
+  "startedAt": "2026-09-11T18:48:20.6720875+09:00",
+  "projectRoot": "D:\\finalproject\\UBot-VertorDBTest",
+  "gitCommit": "14521c95a59de9a90a59496f9c4dbcbb71381a7d",
+  "jarSha256": "8840ef573c6c02823bc69dfdd21c7521242997bd1e4c82a19a439615ff7290b3",
+  "repetitions": 3,
+  "matrixCases": 28,
+  "expectedResultRows": 84,
+  "expectedIndexRebuilds": 42,
+  "expectedTimedSearches": 84000,
+  "calibrationQueryCount": 100,
+  "evaluationQueryCount": 200,
+  "topK": 10,
+  "concurrency": 10,
+  "warmupIterations": 1,
+  "measurementIterations": 5,
+  "cpuBudget": 4,
+  "memoryBudgetBytes": 8589934592,
+  "targetRecallTolerance": 0.01,
+  "driftThreshold": 0.05,
+  "decisionRecallMinimum": 0.95,
+  "decisionP95LimitMs": 30,
+  "decisionRamLimitBytes": 2147483648,
+  "dockerServer": "29.7.2",
+  "dockerCpus": 16,
+  "dockerMemoryBytes": 25159159808,
+  "dbOrder": [
+    [
+      "pgvector",
+      "qdrant",
+      "weaviate",
+      "milvus",
+      "opensearch"
+    ],
+    [
+      "weaviate",
+      "opensearch",
+      "pgvector",
+      "qdrant",
+      "milvus"
+    ],
+    [
+      "milvus",
+      "qdrant",
+      "opensearch",
+      "weaviate",
+      "pgvector"
+    ]
+  ],
+  "preRunCorrection": "pgvector IVFFlat index creation deferred until after vector load"
+}
