@@ -44,9 +44,15 @@
   },
   "recommended_benchmark": {
     "top_k": 10,
-    "distance_metric": "cosine (or the exact metric/normalization chosen for your BGE-M3 pipeline; keep identical across DBs)",
+    "distance_metric": "cosine",
+    "concurrency": 10,
+    "rebuild_repetitions": 5,
+    "query_split": {
+      "calibration": 100,
+      "evaluation": 200
+    },
     "reference_recall_levels": [0.90, 0.95],
-    "measurement_protocol": "search-parameter-sweep-v1",
+    "measurement_protocol": "fairness-sweep-v2",
     "note": "Generate document/query embeddings once and reuse the exact same float vectors in every Vector DB."
   }
 }

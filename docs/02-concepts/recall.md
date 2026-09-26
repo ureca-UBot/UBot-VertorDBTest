@@ -43,12 +43,17 @@ int denominator = Math.min(k, exact.size());
 그래서 이런 질의는 Recall 평균에서 빼고 **빈 결과를 반환했는지 별도 기록**합니다. 이 검사로 전체 측정 점을 제거하지 않습니다.
 
 ```java
-if (recallCalculator.hasGroundTruth(exact)) {
-    scores.recordScored(recallCalculator.recallAtK(exact, approximate, topK));
+// BenchmarkRunner.runScenario — 검색 타이머가 닫힌 뒤 실행
+if (!truth.strictTopK().isEmpty()) {
+    tieRecall = violations.isEmpty() ? recallCalculator.tieAwareRecallAtK(truth, outcome.approximate(), scenario.topK()) : 0;
+    strictRecall = violations.isEmpty() ? recallCalculator.recallAtK(truth.strictTopK(), outcome.approximate(), scenario.topK()) : 0;
+    scores.recordScored(tieRecall, strictRecall);
 } else {
-    scores.recordEmptyGroundTruth(recallCalculator.returnedNothing(approximate));
+    scores.recordEmptyGroundTruth(recallCalculator.returnedNothing(outcome.approximate()));
 }
 ```
+
+응답 계약 위반(`violations`)이 있으면 두 Recall 모두 0으로 채점합니다.
 
 결과 파일에 구간별로 세 값이 남습니다.
 

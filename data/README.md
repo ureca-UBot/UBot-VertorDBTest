@@ -70,5 +70,5 @@ embedding은 바꾸지 않고 metadata만 1%/10%/50% cohort로 확장한다.
 ## 주의
 
 이 데이터는 재현 가능한 DB 비교용 합성 데이터다.
-실제 서비스 선정 직전에는 실제 서비스 문서/질의 분포로 동일 benchmark를 한 번 더 수행하는 것이 적절하다.
+DB 선정(pgvector)은 이 데이터의 측정 결과와 운영 편의성으로 내렸다. 실제 FAQ/질의 분포로 다시 측정하려면 `scripts/run-real-workload-validation.ps1`을 쓴다.
 `run-real-workload-validation.ps1`은 문서 또는 query에서 `synthetic:true`를 발견하면 실행을 거부한다.

@@ -1,16 +1,16 @@
 # 실행 결과 문서
 
-현재 기준은 **fairness-v2의 620개 측정**이다. 14개 DB·엔진·인덱스 구성, 124개 고정 검색 설정을 5회 재구축해 측정했다. 예상 서비스 규모는 청크 1천~1만 개이며, 이번 합성 10k 결과를 6개 산포도로 검토한다. 자동 승자·2GiB RAM·30ms p95 탈락 기준을 적용하지 않는다.
+**결론은 pgvector 사용이다.** 근거 측정은 **fairness-v2의 620개 측정**이다. 14개 DB·엔진·인덱스 구성, 124개 고정 검색 설정을 5회 재구축해 측정했다. 예상 서비스 규모는 청크 1천~1만 개이며, 합성 10k 결과를 6개 산포도로 비교했다.
 
 ## 현재 읽을 문서
 
 | 문서 | 내용 |
 |---|---|
+| [선정 결론: pgvector](decision.md) | 결정 근거 수치, 편의성, UBot-BE 현재 설정과의 차이, 남은 확인 |
 | [최신 다축 비교 보고서](fairness-v2-results-20260913.md) | 6개 산포도, 프로젝트 규모, 실제 관측·경고·미검증 구분 |
 | [상호작용 산포도](assets/fairness-v2-20260912-1826/scatter-interactive.html) | 범례로 구성을 표시하고 같은 설정의 5회 반복값 확인 |
 | [124개 설정 수치 부록](assets/fairness-v2-20260912-1826/parameter-statistics.md) | Recall 평균/범위, median p50/p95/p99/QPS/자원 |
 | [근거와 검증 안내](assets/fairness-v2-20260912-1826/README.md) | 원시 지표 사본, 정밀 집계, 해시와 그림 재생성 |
-| [비교 결과 해석 기준](decision.md) | 같은 Recall 비교, 실행 예산과 SLO 분리, eligible 주의 |
 | [문서 전체 검토 기록](document-review-20260913.md) | 현재·구버전·서비스·원본 문서 검토 범위와 보존 원칙 |
 
 실행 조건은 [현행 프로토콜](../03-benchmark-design/fairness-v2.md), 저장 필드와 집계는 [결과 형식](../06-implementation/result-format.md)을 확인한다. 아직 실제 서비스 데이터·독립 holdout·1k·필터 선택도별 측정은 하지 않았다.

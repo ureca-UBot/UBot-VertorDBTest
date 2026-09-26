@@ -1,6 +1,6 @@
 # 결과 형식
 
-현재 형식은 `fairness-sweep-v2`입니다. 모든 파라미터·반복의 실제 측정을 보존합니다. **summary JSON에는 기존 `decision.eligible` 판정이 생성됩니다.** 코드의 기본 Recall 0.95·p95 30ms·RAM 2GiB와 holdout 미실시 등이 결합된 값이므로 현재 프로젝트의 산포도 기반 후보 선정에는 사용하지 않습니다. 30ms·2GiB는 합의된 서비스 조건이 아니며 해당 코드가 제거된 상태도 아닙니다.
+현재 형식은 `fairness-sweep-v2`입니다. 모든 파라미터·반복의 실제 측정을 보존합니다. **summary JSON에는 기존 `decision.eligible` 판정이 생성됩니다.** 코드의 기본 Recall 0.95·p95 30ms·RAM 2GiB와 holdout 미실시 등이 결합된 값이므로 선정(pgvector)에 사용하지 않았습니다. 30ms·2GiB는 합의된 서비스 조건이 아니며 해당 코드는 남아 있습니다.
 
 ## 디렉터리
 
@@ -99,6 +99,6 @@ JSON의 `metrics`와 CSV의 지표별 접미사에 다음을 기록합니다.
 
 작은 점은 실제 회차, 큰 기호는 같은 설정 5회의 Recall 평균/나머지 지표 중앙값입니다. 최소–최대 선은 반복 범위이지 신뢰구간이 아닙니다. 실행의 참고선 0.90·0.95 외에 최신 그림에는 0.80을 시각적 비교용으로 추가했습니다. 필요 시 ±0.01 같은 근접 범위와 실제 Recall 차이를 설명할 수 있지만 이번 sweep은 해당 범위로 자동 후보를 선택하거나 최근접값으로 대체하지 않았습니다. RAM은 합격선이 아닌 관측 지표이고 DB 실행 제한 8GiB·OpenSearch 힙 4GiB와 구별합니다.
 
-워밍업 미달 170개와 query audit으로 확인한 Milvus DISKANN 변동 5개를 숨기지 않습니다. 사후 `stabilityDiagnostics.verified=true`만으로 이 변동을 정상이라고 덮지 않으며 의심 결과는 확정 선정 판단을 보류합니다. 서비스 선정은 실제 프로젝트 1k~10k 분포와 미실시 검증을 고려해 사람이 수행합니다.
+워밍업 미달 170개와 query audit으로 확인한 Milvus DISKANN 변동 5개를 숨기지 않습니다. 사후 `stabilityDiagnostics.verified=true`만으로 이 변동을 정상이라고 덮지 않으며 의심 결과는 확정 판단에 쓰지 않습니다. 서비스 선정 결과와 근거는 [선정 결론](../07-results/decision.md)에 있습니다.
 
 [과거 84개 결과](../07-results/matrix-results-20260911.md)의 스키마와 목표 관련 필드는 역사 자료에만 남습니다. 그 원본을 새 sweep 측정으로 해석하지 않습니다.

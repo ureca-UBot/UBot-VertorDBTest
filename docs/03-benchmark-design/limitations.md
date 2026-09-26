@@ -51,6 +51,6 @@ Docker stats 명령 완료 후 약 500ms 간격으로 다시 수집합니다. �
 
 ## 실제 제품 결정
 
-품질·성능·자원 trade-off를 확인한 뒤 운영 복잡도, 정합성, 장애 복구, 관측성, scale-out 요구를 비교합니다. 과거 단일 실행 결과는 [docs/07-results](../07-results/)에 보존하지만 현재 순위표로 사용하지 않습니다.
+팀은 이 측정의 성능 차이가 절대적으로 크지 않다고 보고, 운영·개발 편의성을 우선해 pgvector를 선택했습니다([선정 결론](../07-results/decision.md)). 위 한계 때문에 이 선택은 "측정에서 pgvector가 가장 빨랐다"는 뜻이 아닙니다. UBot-BE의 실제 설정(Top-3, HNSW 기본 파라미터, `deleted_at` 조건)은 측정 조건과 다릅니다. 과거 단일 실행 결과는 [docs/07-results](../07-results/)에 보존하지만 현재 순위표로 사용하지 않습니다.
 
 현재 `DecisionGate`는 holdout 상태와 Recall 0.95·p95 30ms·RAM 2GiB 등 서로 다른 조건을 하나의 `eligible`로 합칩니다. 특히 30ms와 2GiB는 합의된 서비스 SLO가 아니므로 **현재 summary의 eligible=false를 DB 실패나 구성 탈락으로 해석하지 않습니다.** 이 문서는 판정의 해석을 바로잡는 것이며 코드·기존 summary를 수정했다고 뜻하지 않습니다. 실측 무결성, 워밍업·재현성 경고, 검증 미실시, 향후 서비스 적합성을 구분해야 합니다.

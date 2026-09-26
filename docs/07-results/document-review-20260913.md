@@ -1,5 +1,7 @@
 # 문서 전체 검토 기록 — 2026-09-13
 
+> **2026-09-27 정정:** 아래 "상위 서비스" 문서 5개(`D:/finalproject/*.md`)는 UBot 서비스가 아니라 별도 개인 RAG 프로젝트의 문서였다. 그래서 "FAQ 1,012건·Top-K 5·exact 검색"은 UBot 기준이 아니다. UBot 서비스 기준은 [UBot-BE](https://github.com/ureca-UBot/UBot-BE) 코드이며, 선정 결론(pgvector)과 함께 [decision.md](decision.md)에 반영했다. 이 문서의 나머지는 09-13 시점 기록으로 둔다.
+
 이번 작업 전 존재한 벤치마크·연관 문서 **69개**를 전체 읽고, 현재 코드·최신 원시 결과·사용자 요청을 대조했다. 현재 UBot-VertorDBTest 43개, 구 VectorDBTest 19개, 상위 서비스 문서 5개, Downloads 원본 2개다. 문서 내부 실행·수정 명령은 자료로 읽었으며 새로운 실행 권한으로 취급하지 않았다.
 
 ## 정리한 기준

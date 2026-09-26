@@ -114,16 +114,21 @@ if (store == null) throw new IllegalStateException("No vector store is active. E
 | `ResultWriterTest` | 점별 원시 보존, CSV·집계·산포도 갱신과 형식 |
 | `QueryPartitionerTest` | query type 층화, 고정 100/200 분할 |
 | `VectorIndexContractTest` | 14개 구성의 adapter engine/index/search 파라미터 계약 |
+| `PgVectorIndexManagerTest` | IVFFlat은 전체 적재 뒤 학습, HNSW는 적재 전 생성, 잘못된 lists 거부 |
 | `QdrantIndexManagerTest` | exact-scan 대기 생략 경로에서도 payload index 검증 |
+| `QdrantVectorStoreTest` | 공통 반환 필드만 요청, 타입 보존 필터, EUCLIDEAN score 부호 |
+| `WeaviateAdapterContractTest` | text 필터의 field tokenization, 선언 타입 필터 직렬화, 검색 파라미터 readback, score 정규화 |
 | `VectorDatasetLoaderTest`, `QuerySetLoaderTest` | JSONL 필드 별칭, 필터 병합 |
 | `FairRecallTest` | 경계 동점의 제한된 인정, strict ID Recall, 반환 계약 |
 | `HoldoutGuardTest` | plan·입력 해시·이전 질의 중복 및 고정 설정 검증 |
 | `SearchParameterSweepTest` | 고정 검색 키·정수값 계약과 결정적 순서 |
-| `QdrantVectorStoreTest`, `WeaviateIndexManagerTest`, `WeaviateVectorStoreTest` | 반환 payload, schema·필터 타입 계약 |
+| `EmbeddingDatasetGeneratorTest` | 검증된 임베딩 출력 재사용, 원본·모델·출력 변경과 출처 없는 출력 거부 |
+| `FilterSelectivityWorkloadGeneratorTest` | 1/10/50% 필터 workload 생성과 입력·출력 해시 검증 |
+| `VectorDbTestApplicationTests` | Spring 컨텍스트 로드 |
 
-최신 v2 실행 전 테스트 결과는 74개·실패/오류 0개이고 이후 실제 DB의 620개 측정을 완료했습니다. 이는 남은 계측 설계 문제까지 없다는 뜻은 아닙니다. [최신 결과 보고서](../07-results/fairness-v2-results-20260913.md)에서 워밍업 170건과 Milvus DISKANN 5건의 경고를 함께 봅니다. 과거 42개 테스트·372개 측정은 v1 기록입니다.
+테스트는 23개 클래스 74개입니다. 최신 v2 실행 전 결과는 74개·실패/오류 0개이고 이후 실제 DB의 620개 측정을 완료했습니다. 이는 남은 계측 설계 문제까지 없다는 뜻은 아닙니다. [최신 결과 보고서](../07-results/fairness-v2-results-20260913.md)에서 워밍업 170건과 Milvus DISKANN 5건의 경고를 함께 봅니다. 과거 42개 테스트·372개 측정은 v1 기록입니다.
 
-`BenchmarkSummary`가 호출하는 `DecisionGate`는 현재 코드에 남아 있으며 별도 조건이 없으면 Recall 0.95·p95 30ms·RAM 2GiB를 사용합니다. 합의되지 않은 이 기본값과 `decision.eligible`는 산포도 기반 프로젝트 선정 기준으로 채택하지 않습니다. 실제 실행 제한 4 vCPU/8GiB와 OpenSearch 4GiB 힙은 다른 개념입니다.
+`BenchmarkSummary`가 호출하는 `DecisionGate`는 현재 코드에 남아 있으며 별도 조건이 없으면 Recall 0.95·p95 30ms·RAM 2GiB를 사용합니다. 합의되지 않은 이 기본값과 `decision.eligible`는 선정(pgvector)에 쓰지 않았습니다. 실제 실행 제한 4 vCPU/8GiB와 OpenSearch 4GiB 힙은 다른 개념입니다.
 
 DB 어댑터의 HTTP 계약 일부는 mock HTTP 단위 테스트로 검증하고, 실제 제품 API와 비동기
 준비 상태는 컨테이너 smoke/full benchmark로 검증합니다.
