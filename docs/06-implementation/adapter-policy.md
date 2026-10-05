@@ -105,11 +105,11 @@ vector.weaviate.filter-fields: {tenant_id: text, status: text, ...}
 vector.qdrant.payload-index-fields: {tenant_id: keyword, status: keyword, ...}
 ```
 
-이미 지원하는 scalar 타입의 필터 키 추가는 YAML에서 선언합니다. 새로운 타입·연산은 `MetadataContract`, `VectorFilter`, 정확 검색 및 모든 어댑터를 함께 검토합니다. JSON 숫자 표현 2/2.0은 같게 비교하되 문자열/boolean과 강제 변환하지 않고 키별 혼합 타입은 사전 거부합니다. Weaviate text equality는 `tokenization: field`, pgvector는 JSONB equality를 사용합니다.
+이미 지원하는 scalar 타입의 필터 키 추가는 YAML에서 선언하고 새로운 타입·연산은 `MetadataContract`, `VectorFilter`, 정확 검색 및 모든 어댑터를 함께 검토합니다. JSON 숫자 표현 2/2.0은 같게 비교하되 문자열/boolean과 강제 변환하지 않고 키별 혼합 타입은 사전 거부합니다. Weaviate text equality는 `tokenization: field`, pgvector는 JSONB equality를 사용합니다.
 
 ## 10. 관측과 선정 기준을 분리합니다
 
-입력·응답·자원 수집의 유효성 검사와 서비스 성능 판정은 다릅니다. 어댑터는 측정값을 보존할 뿐 선정하지 않습니다. 원시 경고점을 지우지 않습니다. 선정 결과(pgvector)는 사람이 다축 산포도와 5회 반복 변동을 보고 내렸으며 [선정 결론](../07-results/decision.md)에 있습니다. 코드의 `DecisionGate` 기본 2GiB·30ms는 합의된 기준이 아니어서 선정에 쓰지 않았고, 코드는 남아 있습니다.
+입력·응답·자원 수집의 유효성 검사와 서비스 성능 판정은 다릅니다. 어댑터는 측정값을 보존할 뿐 선정하지 않습니다. 원시 경고점을 지우지 않습니다. 선정 결과(pgvector)는 사람이 다축 산포도와 5회 반복 변동을 보고 내렸으며 [선정 결론](../07-results/decision.md)에 있습니다. 코드의 `DecisionGate` 기본 2GiB·30ms는 합의된 기준이 아니어서 선정에 쓰지 않았고 코드는 남아 있습니다.
 
 ## 새 어댑터 추가 체크리스트
 

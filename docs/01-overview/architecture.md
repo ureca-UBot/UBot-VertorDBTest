@@ -59,8 +59,8 @@ long elapsed = System.nanoTime() - started;
 ## Source of Truth
 
 원본 문서와 청크는 PostgreSQL에 보관합니다(`V1__source_of_truth.sql`, Spring Data JDBC).
-`BenchmarkSourceOfTruthSynchronizer`가 벡터 JSONL을 200개 원문과 10,000개 청크로 동기화하고,
-`benchmark_dataset_state`에 입력 SHA-256과 건수를 기록합니다. 동일 스냅샷이면 재적재하지 않으며,
+`BenchmarkSourceOfTruthSynchronizer`가 벡터 JSONL을 200개 원문과 10,000개 청크로 동기화하고
+`benchmark_dataset_state`에 입력 SHA-256과 건수를 기록합니다. 동일 스냅샷이면 재적재하지 않으며
 불일치한 상태에서 `rebuildAndLoad=false`이면 실행을 거부합니다. Flyway는 기존 비어 있지 않은
 개발 볼륨도 baseline 0에서 V1·V2를 적용합니다.
 

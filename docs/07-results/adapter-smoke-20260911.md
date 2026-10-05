@@ -24,7 +24,7 @@ DB 전체 순서를 교차한 T01~T28 공식 순위표가 아니므로 DB 간 �
 stateBefore.querySegments = []
 ```
 
-인 경우가 있었습니다. calibration은 아직 query node에 segment가 보이지 않는 전환 경로를 측정했고,
+인 경우가 있었습니다. calibration은 아직 query node에 segment가 보이지 않는 전환 경로를 측정했고
 본 측정 뒤에는 10,000-row Sealed segment가 나타나 같은 파라미터의 Recall이 크게 달라졌습니다.
 
 `awaitReady()`를 다음 조건 모두가 참일 때만 반환하도록 수정했습니다.

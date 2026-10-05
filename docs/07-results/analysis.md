@@ -70,7 +70,7 @@ vector.qdrant.payload-index-fields:
   ...
 ```
 
-컬렉션 생성 후 `metadata.<키>`에 payload index를 만들고,
+컬렉션 생성 후 `metadata.<키>`에 payload index를 만들고
 `awaitReady()`가 `payload_schema`에 선언 필드가 모두 있는지 확인합니다.
 없으면 측정을 시작하지 않고 실패합니다.
 
@@ -104,7 +104,7 @@ p50은 12.53→13.97로 오르는데 p95는 29.73→27.88로 움직이지 않습
 
 ### 수정
 
-`LatencyCollector`가 필터/무필터 계열을 따로 모으고,
+`LatencyCollector`가 필터/무필터 계열을 따로 모으고
 결과에 `filtered_*`와 `unfiltered_*` 컬럼 12개를 추가했습니다.
 SVG 차트의 x축도 합산 p95에서 unfiltered p95로 바꿨습니다.
 
@@ -170,7 +170,7 @@ DB 간 비교가 불가능합니다. 0.95에서만 4개 제품 비교가 가능�
 5. `WITHIN_TOLERANCE` 7행과 본 측정 `target_met=true` 7행의 교집합은 6행이다.
    Milvus 0.90·0.95의 양방향 drift를 별도 상태로 드러냈다.
 6. PostgreSQL에 원문 200건·청크 10,000건과 데이터 해시가 기록됐고 Flyway V1·V2가 적용됐다.
-7. 애플리케이션 오류 로그 5개는 비어 있고, 결과 JSON·CSV의 분리 지표 누락도 없다.
+7. 애플리케이션 오류 로그 5개는 비어 있고 결과 JSON·CSV의 분리 지표 누락도 없다.
 
 재실행 전 확인 항목은 아래와 같았다.
 
@@ -187,7 +187,7 @@ DB 간 비교가 불가능합니다. 0.95에서만 4개 제품 비교가 가능�
 ## 배운 것
 
 **조용한 성능 저하가 가장 위험합니다.**
-Qdrant는 오류를 내지 않았습니다. 그냥 느렸고, 그 숫자가 그대로 표에 들어갔습니다.
+Qdrant는 오류를 내지 않았습니다. 그냥 느렸고 그 숫자가 그대로 표에 들어갔습니다.
 
 그래서 설정 누락으로 제품이 느린 경로에 빠지면 측정 대신 실패하도록 바꿨습니다.
 [../06-implementation/adapter-policy.md](../06-implementation/adapter-policy.md)의 8번 규칙입니다.

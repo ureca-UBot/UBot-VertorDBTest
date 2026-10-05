@@ -9,7 +9,7 @@
 > 결함 수정 후 재실행은 완료했으며 결과는
 > [benchmark-results-rerun.md](benchmark-results-rerun.md)에 있다.
 >
-> 측정 후 세 가지 결함을 확인했다. Qdrant payload index 누락으로 필터 질의가 full scan이 됐고,
+> 측정 후 세 가지 결함을 확인했다. Qdrant payload index 누락으로 필터 질의가 full scan이 됐고
 > 필터 질의 10%가 합산 p95·p99를 지배했으며 전체 Recall과 무필터 latency의 비교 모집단도
 > 일치하지 않았다.
 > 따라서 **아래 판정 1번과 3번은 성립하지 않는다.**

@@ -161,9 +161,9 @@ benchmark.container-names: [vector-qdrant]
 
 ## CPU가 0.01% 같은 비현실적인 값
 
-짧은 검색이 끝난 뒤 유휴 CPU 표본을 합치면 부하 중 사용량이 과소 집계될 수 있습니다. 실제로 최초 sweep 시도 `sweep-20260911-215805`의 26개 기록에서 계측 문제를 발견했습니다. 해당 기록과 중단 사유는 별도로 보존했습니다.
+짧은 검색이 끝난 뒤 유휴 CPU 표본을 합치면 부하 중 사용량이 과소 집계될 수 있습니다. 실제로 최초 sweep 시도 `sweep-20260911-215805`의 26개 기록에서 계측 문제를 발견했고 해당 기록과 중단 사유는 별도로 보존했습니다.
 
-현재 구현은 1,000요청 단위를 최소 30초·자원 표본 30개를 모두 충족하도록 반복하고, 수집 시작·종료가 모두 검색 구간 안인 표본만 평균·최대에 사용합니다. 종료 직후 유휴 표본을 추가하지 않습니다. 실행 스크립트의 `-MinimumMeasurementTimeMs 30000 -MinimumResourceSamples 30` 또는 애플리케이션의 `benchmark.minimum-measurement-time-ms`·`benchmark.minimum-resource-samples`를 확인합니다. 30표본을 얻기 위해 실제 시간은 30초보다 길어질 수 있습니다.
+현재 구현은 1,000요청 단위를 최소 30초·자원 표본 30개를 모두 충족하도록 반복하고 수집 시작·종료가 모두 검색 구간 안인 표본만 평균·최대에 사용합니다. 종료 직후 유휴 표본을 추가하지 않습니다. 실행 스크립트의 `-MinimumMeasurementTimeMs 30000 -MinimumResourceSamples 30` 또는 애플리케이션의 `benchmark.minimum-measurement-time-ms`·`benchmark.minimum-resource-samples`를 확인합니다. 30표본을 얻기 위해 실제 시간은 30초보다 길어질 수 있습니다.
 
 [과거 v1의 372개 결과](../07-results/sweep-results-20260911.md)는 검색 구간 최소 5,001ms·자원 표본 최소 2개·CPU/RAM 누락 0개였습니다. 최신 v2 620점은 검색 구간 최소 **60,210ms**, 자원 표본 최소 **30개**, 자원 증거 불완전 0개입니다. 이 둘의 조건을 합치지 않습니다. 숫자가 작다는 이유만으로 버리지 않고 수집 시점·실제 부하·표본 수를 함께 확인합니다.
 
@@ -177,7 +177,7 @@ benchmark.container-names: [vector-qdrant]
 
 ## summary에서 모든 구성이 eligible=false다
 
-현재 `DecisionGate`는 holdout 미실시·워밍업 경고·성능 조건을 하나의 판정에 합치고, 별도 임계값이 없으면 Recall 0.95·p95 30ms·RAM 2GiB를 적용합니다. 최신 실행은 탐색형이므로 모두 최종 독립 검증 조건을 충족하지 않은 상태이며, **30ms·2GiB는 합의된 서비스 기준도 아닙니다.** 이를 DB 장애나 전체 측정 무효로 해석하지 않습니다.
+현재 `DecisionGate`는 holdout 미실시·워밍업 경고·성능 조건을 하나의 판정에 합치고 별도 임계값이 없으면 Recall 0.95·p95 30ms·RAM 2GiB를 적용합니다. 최신 실행은 탐색형이므로 모두 최종 독립 검증 조건을 충족하지 않은 상태이며 **30ms·2GiB는 합의된 서비스 기준도 아닙니다.** 이를 DB 장애나 전체 측정 무효로 해석하지 않습니다.
 
 코드와 기존 summary는 그대로 보존합니다. 현재 산포도 비교에서는 해당 자동 판정을 선정 근거로 쓰지 않고 측정 무결성·품질 경고·미실시 검증을 나눠 읽습니다. DB 합계 4 vCPU/8GiB와 OpenSearch의 4GiB 힙은 실행 조건이며 RAM Avg/Max는 관측 비교 지표입니다.
 
@@ -185,7 +185,7 @@ benchmark.container-names: [vector-qdrant]
 
 ## 워밍업 경고 또는 Milvus verified=true인데 측정 중 Recall이 변한다
 
-최신 620점 중 워밍업 경고는 170점입니다. 200질의 pass에서 최근 3회 p95 변동 폭을 검사한 결과이며, 경고가 약 60초 본 측정 전체의 무효를 뜻하지는 않습니다. 반대로 통과도 본 측정 안정성을 보증하지 않습니다.
+최신 620점 중 워밍업 경고는 170점입니다. 200질의 pass에서 최근 3회 p95 변동 폭을 검사한 결과이며 경고가 약 60초 본 측정 전체의 무효를 뜻하지는 않습니다. 반대로 통과도 본 측정 안정성을 보증하지 않습니다.
 
 Milvus의 별도 진단은 본 측정 뒤 수행하므로 측정 중 변동을 놓칠 수 있습니다. DISKANN 5점에서는 같은 질의의 Recall 변동이 확인됐는데도 `verified=true`였습니다. query audit·검색 설정·index/segment 상태를 함께 확인하고 경고를 보존합니다. 전체 620점이나 Milvus 전부를 버리지 않으며 진단 결함이 수정됐다고 단정하지 않습니다. 구체적인 대상은 [최신 결과 보고서](../07-results/fairness-v2-results-20260913.md)에 있습니다.
 
@@ -193,7 +193,7 @@ Milvus의 별도 진단은 본 측정 뒤 수행하므로 측정 중 변동을 �
 
 ## 실행 중 CSV 갱신이 실패한다
 
-Windows에서 CSV를 독점적으로 연 프로그램은 Java의 임시 파일 교체를 막을 수 있습니다. 파일을 연 도구를 확인하고, 실행 중 조회는 `FileShare.ReadWrite | FileShare.Delete`로 읽습니다. 과거 v1 실행의 로컬 `benchmark-result/sweep-20260911-220549/provenance/progress.ps1`이 그 예이며 현재 실행기가 자동으로 만드는 파일은 아닙니다. 일반 `Import-Csv` 예시는 실행 완료 뒤 사용합니다.
+Windows에서 CSV를 독점적으로 연 프로그램은 Java의 임시 파일 교체를 막을 수 있습니다. 파일을 연 도구를 확인하고 실행 중 조회는 `FileShare.ReadWrite | FileShare.Delete`로 읽습니다. 과거 v1 실행의 로컬 `benchmark-result/sweep-20260911-220549/provenance/progress.ps1`이 그 예이며 현재 실행기가 자동으로 만드는 파일은 아닙니다. 일반 `Import-Csv` 예시는 실행 완료 뒤 사용합니다.
 
 ---
 
@@ -245,7 +245,7 @@ Qdrant와 Weaviate는 내부 id로 UUID를 씁니다. 어댑터가 변환된 UUI
 | Milvus | index/load 상태와 query-node Sealed/Flushed segment row 합계 |
 | pgvector | `enable_seqscan=off`가 적용됐는지 (`force-index-scan: true`) |
 
-`awaitReady()`가 이 장벽을 담당하지만, 임계값 설정이 바뀌면 우회될 수 있습니다.
+`awaitReady()`가 이 장벽을 담당하지만 임계값 설정이 바뀌면 우회될 수 있습니다.
 
 ---
 

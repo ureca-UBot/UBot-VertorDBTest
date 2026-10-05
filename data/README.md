@@ -2,7 +2,7 @@
 
 이 데이터셋은 pgvector / Qdrant / Weaviate / Milvus / OpenSearch를 동일 조건에서 비교하기 위한 합성 기술문서 코퍼스다.
 
-실제 프로젝트의 예상 범위는 1,000~10,000개 청크다. 현재 완료 결과는 이 합성 데이터 10,000개만 사용했으며, 1k 규모와 실제 프로젝트 분포의 검증을 대신하지 않는다.
+실제 프로젝트의 예상 범위는 1,000~10,000개 청크다. 현재 완료 결과는 이 합성 데이터 10,000개만 사용했으며 1k 규모와 실제 프로젝트 분포의 검증을 대신하지 않는다.
 
 ## 파일
 
@@ -23,7 +23,7 @@
 - `embeddings/embedding-manifest.json`
 - `queries/queries.jsonl`
 
-동일한 vector 파일을 모든 Vector DB에 재사용한다. 생성·검증 명령은 `./gradlew generateEmbeddings`이며,
+동일한 vector 파일을 모든 Vector DB에 재사용한다. 생성·검증 명령은 `./gradlew generateEmbeddings`이며
 완성된 출력의 provenance가 검증되면 다시 생성하지 않고 재사용한다. manifest의 model digest와 SHA-256이 실험 데이터 동일성의 기준이다.
 
 DB benchmark에서는 embedding 생성 시간을 latency에 포함하지 않는다.

@@ -51,13 +51,13 @@ ef_construction = 128
 
 ## 전체 파라미터 sweep
 
-`searchParameters: {}`이면 `searchParameterValues` 또는 기본 그리드 전체를 측정합니다. 예를 들어 `[16, 32, 64, 96, 128]`에서 각 값의 Recall·latency·QPS·CPU·RAM을 모두 저장합니다. 아래 `repetitions: 3`은 호출 형식 예시이며 현재 기본값이나 완료 실행의 횟수가 아닙니다. [fairness-v2 완료 실행](../07-results/fairness-v2-results-20260913.md)은 전체 재구축 5회이고, 현재 API도 `rebuildAndLoad=true`일 때 매 repetition 재구축합니다.
+`searchParameters: {}`이면 `searchParameterValues` 또는 기본 그리드 전체를 측정합니다. 예를 들어 `[16, 32, 64, 96, 128]`에서 각 값의 Recall·latency·QPS·CPU·RAM을 모두 저장합니다. 아래 `repetitions: 3`은 호출 형식 예시이며 현재 기본값이나 완료 실행의 횟수가 아닙니다. [fairness-v2 완료 실행](../07-results/fairness-v2-results-20260913.md)은 전체 재구축 5회이고 현재 API도 `rebuildAndLoad=true`일 때 매 repetition 재구축합니다.
 
 ```json
 {"searchParameters": {}, "searchParameterValues": [16, 32, 64, 96, 128], "repetitions": 3}
 ```
 
-Recall이 0.90·0.95를 넘더라도 측정을 계속합니다. 단조성 보정이나 목표 구간 선택을 적용하지 않습니다. 모든 실제 점을 X=p95, Y=Recall에 그리고 0.90·0.95를 참고선으로 표시합니다.
+Recall이 0.90·0.95를 넘더라도 측정을 계속하며 단조성 보정이나 목표 구간 선택을 적용하지 않습니다. 모든 실제 점을 X=p95, Y=Recall에 그리고 0.90·0.95를 참고선으로 표시합니다.
 
 고정 파라미터만 반복할 때는 그리드를 생략합니다.
 

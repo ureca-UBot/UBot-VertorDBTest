@@ -68,7 +68,7 @@ com.myapp
 
 ## 프로필로 DB를 고르는 방식
 
-Spring 프로필이 `vector.store.type`을 정하고, 각 `<Db>Config`가 그 값에 반응합니다.
+Spring 프로필이 `vector.store.type`을 정하고 각 `<Db>Config`가 그 값에 반응합니다.
 
 ```java
 @ConditionalOnProperty(prefix = "vector.store", name = "type", havingValue = "qdrant")
@@ -130,7 +130,7 @@ if (store == null) throw new IllegalStateException("No vector store is active. E
 
 `BenchmarkSummary`가 호출하는 `DecisionGate`는 현재 코드에 남아 있으며 별도 조건이 없으면 Recall 0.95·p95 30ms·RAM 2GiB를 사용합니다. 합의되지 않은 이 기본값과 `decision.eligible`는 선정(pgvector)에 쓰지 않았습니다. 실제 실행 제한 4 vCPU/8GiB와 OpenSearch 4GiB 힙은 다른 개념입니다.
 
-DB 어댑터의 HTTP 계약 일부는 mock HTTP 단위 테스트로 검증하고, 실제 제품 API와 비동기
+DB 어댑터의 HTTP 계약 일부는 mock HTTP 단위 테스트로 검증하고 실제 제품 API와 비동기
 준비 상태는 컨테이너 smoke/full benchmark로 검증합니다.
 [../04-quickstart/run-benchmark.md](../04-quickstart/run-benchmark.md)를 봅니다.
 

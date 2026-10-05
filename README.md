@@ -4,7 +4,7 @@ UBot FAQ 검색에 쓸 Vector DB를 고르려고 pgvector·Qdrant·Weaviate·Mil
 
 > [!IMPORTANT]
 > **결론: 별도 Vector DB 없이 PostgreSQL의 pgvector를 사용합니다.**
-> 같은 Recall에서 Qdrant·OpenSearch가 더 빨랐지만 차이는 p50 1~2ms, p95 수 ms~수십 ms였습니다. 절대적으로 크지 않다고 보고, 이미 쓰는 PostgreSQL에 FAQ와 벡터를 함께 두는 편의성을 우선했습니다.
+> 같은 Recall에서 Qdrant·OpenSearch가 더 빨랐지만 차이는 p50 1~2ms, p95 수 ms~수십 ms였습니다. 절대적으로 크지 않다고 보고 이미 쓰는 PostgreSQL에 FAQ와 벡터를 함께 두는 편의성을 우선했습니다.
 > 근거와 남은 확인 항목은 [선정 결론](docs/07-results/decision.md)에 있습니다.
 
 ## 결과 요약
@@ -47,7 +47,7 @@ Recall 약 0.99에서는 pgvector(ef_search=400)의 p95가 32.2ms로 Qdrant(4.2m
 | 반복 | 구성마다 5회 재구축, 회차별 DB 순서 교차 |
 | 정답 | Java로 계산한 exact cosine Top-10과 비교한 Recall@10 |
 
-속도만 비교하면 Recall이 낮은 설정이 빠르게 보입니다. 그래서 인덱스마다 검색 폭(ef, nprobe 등)을 전부 바꿔 가며 Recall과 지연을 함께 측정했습니다. 14개 구성 × 124개 검색 설정 × 5회 = 620개 측정입니다. 검색 오류와 응답 계약 위반은 0건이고, 워밍업 경고 170건과 Milvus DISKANN Recall 변동 5건은 표시한 채 보존했습니다.
+속도만 비교하면 Recall이 낮은 설정이 빠르게 보입니다. 그래서 인덱스마다 검색 폭(ef, nprobe 등)을 전부 바꿔 가며 Recall과 지연을 함께 측정했습니다. 14개 구성 × 124개 검색 설정 × 5회 = 620개 측정입니다. 검색 오류와 응답 계약 위반은 0건이고 워밍업 경고 170건과 Milvus DISKANN Recall 변동 5건은 표시한 채 보존했습니다.
 
 ## 실행
 
