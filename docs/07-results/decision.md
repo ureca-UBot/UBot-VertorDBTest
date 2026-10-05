@@ -6,7 +6,7 @@
 
 UBot은 별도 Vector DB를 두지 않고 **PostgreSQL의 pgvector**를 사용한다.
 
-같은 Recall 수준에서 Qdrant·OpenSearch가 pgvector보다 빨랐다. 다만 차이는 p50 기준 1~2ms, p95 기준 수 ms~수십 ms였다. 절대값으로는 크지 않다고 판단했고, 이미 쓰는 PostgreSQL에 FAQ와 벡터를 함께 두는 편의성을 우선했다.
+같은 Recall 수준에서 Qdrant·OpenSearch가 pgvector보다 빨랐다. 다만 차이는 p50 기준 1~2ms, p95 기준 수 ms~수십 ms였다. 절대값으로는 크지 않다고 판단했고 이미 쓰는 PostgreSQL에 FAQ와 벡터를 함께 두는 편의성을 우선했다.
 
 ## 성능 차이는 어느 정도였나
 
@@ -47,7 +47,7 @@ UBot-BE 코드 기준이다(`develop`, 2026-09-23 커밋 기준).
 - **추가 서버가 없다.** UBot-BE는 이미 PostgreSQL 18 + PostGIS를 쓴다. pgvector는 같은 이미지([infra/postgres/Dockerfile](https://github.com/ureca-UBot/UBot-BE/blob/develop/infra/postgres/Dockerfile))의 확장이며 Flyway `V1`에서 켠다.
 - **원문과 벡터가 같은 행에 있다.** `faq.vector`, `old_faq.vector` 컬럼에 저장한다. 별도 Vector DB와 원본 DB 사이의 동기화·정합성·재색인 관리가 없다.
 - **조건을 같은 SQL에 쓴다.** 삭제된 FAQ 제외는 [FaqVectorRepository](https://github.com/ureca-UBot/UBot-BE/blob/develop/src/main/java/com/ubot/faq/repository/FaqVectorRepository.java)의 `WHERE deleted_at IS NULL` 한 줄이다.
-- **스키마와 테스트가 하나로 관리된다.** 벡터 컬럼과 HNSW 인덱스는 Flyway `V3`에 있고, 테스트는 Testcontainers로 같은 이미지를 띄운다.
+- **스키마와 테스트가 하나로 관리된다.** 벡터 컬럼과 HNSW 인덱스는 Flyway `V3`에 있고 테스트는 Testcontainers로 같은 이미지를 띄운다.
 - **자원이 작다.** 벤치마크에서 pgvector 컨테이너의 관측 peak RAM은 약 0.22GiB였다.
 
 ## UBot-BE 현재 설정과 벤치마크 조건의 차이
@@ -77,7 +77,7 @@ UBot-BE 코드 기준이다(`develop`, 2026-09-23 커밋 기준).
 ## 벤치마크 결과를 읽는 기준
 
 - 비슷한 **실제 Recall**의 설정끼리 지연·QPS·자원을 비교한다. 서로 다른 검색 파라미터를 평균 내어 가상의 한 구성으로 만들지 않는다.
-- 무필터 Recall–무필터 p95와 필터 Recall–필터 p95를 분리한다. 혼합 QPS는 evaluation 200개 전체 부하이고, 혼합 Recall은 빈 정답 6개를 제외한 194개에 대한 점수다.
+- 무필터 Recall–무필터 p95와 필터 Recall–필터 p95를 분리한다. 혼합 QPS는 evaluation 200개 전체 부하이고 혼합 Recall은 빈 정답 6개를 제외한 194개에 대한 점수다.
 - 실행 예산(DB 합계 4 vCPU/8GiB/swap 없음)과 선정 조건은 다르다. RAM은 관측 비교 지표다.
 - 워밍업 경고 170/620행과 Milvus DISKANN Recall 변동 5행은 삭제하지 않고 표시했다. 선정에 쓴 pgvector·Qdrant·OpenSearch 비교와는 별개다.
 - 코드의 [DecisionGate](../../src/main/java/com/myapp/benchmark/DecisionGate.java)는 임계값이 없으면 Recall 0.95·p95 30ms·RAM 2GiB를 기본 적용해 summary의 `decision.eligible`을 만든다. 합의된 기준이 아니므로 이번 선정에 쓰지 않았다. 코드는 그대로 남아 있다.

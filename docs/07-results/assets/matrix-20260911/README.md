@@ -12,4 +12,4 @@
 - `benchmark-matrix.json`, `embedding-manifest.json`, `docker-images.json`, `run-protocol.json`, `run-status.json`: 실행 당시 보존한 설정과 식별자 사본. protocol의 기존 decision 임계값은 당시 스크립트 설정 기록이며 문서의 선정 기준이 아니다.
 - `working-tree.patch`, `PgVectorIndexManagerTest.java`, `source-sha256.json`, `test-results.json`: 실행 전 IVFFlat 수정과 테스트 근거. 새 테스트는 당시 Git 미추적 파일이어서 patch 외에 별도로 보존했다.
 
-벡터 본문, 실제 실행 JAR, 42개 benchmark raw JSON과 로그 전체는 이 문서 자료 디렉터리에 복제하지 않았다. 원래 로컬 `benchmark-result/matrix-t01-t28-20260911-183751/`에 보존되어 있다. 이 폴더의 자료는 기록을 읽고 집계하는 데 필요한 근거이며, 이 폴더만으로 DB 실행 환경 전체가 복원되는 것은 아니다.
+벡터 본문, 실제 실행 JAR, 42개 benchmark raw JSON과 로그 전체는 이 문서 자료 디렉터리에 복제하지 않았다. 원래 로컬 `benchmark-result/matrix-t01-t28-20260911-183751/`에 보존되어 있다. 이 폴더의 자료는 기록을 읽고 집계하는 데 필요한 근거이며 이 폴더만으로 DB 실행 환경 전체가 복원되는 것은 아니다.

@@ -19,7 +19,7 @@ BGE-M3 출력이 L2 정규화되어 있어 cosine과 dot의 순위가 사실상 
 그중 cosine을 고른 이유는 다섯 DB가 모두 1급으로 지원하는 metric이기 때문입니다.
 
 중요한 것은 어떤 metric인지가 아니라 **전 DB가 같은 metric을 쓰는 것**입니다.
-`BenchmarkRunner`가 실행 전에 검사하고, 다르면 실행을 거부합니다.
+`BenchmarkRunner`가 실행 전에 검사하고 다르면 실행을 거부합니다.
 
 ```java
 if (properties.getMetric() != store.metric()) {

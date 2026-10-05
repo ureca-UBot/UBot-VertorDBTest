@@ -35,13 +35,13 @@
 | Milvus 범위 | 본체 + etcd + MinIO 합산 |
 | OpenSearch 힙 | Lucene/Faiss 및 JVector 모두 -Xms4g -Xmx4g; 8GiB 컨테이너 예산과 별개 |
 
-DB 순서는 R1 P-Q-W-M-O, R2 W-O-P-Q-M, R3 M-Q-O-W-P, R4 O-M-W-P-Q, R5 Q-P-M-O-W로 교차했다. P=pgvector, Q=Qdrant, W=Weaviate, M=Milvus, O=OpenSearch다. 구성 안 검색 파라미터도 회차별 결정적 섞기를 사용했다. 동일 호스트의 캐시·열·배경 부하를 완전히 제거했다는 뜻은 아니다. [실제 순서](assets/fairness-v2-20260912-1826/execution-order.json), [실행 명세](assets/fairness-v2-20260912-1826/execution-start.json), [현행 프로토콜](../03-benchmark-design/fairness-v2.md)을 함께 본다.
+DB 순서는 R1 P-Q-W-M-O, R2 W-O-P-Q-M, R3 M-Q-O-W-P, R4 O-M-W-P-Q, R5 Q-P-M-O-W로 교차했다. P=pgvector, Q=Qdrant, W=Weaviate, M=Milvus, O=OpenSearch다. 구성 안 검색 파라미터도 회차별 결정적 섞기를 사용했지만 그것으로 동일 호스트의 캐시·열·배경 부하를 완전히 제거했다고 보지는 않는다. [실제 순서](assets/fairness-v2-20260912-1826/execution-order.json), [실행 명세](assets/fairness-v2-20260912-1826/execution-start.json), [현행 프로토콜](../03-benchmark-design/fairness-v2.md)을 함께 본다.
 
 ## 3. 점과 축을 읽는 방법
 
-작은 점 620개는 각 회차의 관측이다. 큰 기호 124개는 **동일 설정 5회의 요약점**이다. Recall은 평균, p95·QPS·평균 CPU·회차별 peak RAM은 중앙값이다. 큰 점은 실제 어느 한 회차의 측정점이 아니다. 다른 파라미터를 평균 내지 않는다. 같은 build의 여러 검색 설정도 독립 재구축으로 세지 않는다.
+작은 점 620개는 각 회차의 관측이다. 큰 기호 124개는 **동일 설정 5회의 요약점**이다. Recall은 평균, p95·QPS·평균 CPU·회차별 peak RAM은 중앙값이다. 큰 점은 실제 어느 한 회차의 측정점이 아니다. 다른 파라미터를 평균 내지 않으며 같은 build의 여러 검색 설정도 독립 재구축으로 세지 않는다.
 
-색은 DB, 기호는 인덱스 구성을 구분한다. OpenSearch Lucene HNSW는 +, Faiss HNSW는 원이다. 빈 작은 원은 워밍업 경고, ×는 동일 질의 반복 Recall 변동이 확인된 Milvus DISKANN 관측이다. **경고점도 표시하고 집계에 포함했다.** 선택 범위는 5회 최솟값~최댓값이며 신뢰구간이 아니다.
+색은 DB, 기호는 인덱스 구성을 구분한다. OpenSearch Lucene HNSW는 +, Faiss HNSW는 원이다. 빈 작은 원은 워밍업 경고다. ×는 Milvus DISKANN 관측 가운데 동일 질의 반복에서 Recall 변동이 확인된 것이다. **경고점도 표시하고 집계에 포함했다.** 선택 범위는 5회 최솟값~최댓값이며 신뢰구간으로 읽지 않는다.
 
 Recall 0.80·0.90·0.95는 참고선이다. 실행 명세의 참고 수준은 0.90·0.95이고, 0.80은 시각적 비교를 위해 추가했다. ±0.01은 필요한 경우 근접 수준을 설명하는 범위로 명시할 수 있지만, 구간 밖 관측을 삭제하거나 가까운 실제값을 목표값으로 바꾸지 않는다.
 
@@ -54,13 +54,13 @@ Recall 0.80·0.90·0.95는 참고선이다. 실행 명세의 참고 수준은 0.
 | [⑤ CPU·처리량](assets/fairness-v2-20260912-1826/scatter-cpu-throughput.png) | 평균 Docker CPU 코어 환산 | 혼합 QPS | 사용 CPU와 처리량의 관계는? |
 | [⑥ 필터 정확도·지연](assets/fairness-v2-20260912-1826/scatter-filter-recall-latency.png) | 필터 Recall@10 | 필터 p95 ms, 로그 | 필터에서도 정확도와 지연이 유지되는가? |
 
-지연 로그 축의 같은 간격은 같은 ms 차이가 아니라 배수 차이다. ③~⑤에는 Recall 축이 없으므로 ①·②·⑥의 같은 설정을 함께 확인한다. QPS는 고정 동시성 10에서의 관측이며 모든 동시성에서의 최대 처리량이 아니다.
+지연 로그 축의 같은 간격은 같은 ms 차이가 아닌 배수 차이를 뜻한다. ③~⑤에는 Recall 축이 없으므로 ①·②·⑥의 같은 설정을 함께 확인한다. QPS는 고정 동시성 10에서 관측한 값이며 모든 동시성에서 낼 수 있는 최대 처리량은 아니다.
 
 ### 채점·부하 모집단의 차이
 
 무필터 Recall과 p95는 180개 질의의 반복이다. 필터 20개 중 6개는 exact 정답이 없다. 따라서 혼합 Recall은 정답이 있는 194개, 필터 Recall은 14개를 채점한다. 지연과 QPS는 빈 정답 질의를 포함한 모든 검색을 측정한다. **②와 ⑥은 같은 부하를 설명하지만 Recall 유효 분모와 지연·QPS 분모가 같지는 않다.**
 
-필터 질의 비율 10%는 문서가 10% 남는 필터 선택도가 아니다. 1%·10%·50% 선택도별 실험은 이번에 하지 않았다. 같은 질의를 반복 호출한 횟수도 독립적인 새 서비스 질의 수로 세지 않는다.
+필터 질의 비율 10%는 문서가 10% 남는 필터 선택도가 아니며 1%·10%·50% 선택도별 실험은 이번에 하지 않았다. 같은 질의를 반복 호출한 횟수도 독립적인 새 서비스 질의 수로 세지 않는다.
 
 ## 4. 실제 수치로 읽는 예시
 
@@ -82,7 +82,7 @@ RAM은 Docker 표본의 최대치이며 RSS·heap 실제 사용량·호스트 RA
 
 ## 5. 오류·경고·미검증 구분
 
-검색 실패, 응답 계약 위반, 빈 정답 반환 위반은 각각 **0건**이고 자원 증거 불완전도 **0행**이다. 워밍업 경고 170행과 Milvus DISKANN 확인 필요 5행은 삭제하지 않았다.
+검색 실패, 응답 계약 위반, 빈 정답 반환 위반은 각각 **0건**이고 자원 증거가 불완전한 경우도 **0행**이다. 워밍업 경고 170행과 Milvus DISKANN 확인 필요 5행은 삭제하지 않았다.
 
 | 구성 | 측정 수 | 워밍업 경고 | 확인된 Recall 변동 |
 |---|---:|---:|---:|
@@ -102,13 +102,13 @@ RAM은 Docker 표본의 최대치이며 RSS·heap 실제 사용량·호스트 RA
 | OpenSearch JVector DiskANN | 45 | 9 | 0 |
 | 합계 | 620 | 170 | 5 |
 
-두 경고는 중복될 수 있다. 변동 0은 모든 DB에 동일 재현성 진단을 수행했다는 뜻이 아니다. Milvus 외에는 필수 진단을 하지 않은 기본 상태도 있다.
+두 경고는 중복될 수 있다. 변동 0은 모든 DB에 동일 재현성 진단을 수행했다는 뜻이 아니며 Milvus 외에는 필수 진단을 하지 않은 기본 상태도 있다.
 
-워밍업은 200개 질의의 짧은 pass에서 p95 안정화 여부를 판단한다. false를 약 60초 본 측정 전체의 무효나 운영 불안정의 증거로 단정하지 않는다. true도 긴 부하 안정성을 보장하지 않는다.
+워밍업은 200개 질의의 짧은 pass에서 p95 안정화 여부를 판단한다. false를 약 60초 본 측정 전체의 무효나 운영 불안정의 증거로 단정하지 않으며 true도 긴 부하 안정성을 보장하지 않는다.
 
-확인 필요 지점은 **Milvus DISKANN R1 search_list=10, R2 200, R3 10, R4 120, R5 120**이다. 동일 질의·설정 반복 및 segment 상태 기록에서 변동이 확인됐으며 과거 HNSW tuning/evaluation drift와 별도 관측이다. 저장된 stabilityDiagnostics.verified=true만으로 해결됐다고 보지 않는다. 현 상태 검사는 최상위 error 키 확인과 사후 관측의 한계가 있어 상태 동일성·측정 구간 중 원인을 확정하지 못한다. 경고점과 요약점은 남기되 DISKANN 재현성 결론을 보류한다.
+확인 필요 지점은 **Milvus DISKANN R1 search_list=10, R2 200, R3 10, R4 120, R5 120**이다. 동일 질의·설정을 반복한 결과와 segment 상태 기록에서 변동이 확인됐으며 과거 HNSW tuning/evaluation drift와는 별도로 관측한 것이다. 저장된 stabilityDiagnostics.verified=true만으로 해결됐다고 보지 않는다. 현 상태 검사는 최상위 error 키만 확인하고 사후에 관측한다는 한계가 있어 상태 동일성·측정 구간 중 원인을 확정하지 못한다. 경고점과 요약점은 남기되 DISKANN 재현성 결론을 보류한다.
 
-독립 holdout·실제 서비스 데이터·1k·필터 선택도별 검증은 미실시다. 이는 DB 실패가 아니라 아직 하지 않은 검증이다.
+독립 holdout·실제 서비스 데이터·1k·필터 선택도별 검증은 아직 하지 않았으며 이를 DB 실패로 보지 않는다.
 
 ## 6. 기존 판정 필드의 취급
 
@@ -118,7 +118,7 @@ RAM은 Docker 표본의 최대치이며 RSS·heap 실제 사용량·호스트 RA
 
 ## 7. 구축 시간과 보조 지표
 
-p50/p99, CPU 평균·최대, RAM 평균·최대, index size, 구축·적재 시간은 [회차별 지표](assets/fairness-v2-20260912-1826/measurements.json)에 보존했다. 주요 그림의 축으로 쓰지 않았다는 이유로 없앤 것이 아니다.
+p50/p99, CPU 평균·최대, RAM 평균·최대, index size, 구축·적재 시간은 [회차별 지표](assets/fairness-v2-20260912-1826/measurements.json)에 보존했다. 주요 그림의 축으로 쓰지 않았다고 해서 없애지는 않았다.
 
 구축 시간은 여러 검색 설정에 반복 기록되므로 **구성당 5개 고유 build만** 집계한다. indexBuildTimeMs는 삭제·생성·학습·적재·준비 대기를 포함한 현재 어댑터의 time-to-ready다. 순수 인덱스 계산 시간이나 컨테이너 기동·LLM 응답 시간과 구분한다.
 
@@ -139,7 +139,7 @@ p50/p99, CPU 평균·최대, RAM 평균·최대, index size, 구축·적재 시�
 | OpenSearch Faiss IVF | 19.13 | 18.81~20.84 |
 | OpenSearch JVector DiskANN | 24.68 | 24.03~26.84 |
 
-[정밀 수치와 70개 build](assets/fairness-v2-20260912-1826/build-statistics.json). Index size는 pgvector ANN relation, OpenSearch 전체 index store 등 수집 범위가 다르고 미지원 값도 있어 동일 저장 비용으로 순위화하지 않는다. 지연에는 store.search 내부의 직렬화·전송·어댑터 처리와 pgvector 검색별 설정 왕복 등이 포함된다. DB 알고리즘만 분리한 속도가 아니다.
+[정밀 수치와 70개 build](assets/fairness-v2-20260912-1826/build-statistics.json). Index size는 pgvector ANN relation, OpenSearch 전체 index store 등 수집 범위가 다르고 미지원 값도 있어 동일 저장 비용으로 순위화하지 않는다. 지연에는 store.search 내부의 직렬화·전송·어댑터 처리와 pgvector 검색별 설정 왕복 등이 포함되므로 DB 알고리즘만 분리한 속도로 읽지 않는다.
 
 ## 8. 이 결과로 내린 결론
 

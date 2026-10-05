@@ -12,7 +12,7 @@ Native engine에서 HNSW, IVF_FLAT, IVF_SQ8, IVF_PQ, DISKANN(T11, T13, T15, T17,
 | IVF_PQ | nlist=128, m=64, nbits=8 | nprobe |
 | DISKANN | server default build params | search_list |
 
-IVF_PQ의 `m=64`, `nbits=8`은 1,024차원을 64개 부분으로 나누고 부분마다 1바이트의 코드를 사용합니다. PQ 코드만 비교하면 float32 원본 벡터 4,096바이트 대비 64바이트지만, 코드북·ID·엔진·보조 서비스까지 포함한 실제 RAM이 64배 줄어든다는 뜻은 아닙니다.
+IVF_PQ의 `m=64`, `nbits=8`은 1,024차원을 64개 부분으로 나누고 부분마다 1바이트의 코드를 사용합니다. PQ 코드만 비교하면 float32 원본 벡터 4,096바이트 대비 64바이트지만 코드북·ID·엔진·보조 서비스까지 포함한 실제 RAM이 64배 줄어든다는 뜻은 아닙니다.
 
 최신 v2의 IVF_PQ 전체 탐색 그리드에서 혼합 Recall은 0.494330–0.613918이었습니다. 이는 현재 `m=64`, `nbits=8`, refine 미사용 설정의 관측이며 제품 전체의 품질 상한이나 압축만의 인과 효과를 입증하지 않습니다. 낮은 Recall의 45개 점도 전부 보존합니다.
 
@@ -26,7 +26,7 @@ insert 뒤 `collections/flush`와 비동기 `collections/load`를 호출합니�
 
 과거 단일 실행에서 calibration 0.9578 → 본 측정 0.7422가 관측됐으므로 Milvus는 자동 stability audit 대상입니다. 각 결과 행에서 해당 측정의 고정 파라미터와 calibration 무필터 query를 사용해 serial 3회와 concurrency 10의 3회를 추가 실행합니다.
 
-과거 스모크에서는 REST index/load 상태 완료 뒤 query node의 segment 목록이 비어 있던 준비 간극을 확인하고 SDK segment 장벽을 추가했습니다. 당시 T12 등의 수치는 [과거 adapter smoke](../07-results/adapter-smoke-20260911.md)에 보존합니다. 현재 결과는 전체 sweep의 T11/T13/T15/T17/T19이며, 각 행의 별도 진단값을 함께 읽습니다.
+과거 스모크에서는 REST index/load 상태 완료 뒤 query node의 segment 목록이 비어 있던 준비 간극을 확인하고 SDK segment 장벽을 추가했습니다. 당시 T12 등의 수치는 [과거 adapter smoke](../07-results/adapter-smoke-20260911.md)에 보존합니다. 현재 결과는 전체 sweep의 T11/T13/T15/T17/T19이며 각 행의 별도 진단값을 함께 읽습니다.
 
 공식 Java SDK의 `getQuerySegmentInfo`로 segment ID/state/rows/memory/index/node 정보를 받고 REST로 상태를 저장합니다. 첫 concurrent 진단 표본 대비 최대 편차나 serial/concurrent 중앙값 차이가 기본 0.05를 넘거나 상태 수집 오류가 있으면 stability_verified=false를 기록합니다. 현재 Recall 진단 검색은 **본 측정 뒤에만** 수행하고 상태 판정도 오류 키 중심이라 pending rows·segment 변화 자체를 충분히 검증하지 못합니다. 따라서 `verified=true`가 본 측정 중 안정성을 보증하지 않습니다.
 

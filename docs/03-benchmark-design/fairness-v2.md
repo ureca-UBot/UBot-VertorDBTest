@@ -22,7 +22,7 @@
 
 ## 반복·시간·자원
 
-- 기본 **5회 전체 재구축**입니다. API도 `rebuildAndLoad=true`이면 repetition마다 drop/create/load/ready를 반복합니다. false이면 구축 비용은 0이 아니라 -1(미측정)입니다. 각 구축에는 별도 buildId가 붙습니다.
+- 기본 **5회 전체 재구축**입니다. API도 `rebuildAndLoad=true`이면 repetition마다 drop/create/load/ready를 반복합니다. false이면 구축 비용은 0이 아닌 -1(미측정)입니다. 각 구축에는 별도 buildId가 붙습니다.
 - DB 순서는 회차별 교차, 검색 파라미터 순서는 runNumber를 시드로 결정적으로 섞습니다.
 - 측정 concurrency로 워밍업하며 최근 3회 p95 범위가 median의 15% 이내인지 확인합니다. 기본 최대 10회이며 불안정 상태도 결과에 남깁니다. 워밍업 생략은 최종 판정 불가입니다.
 - 기본 최소 **30초 + 검색 구간에 완전히 포함된 자원 표본 30개**를 확보합니다. 표본이 부족하면 기본 180초까지 완전한 query batch 단위로 연장합니다. 마지막 batch/개별 요청 timeout 때문에 180초는 강제 중단 시간이 아닙니다. 표본 부족은 `resourceComplete=false`입니다.
@@ -63,7 +63,7 @@ summary JSON은 동일 workload·설정별 median p95/QPS, Recall mean/min/max, 
 | scenarios | testId·database·engine·indexType·topK·concurrency·전체 index/search 설정 |
 | thresholds | 사전에 합의할 Recall·지연·자원·오류율 정책; 현재 서비스 요구사항으로 확정된 값 없음 |
 
-주의: **현재 `HoldoutGuard`는 recallMinimum·p95MaximumMs·ramMaximumBytes·errorRateMaximum을 필수 숫자로 요구합니다.** RAM을 관측 지표만으로 두는 정책은 아직 이 실행 스키마에 반영되지 않았습니다. 새 holdout을 실행하기 전에 정책과 코드 경로를 별도로 정리해야 하며, 검증기를 통과하려고 임의의 임계값을 넣지 않습니다. concurrency 1/10은 같은 ID의 scenario를 각각 선언할 수 있습니다. prior 상대 경로는 plan 파일의 부모 기준입니다.
+주의: **현재 `HoldoutGuard`는 recallMinimum·p95MaximumMs·ramMaximumBytes·errorRateMaximum을 필수 숫자로 요구합니다.** RAM을 관측 지표만으로 두는 정책은 아직 이 실행 스키마에 반영되지 않았습니다. 새 holdout을 실행하기 전에 정책과 코드 경로를 별도로 정리해야 하며 검증기를 통과하려고 임의의 임계값을 넣지 않습니다. concurrency 1/10은 같은 ID의 scenario를 각각 선언할 수 있습니다. prior 상대 경로는 plan 파일의 부모 기준입니다.
 
 정책·스키마를 정리하고 새 입력·plan을 준비한 뒤 사용할 실행 형식은 다음과 같습니다. 이번 완료 실행에서 holdout을 수행했다는 뜻은 아닙니다.
 

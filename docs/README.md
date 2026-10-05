@@ -1,8 +1,8 @@
 # 문서 안내
 
-**결론: UBot은 pgvector를 사용합니다.** 같은 Recall 수준에서 Qdrant·OpenSearch가 더 빨랐지만 차이가 절대적으로 크지 않아, 이미 쓰는 PostgreSQL에 FAQ와 벡터를 함께 두는 편의성을 우선했습니다. 근거는 [선정 결론](07-results/decision.md)에 있습니다.
+**결론: UBot은 pgvector를 사용합니다.** 같은 Recall 수준에서 Qdrant·OpenSearch가 더 빨랐지만 차이가 절대적으로 크지 않아 이미 쓰는 PostgreSQL에 FAQ와 벡터를 함께 두는 편의성을 우선했습니다. 근거는 [선정 결론](07-results/decision.md)에 있습니다.
 
-근거 측정은 **2026-09-13 완료된 fairness-v2의 620개 실측**입니다. 14개 DB·엔진·인덱스 구성을 각각 5회 독립 재구축했고(총 70개 build), 각 회차에서 124개 검색 설정을 측정했습니다. 실제 프로젝트의 예상 범위는 1,000~10,000개 청크이며 실측은 합성 10k 청크입니다.
+근거 측정은 **2026-09-13 완료된 fairness-v2의 620개 실측**입니다. 14개 DB·엔진·인덱스 구성을 각각 5회 독립 재구축했고(총 70개 build) 각 회차에서 124개 검색 설정을 측정했습니다. 실제 프로젝트의 예상 범위는 1,000~10,000개 청크이며 실측은 합성 10k 청크입니다.
 
 ## 결과부터 읽기
 
@@ -28,7 +28,7 @@
 - 구현 계약: [VectorStore와 IndexManager](06-implementation/vector-store.md), [어댑터 정책](06-implementation/adapter-policy.md), [코드 지도](06-implementation/code-architecture.md)
 - 측정값 확인: [결과 형식](06-implementation/result-format.md), [문제 해결](08-troubleshooting/common-issues.md)
 
-이번 측정은 10k 합성 데이터·1024차원·Top-10·동시성 10·DB 합계 4 vCPU/8 GiB 조건입니다. OpenSearch 힙 4GiB는 이 실행 예산 안의 설정입니다. RAM은 관측 지표입니다. 코드의 `DecisionGate` 기본 2GiB·30ms·0.95와 `eligible`는 코드에 남아 있지만 선정에 쓰지 않았습니다.
+이번 측정은 10k 합성 데이터·1024차원·Top-10·동시성 10·DB 합계 4 vCPU/8 GiB 조건입니다. OpenSearch 힙 4GiB는 이 실행 예산 안의 설정이고 RAM은 관측 지표입니다. 코드의 `DecisionGate` 기본 2GiB·30ms·0.95와 `eligible`는 코드에 남아 있지만 선정에 쓰지 않았습니다.
 
 워밍업 미달 170건과 Milvus DISKANN 변동 5건을 표시한 채 결과를 보존합니다. 1k·실제 FAQ·별도 필터 선택도·독립 holdout은 측정하지 않았습니다. 실제 FAQ에서 확인할 항목은 [선정 결론의 남은 확인](07-results/decision.md#남은-확인)에 있습니다. 과거 84개·372개 결과는 각각의 프로토콜로만 읽습니다.
 
